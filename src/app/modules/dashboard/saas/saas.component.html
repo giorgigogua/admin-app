@@ -1,0 +1,117 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex flex-column">
+      <h3>Trends</h3>
+    </div>
+    <div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Last Month
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Trading Profits</a></li>
+          <li><a class="dropdown-item" href="#">Staking Rewards</a></li>
+          <li><a class="dropdown-item" href="#">Mining Income</a></li>
+        </ul>
+      </li>
+    </div>
+  </div>
+
+  <nav class="mt-5">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+        role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+        role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+        role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+    </div>
+  </nav>
+  <div class="tab-content mt-5" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <app-bar-chart></app-bar-chart>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <app-bar-chart></app-bar-chart>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <app-bar-chart></app-bar-chart>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-xl-8 col-lg-8 col-md-12">
+      <app-browse-all title="Support Tickets"></app-browse-all>
+      <app-table></app-table>
+    </div>
+    <div class="col-xl-4 col-md-8">
+      <app-browse-all title="Top Refferes"></app-browse-all>
+
+      <div class="container">
+
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex justify-content-between">
+            <span>Facebook</span>
+            <span>50%</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span>Facebook</span>
+            <span>50%</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span>Facebook</span>
+            <span>50%</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span>Facebook</span>
+            <span>50%</span>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="progress">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 2rem;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Tooltip on top">25%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width:8rem;" aria-valuenow="5"
+                aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 5rem;" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-secondary" role="progressbar" style="width: 7rem;" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mt-5">
+        <app-browse-all title="Support Tickets"></app-browse-all>
+          <app-accordion title="Login Issues on mobile"
+            content="Customer is experiencing issues with the payment gateway. This affects both credit card and PayPal payments."></app-accordion>
+        </div>
+        <div>
+          <app-accordion title="Login Issues on mobile" date="oct 4"
+            content="Customer is experiencing issues with the payment gateway. This affects both credit card and PayPal payments."></app-accordion>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-3 mt-5">
+        <div class="d-flex justify-content-between">
+          <h4>Api usage limits</h4>
+        </div>
+        <div class="container d-flex flex-column gap-3">
+          <div class="d-flex justify-content-end">
+            <span class="badge bg-warning text-dark w-25">75 % used</span>
+          </div>
+          <h5>ChatGPT</h5>
+          <p>You're approaching your monthly limit.</p>
+          <div class="container">
+            <p>25,000 / 30,000 calls used</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
