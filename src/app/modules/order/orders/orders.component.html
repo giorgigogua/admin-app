@@ -1,22 +1,10 @@
 <div class="container">
-    <app-page-title titleOne="Customers" titleTwo="Customers" titleThree="Customers" buttonText="+ New Customer" icon="bi bi-person text-primary"></app-page-title>
 
-    <div class="d-flex justify-content-between mt-5">
-        <div class="d-flex gap-2">
-            <div>
-                <span>3 contacts selected</span>
-            </div>
-            <div>
-                <span class="bg-danger text-white">Delete</span>
-            </div>
-        </div>
-        <div class="input-group w-25">
-            <input class="form-control" id="topnavSearchInput" type="search" placeholder="Search" aria-label="Search"
-                aria-describedby="navbarSearch">
-            <span class="input-group-text" id="navbarSearch">
-                <i class="bi bi-search"></i>
-            </span>
-        </div>
+    <app-page-title titleOne="Orders" titleTwo="Orders" titleThree="Orders" icon="bi bi-journal-text text-primary"
+        buttonText="+ New Project"></app-page-title>
+
+    <div>
+        <app-filter-box isInput="true"></app-filter-box>
     </div>
     <div class="mt-5">
         <app-table></app-table>

@@ -19,6 +19,18 @@ import { SaasComponent } from './modules/dashboard/saas/saas.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { BrowseAllComponent } from './components/browse-all/browse-all.component';
 import { CustomersComponent } from './modules/customer/customers/customers.component';
+import { PageTitleComponent } from './components/page-title/page-title.component';
+import { ProjectsComponent } from './modules/project/projects/projects.component';
+import { OrdersComponent } from './modules/order/orders/orders.component';
+import { InvoiceComponent } from './modules/order/invoice/invoice.component';
+import { FilterBoxComponent } from './components/filter-box/filter-box.component';
+import { PricingComponent } from './modules/order/pricing/pricing.component';
+import { PricingCardComponent } from './components/pricing-card/pricing-card.component';
+import { AccountOverviewComponent } from './modules/account/account-overview/account-overview.component';
+import { CategoriesComponent } from './modules/post/categories/categories.component';
+import { PostCardComponent } from './components/post-card/post-card.component';
+import { PostsComponent } from './modules/post/posts/posts.component';
+import { PostListCardComponent } from './components/post-list-card/post-list-card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +48,19 @@ import { CustomersComponent } from './modules/customer/customers/customers.compo
     SaasComponent,
     AccordionComponent,
     BrowseAllComponent,
-    CustomersComponent
+    CustomersComponent,
+    PageTitleComponent,
+    ProjectsComponent,
+    OrdersComponent,
+    InvoiceComponent,
+    FilterBoxComponent,
+    PricingComponent,
+    PricingCardComponent,
+    AccountOverviewComponent,
+    CategoriesComponent,
+    PostCardComponent,
+    PostsComponent,
+    PostListCardComponent
   ],
   imports: [
     BrowserModule,

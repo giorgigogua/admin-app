@@ -1,0 +1,45 @@
+<div class="container">
+    <div>
+        <app-page-title titleOne="Posts" titleTwo="Posts" titleThree="Posts" buttonText="+ New post"></app-page-title>
+    </div>
+    <div>
+        <app-filter-box isInput="true" publDrafts="true" published="Published" drafts="Drafts"></app-filter-box>
+    </div>
+
+
+    <div class="row py-5">
+        <div class="col">
+            <app-post-list-card></app-post-list-card>
+        </div>
+        <div class="col-auto">
+            <div>
+                <h4>Top Authors</h4>
+            </div>
+            <div class="d-flex align-items-center py-4">
+                <div>
+                    <img src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-1.jpg" alt="">
+                </div>
+                <div>
+                    <div>
+                        <h6>Jesicca millow</h6>
+                    </div>
+                    <div>
+                        <p>jesica#gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span>Allow Comments</span>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-warning border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span>Posts as anonymous</span>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-warning border-0" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

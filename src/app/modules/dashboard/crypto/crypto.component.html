@@ -27,34 +27,35 @@
           <p>Watchlist</p>
           <p>+ Add</p>
         </div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col"><small class="text-muted">Name</small></th>
-                <th scope="col"><small class="text-muted">Last price (USD)</small></th>
-                <th scope="col"><small class="text-muted">Change</small></th>
-                <th scope="col"><small class="text-muted">Last 24hr</small></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="d-flex gap-2">
-                    <div>
-                      <img width="30" height="30" src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/btc.svg" alt="">
-                    </div>
-                    <div>
-                      <strong class="fw-semibold">Bitcoin</strong>
-                    </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"><small class="text-muted">Name</small></th>
+              <th scope="col"><small class="text-muted">Last price (USD)</small></th>
+              <th scope="col"><small class="text-muted">Change</small></th>
+              <th scope="col"><small class="text-muted">Last 24hr</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex gap-2">
+                  <div>
+                    <img width="30" height="30"
+                      src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/btc.svg" alt="">
                   </div>
-                </td>
-                <td>621,879.81</td>
-                <td>+0.53%</td>
-                <td>Line</td>
-                <td>Trade</td>
-              </tr>
-            </tbody>
-          </table>
+                  <div>
+                    <strong class="fw-semibold">Bitcoin</strong>
+                  </div>
+                </div>
+              </td>
+              <td>621,879.81</td>
+              <td>+0.53%</td>
+              <td>Line</td>
+              <td>Trade</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="col-xl-3 col-md-8">
         <app-pie-chart></app-pie-chart>
@@ -68,29 +69,20 @@
         <p>Browse All ></p>
       </div>
       <div>
-        <h6>Bitcoin Hits New All-Time High</h6>
-        <p>Bitcoin's value surges past $70,000 amid global economic uncertainty</p>
-        <br>
-        <div class="d-flex gap-3">
-          <p>Published on September 12, 2024</p>
-          <li class="nav-item dropdown">
-            <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              ...
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Trading Profits</a></li>
-              <li><a class="dropdown-item" href="#">Staking Rewards</a></li>
-              <li><a class="dropdown-item" href="#">Mining Income</a></li>
-            </ul>
-        </div>
+        <app-post-list-card></app-post-list-card>
       </div>
     </div>
     <div class="col-xl-3 col-md-8">
-      <app-recent-activity name={{title}} time="Oct 1" activity="Transaction completed on Coinbase"></app-recent-activity>
-      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1" activity="Transaction completed on Coinbase"></app-recent-activity>
-      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1" activity="Transaction completed on Coinbase"></app-recent-activity>
-      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1" activity="Transaction completed on Coinbase"></app-recent-activity>
-      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1" activity="Transaction completed on Coinbase"></app-recent-activity>
+      <app-recent-activity name={{title}} time="Oct 1"
+        activity="Transaction completed on Coinbase"></app-recent-activity>
+      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1"
+        activity="Transaction completed on Coinbase"></app-recent-activity>
+      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1"
+        activity="Transaction completed on Coinbase"></app-recent-activity>
+      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1"
+        activity="Transaction completed on Coinbase"></app-recent-activity>
+      <app-recent-activity name="Bought 1.5 BTC" time="Oct 1"
+        activity="Transaction completed on Coinbase"></app-recent-activity>
     </div>
   </div>
 </div>

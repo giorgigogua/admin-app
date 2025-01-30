@@ -1,0 +1,31 @@
+<div class="w-100 d-flex justify-content-between">
+    <div class="d-flex gap-4 align-items-center">
+        <div>
+            <i class={{icon}}></i>
+        </div>
+        <div>
+            <div class="d-flex gap-2">
+                <div>
+                    <span>{{titleOne}}</span>
+                </div>
+                <div>
+                    <span>{{titleTwo}}</span>
+                </div>
+            </div>
+            <div>
+                <h4>{{titleThree}}</h4>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="buttonText">
+        <button class="btn btn-warning h-75">{{buttonText}}</button>
+    </div>
+    <div *ngIf="buttons" class="d-flex gap-2">
+        <div *ngIf="editButton">
+            <button class="btn btn-white h-75">{{editButton}}</button>
+        </div>
+        <div *ngIf="deleteButton">
+            <button class="btn btn-danger h-75">{{deleteButton}}</button>
+        </div>
+    </div>
+</div>

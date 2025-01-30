@@ -11,6 +11,7 @@ import { TableComponent } from '../../components/table/table.component';
 import { RecentActivityComponent } from '../../components/recent-activity/recent-activity.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
 import { BrowseAllComponent } from '../../components/browse-all/browse-all.component';
+import { PostListCardComponent } from '../../components/post-list-card/post-list-card.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { BrowseAllComponent } from '../../components/browse-all/browse-all.compo
     TableComponent,
     RecentActivityComponent,
     AccordionComponent,
-    BrowseAllComponent
+    BrowseAllComponent,
+    PostListCardComponent
   ],
   imports: [
     CommonModule,
