@@ -31,6 +31,7 @@ import { CategoriesComponent } from './modules/post/categories/categories.compon
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { PostsComponent } from './modules/post/posts/posts.component';
 import { PostListCardComponent } from './components/post-list-card/post-list-card.component';
+import { GridListComponent } from './components/grid-list/grid-list.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { PostListCardComponent } from './components/post-list-card/post-list-car
     CategoriesComponent,
     PostCardComponent,
     PostsComponent,
-    PostListCardComponent
+    PostListCardComponent,
+    GridListComponent
   ],
   imports: [
     BrowserModule,

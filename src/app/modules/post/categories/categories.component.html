@@ -1,12 +1,9 @@
 <div class="container">
-    <div>
-        <app-page-title titleOne="Posts" titleTwo="Categories" titleThree="Categories" buttonText="+ New category"></app-page-title>
+    <div class="py-4">
+        <app-page-title titleOne="Posts" titleTwo="Categories" titleThree="Categories" buttonText="+ New category" icon="bi bi-person"></app-page-title>
     </div>
 
-    <div class="row">
-        <app-post-card></app-post-card>
-        <app-post-card></app-post-card>
-        <app-post-card></app-post-card>
-        <app-post-card></app-post-card>
+    <div class="row" *ngFor="let item of categories">
+        <app-post-card title={{item.title}} postLength={{item.postLength}} topTitle={{item.topTitle}}  icon={{item.img}} backgroundColor={{item.backgroundColor}}></app-post-card>
     </div>
 </div>

@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,36 @@ import { Component } from '@angular/core';
   styleUrl: './categories.component.scss'
 })
 export class CategoriesComponent {
+
+  categories: any = [
+    {
+      topTitle: '12 followers',
+      title: 'Announcments',
+      postLength: '20 posts',
+      img: 'bi bi-person text-primary',
+      backgroundColor: 'bg-warning'
+    },
+    {
+      topTitle: '12 followers',
+      title: 'Announcments',
+      postLength: '20 posts',
+      img: 'bi bi-person text-primary',
+      backgroundColor: 'bg-secondary'
+    },
+    {
+      topTitle: '12 followers',
+      title: 'Announcments',
+      postLength: '20 posts',
+      img: 'bi bi-person text-primary',
+      backgroundColor: 'bg-success'
+    },
+    {
+      topTitle: '12 followers',
+      title: 'Announcments',
+      postLength: '20 posts',
+      img: 'bi bi-person text-primary',
+      backgroundColor: 'bg-light'
+    },
+  ]
 
 }

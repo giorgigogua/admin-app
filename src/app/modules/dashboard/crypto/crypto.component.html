@@ -22,11 +22,12 @@
   </div>
   <div class="mt">
     <div class="row mt-5 gap-5">
-      <div class="col-xl-8 col-lg-8 col-md-12">
+      <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-secondary p-3 rounded-4">
         <div class="d-flex justify-content-between">
           <p>Watchlist</p>
           <p>+ Add</p>
         </div>
+        <hr>
         <table class="table">
           <thead>
             <tr>
@@ -57,22 +58,24 @@
           </tbody>
         </table>
       </div>
-      <div class="col-xl-3 col-md-8">
+      <div class="col-xl-3 col-md-8 border border-1 border-secondary p-3 rounded-4">
         <app-pie-chart></app-pie-chart>
       </div>
     </div>
   </div>
   <div class="row gap-5 mt">
-    <div class="col-xl-8 col-lg-8 col-md-12">
-      <div class="d-flex justify-content-between">
+    <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-secondary p-4 rounded-4">
+      <div class="d-flex justify-content-between py-3">
         <h5>Industry News</h5>
         <p>Browse All ></p>
       </div>
+      <hr>
       <div>
         <app-post-list-card></app-post-list-card>
       </div>
     </div>
-    <div class="col-xl-3 col-md-8">
+    <div class="col-xl-3 col-md-8 border border-1 border-secondary rounded-4 p-3">
+      <app-browse-all title="Latest Transactions"></app-browse-all>
       <app-recent-activity name={{title}} time="Oct 1"
         activity="Transaction completed on Coinbase"></app-recent-activity>
       <app-recent-activity name="Bought 1.5 BTC" time="Oct 1"

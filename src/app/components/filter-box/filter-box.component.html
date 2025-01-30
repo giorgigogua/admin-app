@@ -4,13 +4,13 @@
     </div>
     <div class="d-flex gap-2" *ngIf="publDrafts">
         <div *ngIf="published">
-            <button class="border-0">Published</button>
+            <button class="border-0 bg-light p-2 rounded-3">Published</button>
         </div>
         <div *ngIf="drafts">
-            <button class="border-0">Drafts</button>
+            <button class="border-0 bg-light p-2 rounded-3">Drafts</button>
         </div>
     </div>
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center gap-2">
         <div *ngIf="isInput">
             <div class="input-group w-100">
                 <input class="form-control" id="topnavSearchInput" type="search" placeholder="Search"

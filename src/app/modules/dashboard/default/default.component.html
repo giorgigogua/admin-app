@@ -1,6 +1,6 @@
 <div class="container">
     <div class="d-flex align-items-center justify-content-between">
-        <div>
+        <div class="py-4">
             <h1 class="text-black">Hello, John</h1>
             <p class="text-secondary">Here's a summary of your account activity for thiw week</p>
         </div>
@@ -19,24 +19,10 @@
             <p>San Francisco, CA - 8:00 PM</p>
         </div>
     </div>
-    <div class="row d-flex align-items-center justify-content-center mt shadow-lg container">
+    <hr>
+    <div class="row d-flex align-items-center justify-content-center py-5 container">
         <div class="col-lg" *ngFor="let item of gridList">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex flex-column">
-                    <span class="text-muted">{{item.name}}</span>
-                    <h4>{{item.price}}</h4>
-                </div>
-                <div class="avatar avatar-lg bg-body text-primary mt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        class="fs-4 duo-icon duo-icon-credit-card" data-duoicon="credit-card">
-                        <path fill="currentColor" d="M22 10v7a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-7h20Z"
-                            class="duoicon-secondary-layer" opacity=".3"></path>
-                        <path fill="currentColor"
-                            d="M19 4a3 3 0 0 1 3 3v1H2V7a3 3 0 0 1 3-3h14Zm-1 10h-3a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2Z"
-                            class="duoicon-primary-layer"></path>
-                    </svg>
-                </div>
-            </div>
+           <app-grid-list title="hours logged" content="34hrs"></app-grid-list>
         </div>
 
     </div>
@@ -45,11 +31,13 @@
     </div>
     <div class="mt">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-lg-8 col-md-12">
+            <div class="row gap-5 py-4">
+                <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-secondary rounded-5 p-4">
+                    <app-browse-all title="Active Projects"></app-browse-all>
+                    <hr>
                     <app-table></app-table>
                 </div>
-                <div class="col-xl-3 col-md-8">
+                <div class="col-xl-3 col-md-8 border border-1 border-secondary rounded-5 p-4">
                     <app-recent-activity name="You" title="Recent Activity" time="1hr ago" activity="Liked by john doe"></app-recent-activity>
                     <app-recent-activity name="You" time="1hr ago" activity="Liked by john doe"></app-recent-activity>
                     <app-recent-activity name="You" time="1hr ago" activity="Liked by john doe"></app-recent-activity>
