@@ -1,1 +1,27 @@
-<p>customer-detail works!</p>
+<div class="container">
+    <div class="row d-flex justify-content-center py-5">
+        <div class="col-lg" *ngFor="let item of gridList">
+            <app-grid-list title="hours logged" content="34hrs"></app-grid-list>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <app-user-card></app-user-card>
+        </div>
+        <div class="col">
+            <app-filter-box filterBoxSpan="Recent Orders" class="h5"></app-filter-box>
+            <app-table></app-table>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h5>Files</h5>
+                    <p>Upload</p>
+                </div>
+                <hr>
+                <div>
+                    <app-upload-table></app-upload-table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

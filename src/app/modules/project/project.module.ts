@@ -5,7 +5,6 @@ import { ProjectRoutingModule } from './project-routing.module';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectOverviewComponent } from './project-overview/project-overview.component';
 import { NewProjectComponent } from './new-project/new-project.component';
-import { TableComponent } from '../../components/table/table.component';
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
 
 
@@ -13,13 +12,12 @@ import { PageTitleComponent } from '../../components/page-title/page-title.compo
   declarations: [
     ProjectsComponent,
     ProjectOverviewComponent,
-    NewProjectComponent,
-    TableComponent,
-    PageTitleComponent
+    NewProjectComponent
   ],
   imports: [
     CommonModule,
-    ProjectRoutingModule
+    ProjectRoutingModule,
+    PageTitleComponent
   ]
 })
 export class ProjectModule { }

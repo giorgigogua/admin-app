@@ -5,7 +5,9 @@ import { Chart } from 'angular-highcharts';
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
-  styleUrl: './pie-chart.component.scss'
+  styleUrl: './pie-chart.component.scss',
+  standalone:true
+  
 })
 export class PieChartComponent {
   pieChart = new Chart(pieChartOptions)

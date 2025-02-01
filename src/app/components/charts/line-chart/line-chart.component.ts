@@ -5,7 +5,9 @@ import { Chart } from 'angular-highcharts';
 @Component({
   selector: 'app-line-chart',
   templateUrl: './line-chart.component.html',
-  styleUrl: './line-chart.component.scss'
+  styleUrl: './line-chart.component.scss',
+  standalone:true
+
 })
 export class LineChartComponent {
 

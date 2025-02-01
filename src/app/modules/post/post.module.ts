@@ -5,17 +5,25 @@ import { PostRoutingModule } from './post-routing.module';
 import { CategoriesComponent } from './categories/categories.component';
 import { PostsComponent } from './posts/posts.component';
 import { NewPostComponent } from './new-post/new-post.component';
+import { PostListCardComponent } from '../../components/post-list-card/post-list-card.component';
+import { PageTitleComponent } from '../../components/page-title/page-title.component';
+import { FilterBoxComponent } from '../../components/filter-box/filter-box.component';
+import { PostCardComponent } from '../../components/post-card/post-card.component';
 
 
 @NgModule({
   declarations: [
-    CategoriesComponent,
     PostsComponent,
-    NewPostComponent
+    NewPostComponent,
+    CategoriesComponent
   ],
   imports: [
     CommonModule,
-    PostRoutingModule
+    PostRoutingModule,
+    PostListCardComponent,
+    PageTitleComponent,
+    FilterBoxComponent,
+    PostCardComponent
   ]
 })
 export class PostModule { }

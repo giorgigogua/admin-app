@@ -22,26 +22,24 @@
     <hr>
     <div class="row d-flex align-items-center justify-content-center py-5 container">
         <div class="col-lg" *ngFor="let item of gridList">
-           <app-grid-list title="hours logged" content="34hrs"></app-grid-list>
+            <app-grid-list title="hours logged" content="34hrs"></app-grid-list>
         </div>
 
     </div>
-    <div class="mt">
+    <div>
         <app-goals></app-goals>
     </div>
-    <div class="mt">
+    <div>
         <div class="container">
-            <div class="row gap-5 py-4">
-                <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-secondary rounded-5 p-4">
+            <div class="row gap-3 py-4">
+                <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-light rounded-5 p-4">
                     <app-browse-all title="Active Projects"></app-browse-all>
                     <hr>
                     <app-table></app-table>
                 </div>
-                <div class="col-xl-3 col-md-8 border border-1 border-secondary rounded-5 p-4">
-                    <app-recent-activity name="You" title="Recent Activity" time="1hr ago" activity="Liked by john doe"></app-recent-activity>
-                    <app-recent-activity name="You" time="1hr ago" activity="Liked by john doe"></app-recent-activity>
-                    <app-recent-activity name="You" time="1hr ago" activity="Liked by john doe"></app-recent-activity>
-                    <app-recent-activity name="You" time="1hr ago" activity="Liked by john doe"></app-recent-activity>
+                <div class="col-xl-3 col-md-8 p-4 rounded-5" style="height: max-content;">
+                    <app-recent-activity name="You" title="Recent Activity" time="1hr ago"
+                        activity="Liked by john doe"></app-recent-activity>
                 </div>
             </div>
         </div>

@@ -1,10 +1,12 @@
 
 import { Component } from '@angular/core';
+import { PageTitleComponent } from '../../../components/page-title/page-title.component';
+import { PostCardComponent } from '../../../components/post-card/post-card.component';
 
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
-  styleUrl: './categories.component.scss'
+  styleUrl: './categories.component.scss',
 })
 export class CategoriesComponent {
 

@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-goals',
   templateUrl: './goals.component.html',
-  styleUrl: './goals.component.scss'
+  styleUrl: './goals.component.scss',
+  standalone:true
+
 })
 export class GoalsComponent {
   goals = [

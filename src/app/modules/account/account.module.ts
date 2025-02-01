@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AccountRoutingModule } from './account-routing.module';
 import { AccountOverviewComponent } from './account-overview/account-overview.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PageTitleComponent } from '../../components/page-title/page-title.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
   ],
   imports: [
     CommonModule,
-    AccountRoutingModule
+    AccountRoutingModule,
+    PageTitleComponent
   ]
 })
 export class AccountModule { }

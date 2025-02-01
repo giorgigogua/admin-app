@@ -27,9 +27,9 @@
               Dashboards
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Default</a></li>
-              <li><a class="dropdown-item" href="#">Crypto</a></li>
-              <li><a class="dropdown-item" href="#">SaaS</a></li>
+              <li><a class="dropdown-item" routerLink="dashboard/default">Default</a></li>
+              <li><a class="dropdown-item" routerLink="dashboard/crypto">Crypto</a></li>
+              <li><a class="dropdown-item" routerLink="dashboard/saas">SaaS</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -37,9 +37,9 @@
               Customers
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" routerLink="customer/customers">Customers</a></li>
+              <li><a class="dropdown-item" routerLink="customer/customer-detail">Customer detail</a></li>
+              <li><a class="dropdown-item" routerLink="customer/new-customer">New customer</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -47,9 +47,9 @@
               Projects
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" routerLink="project/projects">Projects</a></li>
+              <li><a class="dropdown-item" routerLink="project/project-overview">Project overview</a></li>
+              <li><a class="dropdown-item" routerLink="project/new-project">New project</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -57,9 +57,8 @@
               Account
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" routerLink="account/account-overview">Account overview</a></li>
+              <li><a class="dropdown-item" routerLink="account/account-setting">Account settings</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -67,9 +66,9 @@
               Orders
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" routerLink="order/order">Orders</a></li>
+              <li><a class="dropdown-item" routerLink="order/invoice">Invoice</a></li>
+              <li><a class="dropdown-item" routerLink="order/pricing">Pricing</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -77,9 +76,9 @@
               Posts
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" routerLink="post/categories">Categories</a></li>
+              <li><a class="dropdown-item" routerLink="post/post">Posts</a></li>
+              <li><a class="dropdown-item" routerLink="post/new-post">New post</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -87,21 +86,12 @@
               Authentication
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#">Sign in</a></li>
+              <li><a class="dropdown-item" href="#">Sign up</a></li>
+              <li><a class="dropdown-item" href="#">Password reset</a></li>
+              <li><a class="dropdown-item" href="#">Error</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Documentation
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-            </ul>
-
         </ul>
         <div class="d-flex gap-3">
           <i class="bi bi-gear-fill text-secondary"></i>
@@ -110,5 +100,5 @@
       </div>
     </div>
   </nav>
-  <app-search-form></app-search-form>
+  <!-- <app-search-form></app-search-form> -->
 </div>

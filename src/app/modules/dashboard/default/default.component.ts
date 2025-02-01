@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-default',
   templateUrl: './default.component.html',
-  styleUrl: './default.component.scss'
+  styleUrl: './default.component.scss',
 })
-export class DefaultComponent {
+export class DefaultComponent implements OnInit {
+  ngOnInit(): void {
+    
+  }
 
   gridList: any = [
     {

@@ -1,1 +1,34 @@
-<p>new-customer works!</p>
+<div class="container">
+    <div>
+        <app-page-title titleOne="Customers" titleTwo="New Customers" titleThree="Customers" icon="bi bi-person"
+            buttonText="Save draft"></app-page-title>
+    </div>
+    <div class="py-5">
+        <form class="d-flex flex-column gap-5">
+            <div class="form-group">
+                <label for="name">Enter Name</label>
+                <input type="name" class="form-control form-control-lg bg-light border-0" id="name"
+                    aria-describedby="name">
+            </div>
+            <div class="form-group">
+                <label for="company">Compaany</label>
+                <input type="company" class="form-control form-control-lg bg-light border-0" id="company">
+            </div>
+            <div class="form-group">
+                <label for="company">Phone</label>
+                <input type="Phone" class="form-control form-control-lg bg-light border-0" id="phone"
+                    placeholder="(___)___-____">
+            </div>
+            <div class="form-group">
+                <label for="Location">Location</label>
+                <input type="Location" class="form-control form-control-lg bg-light border-0" id="location">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control form-control-lg bg-light border-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+            <button type="reset" class="btn btn-light">Reset Form</button>
+        </form>
+    </div>
+</div>

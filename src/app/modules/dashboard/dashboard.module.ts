@@ -2,33 +2,33 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { DefaultComponent } from './default/default.component';
-import { CryptoComponent } from './crypto/crypto.component';
 import { SaasComponent } from './saas/saas.component';
-import { BarChartComponent } from '../../components/charts/bar-chart/bar-chart.component';
-import { GoalsComponent } from '../../components/goals/goals.component';
-import { TableComponent } from '../../components/table/table.component';
-import { RecentActivityComponent } from '../../components/recent-activity/recent-activity.component';
-import { AccordionComponent } from '../../components/accordion/accordion.component';
-import { BrowseAllComponent } from '../../components/browse-all/browse-all.component';
 import { PostListCardComponent } from '../../components/post-list-card/post-list-card.component';
+import { PieChartComponent } from '../../components/charts/pie-chart/pie-chart.component';
+import { RecentActivityComponent } from '../../components/recent-activity/recent-activity.component';
+import { LineChartComponent } from '../../components/charts/line-chart/line-chart.component';
+import { CryptoComponent } from './crypto/crypto.component';
+import { DefaultComponent } from './default/default.component';
+import { BrowseAllComponent } from '../../components/browse-all/browse-all.component';
+import { TableComponent } from '../../components/table/table.component';
+import { GoalsComponent } from '../../components/goals/goals.component';
+import { GridListComponent } from '../../components/grid-list/grid-list.component';
 
 
 @NgModule({
   declarations: [
-    DefaultComponent,
-    CryptoComponent,
     SaasComponent,
-    GoalsComponent,
-    TableComponent,
-    RecentActivityComponent,
-    AccordionComponent,
-    BrowseAllComponent,
-    PostListCardComponent
+    CryptoComponent,
+    DefaultComponent
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    PostListCardComponent,
+    PieChartComponent,
+    RecentActivityComponent,
+    LineChartComponent,
+    BrowseAllComponent, TableComponent, GoalsComponent, GridListComponent
   ]
 })
 export class DashboardModule { }

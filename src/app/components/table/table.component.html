@@ -1,49 +1,49 @@
-<div>
-        <table class="table table-selectable">
-            <thead>
-                <tr>
-                    <th scope="col" class="text-muted" style="width: 0;"><input type="checkbox"></th>
-                    <th scope="col" class="text-muted">Title</th>
-                    <th scope="col" class="text-muted">Status</th>
-                    <th scope="col" class="text-muted">Author</th>
-                    <th scope="col" class="text-muted">Team</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let item of tableList">
-                    <td style="width: 0;">
-                        <input type="checkbox">
-                    </td>
-                    <td>
-                        <div class="d-flex gap-2">
-                            <div class="img">
-                                <img class="w-100 h-100 rounded-circle" src={{item.img}} alt="">
-                            </div>
-                            <div>
-                                <h6>{{item.title}}</h6>
-                                <p class="text-muted">{{item.updated}}</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>{{item.status}}</td>
-                    <td>
-                        <div class="d-flex gap-2">
-                            <div class="img2">
-                                <img class="w-100 h-100 rounded-circle w-25 h-25" src={{item.img}} alt="">
-                            </div>
-                            <div class="d-flex">
-                                <h6>{{item.author}}</h6>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="img2 d-flex">
-                            <img class="w-100 h-100 rounded-circle" src={{item.img}} alt="">
+<div class="table-responsive">
+    <table class="table table-selectable align-middle">
+        <thead>
+            <tr>
+                <th scope="col" class="text-muted" style="width: 0;"><input type="checkbox"></th>
+                <th scope="col" class="text-muted">Title</th>
+                <th scope="col" class="text-muted">Status</th>
+                <th scope="col" class="text-muted">Author</th>
+                <th scope="col" class="text-muted">Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of tableList">
+                <td style="width: 0;">
+                    <input type="checkbox">
+                </td>
+                <td>
+                    <div class="d-flex gap-2">
+                        <div class="img">
                             <img class="w-100 h-100 rounded-circle" src={{item.img}} alt="">
                         </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        <div>
+                            <h6>{{item.title}}</h6>
+                            <p class="text-muted">{{item.updated}}</p>
+                        </div>
+                    </div>
+                </td>
+                <td>{{item.status}}</td>
+                <td>
+                    <div class="d-flex gap-2">
+                        <div class="img2">
+                            <img class="w-100 h-100 rounded-circle w-25 h-25" src={{item.img}} alt="">
+                        </div>
+                        <div class="d-flex">
+                            <h6>{{item.author}}</h6>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="img2 d-flex">
+                        <img class="w-100 h-100 rounded-circle" src={{item.img}} alt="">
+                        <img class="w-100 h-100 rounded-circle" src={{item.img}} alt="">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 </div>

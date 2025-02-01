@@ -1,9 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrl: './table.component.scss'
+  styleUrl: './table.component.scss',
+  standalone:true,
+  imports:[CommonModule]
+
 })
 export class TableComponent {
 
@@ -32,6 +36,24 @@ export class TableComponent {
       title: 'Update Documentation',
       updated: 'mar 15',
       status: 'Pending',
+      authorImg: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
+      author: 'mar 15',
+      team: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
+    },
+    {
+      img: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
+      title: 'Update touche',
+      updated: 'mar 15',
+      status: 'Backing',
+      authorImg: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
+      author: 'mar 15',
+      team: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
+    },
+    {
+      img: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
+      title: 'Update touche',
+      updated: 'mar 15',
+      status: 'Backing',
       authorImg: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
       author: 'mar 15',
       team: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',

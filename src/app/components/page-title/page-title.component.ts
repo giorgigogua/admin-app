@@ -3,7 +3,9 @@ import { booleanAttribute, Component, Input } from '@angular/core';
 @Component({
   selector: 'app-page-title',
   templateUrl: './page-title.component.html',
-  styleUrl: './page-title.component.scss'
+  styleUrl: './page-title.component.scss',
+  standalone:true
+
 })
 export class PageTitleComponent {
 

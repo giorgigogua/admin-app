@@ -5,7 +5,9 @@ import { Chart } from 'angular-highcharts';
 @Component({
   selector: 'app-bar-chart',
   templateUrl: './bar-chart.component.html',
-  styleUrl: './bar-chart.component.scss'
+  styleUrl: './bar-chart.component.scss',
+  standalone:true,
+
 })
 export class BarChartComponent {
 
