@@ -9,6 +9,7 @@ import { PostListCardComponent } from '../../components/post-list-card/post-list
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
 import { FilterBoxComponent } from '../../components/filter-box/filter-box.component';
 import { PostCardComponent } from '../../components/post-card/post-card.component';
+import { TopAuthorsComponent } from '../../components/top-authors/top-authors.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PostCardComponent } from '../../components/post-card/post-card.componen
     PostListCardComponent,
     PageTitleComponent,
     FilterBoxComponent,
-    PostCardComponent
+    PostCardComponent,
+    TopAuthorsComponent
   ]
 })
 export class PostModule { }

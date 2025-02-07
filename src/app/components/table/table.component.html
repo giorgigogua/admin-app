@@ -2,7 +2,9 @@
     <table class="table table-selectable align-middle">
         <thead>
             <tr>
-                <th scope="col" class="text-muted" style="width: 0;"><input type="checkbox"></th>
+                <div *ngIf="checkboxes">
+                    <th scope="col" class="text-muted" style="width: 0;"><input type="checkbox"></th>
+                </div>
                 <th scope="col" class="text-muted">Title</th>
                 <th scope="col" class="text-muted">Status</th>
                 <th scope="col" class="text-muted">Author</th>
@@ -11,9 +13,11 @@
         </thead>
         <tbody>
             <tr *ngFor="let item of tableList">
-                <td style="width: 0;">
-                    <input type="checkbox">
-                </td>
+                <div *ngIf="checkboxes">
+                    <td style="width: 0;">
+                        <input type="checkbox">
+                    </td>
+                </div>
                 <td>
                     <div class="d-flex gap-2">
                         <div class="img">
@@ -38,8 +42,9 @@
                 </td>
                 <td>
                     <div class="img2 d-flex">
-                        <img class="w-100 h-100 rounded-circle" src={{item.img}} alt="">
-                        <img class="w-100 h-100 rounded-circle" src={{item.img}} alt="">
+                        <img class="w-100 h-100 rounded-circle" src={{item.team[0]}} alt="">
+                        <img class="w-100 h-100 rounded-circle" src={{item.team[1]}} alt="">
+
                     </div>
                 </td>
             </tr>

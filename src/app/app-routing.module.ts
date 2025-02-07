@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: "project",
     loadChildren: () => import("./modules/project/project.module").then(m => m.ProjectModule)
-  }
+  },
+  {
+    path: "authentication",
+    loadChildren: () => import("./modules/authentication/authentication.module").then(m => m.AuthenticationModule)
+  },
 
 ];
 

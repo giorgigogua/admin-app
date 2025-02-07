@@ -1,11 +1,9 @@
-<div class="card border-light">
-    <div class="card-header border-light bg-white">
-        <p>Portfolio</p>
-    </div>
+<div>
     <div class="d-flex flex-column align-items-center justify-content-center">
-        <div class="card-body p-3">
-            <!-- <div class="pie" [chart]="pieChart"></div> -->
-            <div class="d-flex gap-3">
+        <div class="p-3">
+            <canvas id="pieChart">{{chart}}</canvas>
+
+            <div class="d-flex gap-3 justify-content-center py-3">
                 <p>Bitcoin</p>
                 <p>Ethereum</p>
                 <p>Dogecoin</p>

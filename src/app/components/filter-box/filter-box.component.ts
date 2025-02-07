@@ -1,10 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { booleanAttribute, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-filter-box',
   templateUrl: './filter-box.component.html',
   styleUrl: './filter-box.component.scss',
-  standalone:true
+  standalone:true,
+  imports:[CommonModule]
 
 })
 export class FilterBoxComponent {

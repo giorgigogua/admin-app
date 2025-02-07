@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PostListCardComponent } from '../../../components/post-list-card/post-list-card.component';
-import { PieChartComponent } from '../../../components/charts/pie-chart/pie-chart.component';
-import { RecentActivityComponent } from '../../../components/recent-activity/recent-activity.component';
-import { LineChartComponent } from '../../../components/charts/line-chart/line-chart.component';
 
 @Component({
   selector: 'app-crypto',
@@ -12,7 +8,34 @@ import { LineChartComponent } from '../../../components/charts/line-chart/line-c
 export class CryptoComponent implements OnInit {
 
   ngOnInit(): void {
-    
+
   }
-  title:string='crypto'
+
+
+  cryptoList: any = [
+    {
+      name: 'Bought 1.5 BTC',
+      date: 'Oct 1',
+      activity: 'Transaction completed on Coinbase',
+      icon: 'bi bi-person'
+    },
+    {
+      name: 'Bought 1.5 BTC',
+      date: 'Oct 1',
+      activity: 'Transaction completed on Coinbase',
+      icon: 'bi bi-person'
+    },
+    {
+      name: 'Bought 1.5 BTC',
+      date: 'Oct 1',
+      activity: 'Transaction completed on Coinbase',
+      icon: 'bi bi-person'
+    },
+    {
+      name: 'Bought 1.5 BTC',
+      date: 'Oct 1',
+      activity: 'Transaction completed on Coinbase',
+      icon: 'bi bi-person'
+    }
+  ]
 }

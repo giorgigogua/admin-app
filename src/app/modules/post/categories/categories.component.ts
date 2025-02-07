@@ -1,7 +1,5 @@
 
 import { Component } from '@angular/core';
-import { PageTitleComponent } from '../../../components/page-title/page-title.component';
-import { PostCardComponent } from '../../../components/post-card/post-card.component';
 
 @Component({
   selector: 'app-categories',
@@ -23,14 +21,22 @@ export class CategoriesComponent {
       title: 'Announcments',
       postLength: '20 posts',
       img: 'bi bi-person text-primary',
-      backgroundColor: 'bg-secondary'
+      backgroundColor: 'bg-primary-subtle',
+      desc: 'Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no margin by default, so use spacing utilities as needed.'
     },
     {
       topTitle: '12 followers',
       title: 'Announcments',
       postLength: '20 posts',
       img: 'bi bi-person text-primary',
-      backgroundColor: 'bg-success'
+      backgroundColor: 'bg-success-subtle'
+    },
+    {
+      topTitle: '12 followers',
+      title: 'Announcments',
+      postLength: '20 posts',
+      img: 'bi bi-person text-primary',
+      backgroundColor: 'bg-warning-subtle'
     },
     {
       topTitle: '12 followers',
@@ -38,6 +44,14 @@ export class CategoriesComponent {
       postLength: '20 posts',
       img: 'bi bi-person text-primary',
       backgroundColor: 'bg-light'
+    }, 
+    {
+      topTitle: '12 followers',
+      title: 'Announcments',
+      postLength: '20 posts',
+      img: 'bi bi-person text-primary',
+      backgroundColor: 'bg-danger-subtle',
+      desc:'Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no margin by default, so use spacing utilities as needed.'
     },
   ]
 

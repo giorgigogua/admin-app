@@ -13,6 +13,8 @@ import { BrowseAllComponent } from '../../components/browse-all/browse-all.compo
 import { TableComponent } from '../../components/table/table.component';
 import { GoalsComponent } from '../../components/goals/goals.component';
 import { GridListComponent } from '../../components/grid-list/grid-list.component';
+import { BarChartComponent } from '../../components/charts/bar-chart/bar-chart.component';
+import { AccordionComponent } from '../../components/accordion/accordion.component';
 
 
 @NgModule({
@@ -28,7 +30,13 @@ import { GridListComponent } from '../../components/grid-list/grid-list.componen
     PieChartComponent,
     RecentActivityComponent,
     LineChartComponent,
-    BrowseAllComponent, TableComponent, GoalsComponent, GridListComponent
+    BrowseAllComponent, 
+    TableComponent, 
+    GoalsComponent, 
+    GridListComponent,
+    BarChartComponent,
+    AccordionComponent,
+    CommonModule
   ]
 })
 export class DashboardModule { }

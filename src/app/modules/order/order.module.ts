@@ -25,7 +25,8 @@ import { AccordionComponent } from '../../components/accordion/accordion.compone
     PageTitleComponent,
     AccordionComponent,
     TableComponent,
-    FilterBoxComponent
+    FilterBoxComponent,
+    CommonModule
   ]
 })
 export class OrderModule { }

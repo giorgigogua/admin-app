@@ -1,1 +1,77 @@
-<p>new-project works!</p>
+<div class="container">
+
+    <div class="py-5">
+        <app-page-title titleOne="Project" titleTwo="New Project" titleThree="Project"
+            icon="bi bi-person"></app-page-title>
+    </div>
+    <form>
+        <div class="card">
+            <div class="card-header bg-light">
+                <h1>General</h1>
+                <p>General information about the project.</p>
+            </div>
+            <div class="card-body bg-light">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="title" class="form-control form-control-lg bg-white border-0" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="description" class="form-control form-control-lg bg-white border-0" id="description">
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="date">Start Date</label>
+                        <input type="date" class="form-control form-control-lg bg-white border-0" id="date">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="date">End Date</label>
+                        <input type="date" class="form-control form-control-lg bg-white border-0" id="date">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="py-5">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h1>Files</h1>
+                    <p>Starting files for the project..</p>
+                </div>
+                <div class="card-body bg-light">
+                    <div class="form-group">
+                        <label for="title">Files</label>
+                        <p>Attach files to this customer.</p>
+                        <input type="file" class="form-control form-control-lg bg-white border-0" id="title">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h1>Team</h1>
+                    <p>Team members working on the project.</p>
+                </div>
+                <div class="card-body bg-light">
+                    <div class="form-group">
+                        <label for="title">Team title</label>
+                        <input type="title" class="form-control form-control-lg bg-white border-0" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="dropdown-link" class="form-control form-control-lg bg-white border-0" id="title">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row gap-3 py-5">
+            <button type="submit" class="btn btn-warning">Submit</button>
+            <button type="reset" class="btn btn-light">Reset Form</button>
+        </div>
+    </form>
+</div>

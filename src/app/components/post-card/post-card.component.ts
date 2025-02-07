@@ -1,10 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-card',
   templateUrl: './post-card.component.html',
   styleUrl: './post-card.component.scss',
-  standalone:true
+  standalone:true,
+  imports:[CommonModule]
 
 })
 export class PostCardComponent {
