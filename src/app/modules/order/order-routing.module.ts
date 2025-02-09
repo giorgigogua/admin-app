@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OrdersComponent } from './orders/orders.component';
 import { InvoiceComponent } from './invoice/invoice.component';
-import { PricingCardComponent } from '../../components/pricing-card/pricing-card.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 const routes: Routes = [
     { path: "order", component: OrdersComponent},
     { path: "invoice", component: InvoiceComponent },
-    { path: "pricing", component: PricingCardComponent },
+    { path: "pricing", component: PricingComponent },
 ];
 
 @NgModule({

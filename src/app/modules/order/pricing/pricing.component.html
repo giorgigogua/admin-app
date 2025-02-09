@@ -5,36 +5,33 @@
                 <span class="badge bg-white text-primary border border-1 border-primary">Primary</span>
             </div>
             <div>
-                <h1>Page Title</h1>
+                <h1>Simple, transparent pricing</h1>
             </div>
             <div>
                 <p class="text-muted">Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
         <div>
-            <button class="border-0">Contact Sales</button>
+            <button class="border-0 p-3 rounded-3">Contact Sales</button>
         </div>
     </div>
     <div class="d-flex row py-5">
-        <div class="col">
-            <app-pricing-card></app-pricing-card>
-        </div>
-        <div class="col">
-            <app-pricing-card></app-pricing-card>
-        </div>
-        <div class="col">
-            <app-pricing-card></app-pricing-card>
+        <div class="col-lg" *ngFor="let item of pricingList">
+            <app-pricing-card buttonText="Click me" title={{item.title}} desc={{item.desc}} price={{item.price}}
+                date={{item.date}} list={{item.list}} list2={{item.list2}} list3={{item.list3}}
+                list4={{item.list4}}></app-pricing-card>
         </div>
     </div>
-
     <div>
         <div>
             <h5>FAQ</h5>
             <p class="text-muted">Lorem ipsum dolor sit.</p>
         </div>
-        <div>
-            <app-accordion title="lorem ipsum dolor amet" content="ijijffdojffoj"></app-accordion>
-            <app-accordion title="lorem ipsum dolor amet" content="ijijffdojffojjbob"></app-accordion>
+        <div class="d-flex flex-column gap-2">
+            <app-accordion title="lorem ipsum dolor amet"
+                content="You will receive an email with a tracking number once your order has been shipped. You can use this number to track your order directly on our website, or on the courier’s website."></app-accordion>
+            <app-accordion title="lorem ipsum dolor amet"
+                content="You will receive an email with a tracking number once your order has been shipped. You can use this number to track your order directly on our website, or on the courier’s website."></app-accordion>
         </div>
     </div>
 

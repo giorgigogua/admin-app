@@ -1,7 +1,7 @@
-<div class="w-100 d-flex justify-content-between">
-    <div class="d-flex gap-4 align-items-center">
+<div class="w-100 row align-items-center justify-content-between">
+    <div class="d-flex gap-4 align-items-center col col-lg-8 col-md-7 col-sm-12 col-12">
         <div>
-            <i class={{icon}} class="display-6 text-primary bg-light rounded-4 p-2"></i>
+            <i class={{icon}} class="display-5 text-primary bg-light rounded-4 p-2"></i>
         </div>
         <div>
             <div class="d-flex gap-2">
@@ -17,15 +17,15 @@
             </div>
         </div>
     </div>
-    <div *ngIf="buttons" class="d-flex gap-2">
-        <div *ngIf="editButton">
-            <button class="btn btn-light h-75">{{editButton}}</button>
+
+        <div *ngIf="editButton" class="col col-lg-2 col-md-3 col-12">
+            <button class="btn btn-light col col-sm-12 col-12">{{editButton}}</button>
         </div>
-        <div *ngIf="buttonText">
-            <button class="btn btn-warning h-75">{{buttonText}}</button>
+        <div *ngIf="buttonText" class="col col-lg-2 col-md-auto col-12">
+            <button class="btn btn-warning col col-sm-12 col-12">{{buttonText}}</button>
         </div>
-        <div *ngIf="deleteButton">
-            <button class="btn btn-danger h-75">{{deleteButton}}</button>
+        <div *ngIf="deleteButton" class="col col-lg-2 col-md-auto col-12">
+            <button class="btn btn-danger col col-sm-12 col-12">{{deleteButton}}</button>
         </div>
-    </div>
+
 </div>

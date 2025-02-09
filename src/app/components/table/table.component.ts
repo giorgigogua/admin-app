@@ -19,8 +19,9 @@ export class TableComponent {
       updated: 'mar 15',
       status: 'Ready to ship',
       authorImg: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
-      author: 'Michae Johnson',
-      team:'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png'
+      author: 'Michael Johnson',
+      team: ['https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png', 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png']
+
 
     },
     {
@@ -29,8 +30,9 @@ export class TableComponent {
       updated: 'mar 15',
       status: 'Cancelled',
       authorImg: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
-      author: 'mar 15',
-      team:'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png'
+      author: 'Michael Johnson',
+      team: ['https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png', 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png']
+
 
     },
     {
@@ -39,8 +41,9 @@ export class TableComponent {
       updated: 'mar 15',
       status: 'Pending',
       authorImg: 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png',
-      author: 'mar 15',
-      team:'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png'
+      author: 'Michael Johnson',
+      team: ['https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png', 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png']
+
 
     },
     {
@@ -49,8 +52,9 @@ export class TableComponent {
       updated: 'mar 15',
       status: 'Backing',
       authorImg: 'https://i.pinimg.com/736x/9c/6a/60/9c6a60071d2aa2b61c783cd553868ece.jpg',
-      author: 'mar 15',
-      team:'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png'
+      author: 'Michael Johnson',
+      team: ['https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png', 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png', 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png']
+
 
     },
     {
@@ -59,8 +63,8 @@ export class TableComponent {
       updated: 'mar 15',
       status: 'Backing',
       authorImg: 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png',
-      author: 'mar 15',
-      team:['https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png','https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png']
+      author: 'Michael Johnson',
+      team: ['https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png', 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png']
 
     }
   ]
