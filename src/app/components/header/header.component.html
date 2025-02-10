@@ -1,7 +1,7 @@
 <div>
   <nav class="navbar navbar-expand-lg bg-body-white">
-    <div class="container gap-5">
-      <div class="d-flex align-items-center gap-2 px-3">
+    <div class="container">
+      <div class="d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
           class="fs-4 text-warning me-1 duo-icon duo-icon-box-2" data-duoicon="box-2">
           <path fill="currentColor"
@@ -16,12 +16,55 @@
         </svg>
         <a class="navbar-brand h1 mt-2" routerLink="/">Dashbrd</a>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex gap-3">
+
+
+        <div class="col col-lg-2  d-lg-none d-xl-none">
+          <div class="d-flex bg-body">
+            <li class="nav-item dropdown">
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <img width="30px" height="30px" class="rounded-circle"
+                    src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg" alt="">
+                </div>
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  John Williams
+                </a>
+                <ul class="dropdown-menu border-0 shadow w-100">
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                  <li><a class="dropdown-item" href="#">Change Password</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </div>
+
+
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse gap-5 px-5" id="navbarNavDropdown">
-        <ul class="navbar-nav gap-4">
+
+        <div class="col col-md-12 col-sm-12 col-12 d-lg-none d-xl-none d-sm-block d-xs-block mb-5">
+          <div class="input-group ">
+            <input class="form-control form-control-lg border-0 bg-light" id="topnavSearchInput" type="search"
+              placeholder="Search" aria-label="Search" aria-describedby="navbarSearch">
+            <span class="input-group-text border-0" id="navbarSearch">
+              <kbd class="badge bg-body-secondary text-body">⌘</kbd>
+              <kbd class="badge bg-body-secondary text-body ms-1">K</kbd>
+            </span>
+          </div>
+        </div>
+
+
+
+        <ul class="navbar-nav gap-3">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dashboards
@@ -104,35 +147,79 @@
             </ul>
           </li>
         </ul>
-        <div class="d-flex gap-4 px-3">
-          <div>
-            <i class="bi bi-bag-dash-fill text-secondary"></i>
-          </div>
-          <div>
+        <hr>
+        <!--LG BLOCK-->
+        <div class="d-lg-block d-xl-block d-none d-sm-none d-xs-none d-md-none">
+          <div class="d-flex gap-4 px-3">
+            <div>
+              <i class="bi bi-bag-dash-fill text-secondary"></i>
+            </div>
+            <div>
 
-            <li class="nav-item dropdown">
-              <button class="nav-link border-0 bg-body bi bi-gear-fill" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-              </button>
-              <ul class="dropdown-menu border-0 shadow">
-                <div class="p-2"><small class="text-muted">Color mode</small></div>
-                <li>
-                  <a class="dropdown-item">
-                    <span>Light</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item">
-                    <span>Dark</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </div>
-          <div>
-            <i class="bi bi-at"></i>
+              <li class="nav-item dropdown">
+                <button class="nav-link border-0 bg-body bi bi-gear-fill" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu border-0 shadow">
+                  <div class="p-2"><small class="text-muted">Color mode</small></div>
+                  <li>
+                    <a class="dropdown-item">
+                      <span>Light</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">
+                      <span>Dark</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <div>
+              <i class="bi bi-at"></i>
+            </div>
           </div>
         </div>
+
+
+        <!--SM BLOCK-->
+
+        <div class="d-lg-none d-xl-none">
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex gap-2">
+              <i class="bi bi-bag-dash-fill text-secondary"></i>
+              <span>Go to product page</span>
+            </div>
+            <div>
+
+              <li class="nav-item dropdown">
+                <button class="nav-link border-0 bg-body bi bi-gear-fill" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span> Settings</span>
+                </button>
+                <ul class="dropdown-menu border-0 shadow">
+                  <div class="p-2"><small class="text-muted">Color mode</small></div>
+                  <li>
+                    <a class="dropdown-item">
+                      <span>Light</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">
+                      <span>Dark</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <div class="d-flex gap-2">
+              <i class="bi bi-at"></i>
+              <p>Contact us</p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </nav>
