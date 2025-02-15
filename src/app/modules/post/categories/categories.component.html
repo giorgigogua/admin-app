@@ -5,7 +5,7 @@
     </div>
 
 
-    <div class="row d-flex align-items-center justify-content-center py-5 container">
+    <div class="row d-flex justify-content-center py-5">
         <div class="col-lg" *ngFor="let item of categories">
             <app-post-card title={{item.title}} postLength={{item.postLength}} topTitle={{item.topTitle}}
                 icon={{item.img}} backgroundColor={{item.backgroundColor}} desc={{item.desc}}></app-post-card>

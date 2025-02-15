@@ -1,0 +1,127 @@
+{
+    "gridList": [
+        {
+            "name": "Earned",
+            "price": "$1250",
+            "icon": "bi bi-credit-card-fill text-primary"
+        },
+        {
+            "name": "Earned",
+            "price": "$12502",
+            "icon": "bi bi-credit-card-fill text-primary"
+        },
+        {
+            "name": "Earned",
+            "price": "$1250",
+            "icon": "bi bi-credit-card-fill text-primary"
+        },
+        {
+            "name": "Earned",
+            "price": "$1250",
+            "icon": "bi bi-credit-card-fill text-primary"
+        }
+    ],
+    "cryptoList": [
+        {
+            "name": "Bought 1.5 BTC",
+            "date": "Oct 1",
+            "activity": "Transaction completed on Coinbase",
+            "icon": "bi bi-person"
+        },
+        {
+            "name": "Bought 1.5 BTC",
+            "date": "Oct 1",
+            "activity": "Transaction completed on Coinbase",
+            "icon": "bi bi-person"
+        },
+        {
+            "name": "Bought 1.5 BTC",
+            "date": "Oct 1",
+            "activity": "Transaction completed on Coinbase",
+            "icon": "bi bi-person"
+        },
+        {
+            "name": "Bought 1.5 BTC",
+            "date": "Oct 1",
+            "activity": "Transaction completed on Coinbase",
+            "icon": "bi bi-person"
+        }
+    ],
+    "bar": [
+        {
+            "label": "Mon",
+            "dataOne": "199",
+            "dataTwo": "222",
+            "backgroundColor": "black"
+        },
+        {
+            "label": "Thu",
+            "dataOne": "199",
+            "dataTwo": "222",
+            "backgroundColor": "black"
+        },
+        {
+            "label": "Mon",
+            "dataOne": "199",
+            "dataTwo": "222",
+            "backgroundColor": "black"
+        },
+        {
+            "label": "Mon",
+            "dataOne": "199",
+            "dataTwo": "222",
+            "backgroundColor": "black"
+        },
+        {
+            "label": "Mon",
+            "dataOne": "199",
+            "dataTwo": "222",
+            "backgroundColor": "black"
+        },
+        {
+            "label": "Mon",
+            "dataOne": "199",
+            "dataTwo": "222",
+            "backgroundColor": "black"
+        },
+        {
+            "label": "Mon",
+            "dataOne": "199",
+            "dataTwo": "222",
+            "backgroundColor": "black"
+        }
+    ],
+    "line": [
+        {
+            "label": "Jan 01",
+            "data": "75"
+        },
+        {
+            "label": "Jan 01",
+            "data": "55"
+        },
+        {
+            "label": "Jan 01",
+            "data": "75"
+        },
+        {
+            "label": "Jan 01",
+            "data": "20"
+        },
+        {
+            "label": "Jan 01",
+            "data": "30"
+        }
+    ],
+    "pie": [
+        {
+            "data": "44"
+        },
+        {
+            "data": "55"
+        },
+        {
+            "data": "300"
+        }
+    ]
+}

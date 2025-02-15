@@ -6,10 +6,10 @@ import { OrdersComponent } from './orders/orders.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
-import { FilterBoxComponent } from '../../components/filter-box/filter-box.component';
 import { TableComponent } from '../../components/table/table.component';
 import { PricingCardComponent } from '../../components/pricing-card/pricing-card.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
+import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
 
 
 @NgModule({
@@ -25,8 +25,8 @@ import { AccordionComponent } from '../../components/accordion/accordion.compone
     PageTitleComponent,
     AccordionComponent,
     TableComponent,
-    FilterBoxComponent,
-    CommonModule
-  ]
+    CommonModule,
+    OrderSelectFilterComponent
+]
 })
 export class OrderModule { }

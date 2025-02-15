@@ -10,6 +10,7 @@ import { TableComponent } from '../../components/table/table.component';
 import { LineChartComponent } from '../../components/charts/line-chart/line-chart.component';
 import { UserCommentComponent } from '../../components/user-comment/user-comment.component';
 import { UploadTableComponent } from '../../components/upload-table/upload-table.component';
+import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { UploadTableComponent } from '../../components/upload-table/upload-table
     TableComponent,
     LineChartComponent,
     UserCommentComponent,
-    UploadTableComponent
-  ]
+    UploadTableComponent,
+    OrderSelectFilterComponent
+]
 })
 export class ProjectModule { }

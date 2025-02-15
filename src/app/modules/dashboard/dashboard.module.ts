@@ -36,7 +36,7 @@ import { AccordionComponent } from '../../components/accordion/accordion.compone
     GridListComponent,
     BarChartComponent,
     AccordionComponent,
-    CommonModule
+    CommonModule,
   ]
 })
 export class DashboardModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { PieChartService } from '../../../services/pie-chart.service';
 
 Chart.register(...registerables)
 
@@ -13,31 +14,53 @@ Chart.register(...registerables)
 })
 export class PieChartComponent implements OnInit {
 
+  constructor(private pieService: PieChartService) {
 
-  public config: any = {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-        label: 'My First Dataset',
-        data: [300, 50, 100],
-        backgroundColor: [
-          'rgb(15, 105, 165)',
-          'rgb(54, 162, 235)',
-          'rgb(83, 159, 209)',
-          'rgb(140, 197, 235)'
-        ],
-        hoverOffset: 4
-      }]
-    }
+  }
 
-  };
+  pieList: any
+  pieData: any[] = []
+
 
   chart: any
 
   ngOnInit(): void {
 
-    this.chart = new Chart('pieChart', this.config)
+    this.pieService.getPie().subscribe((data: any) => {
+      this.pieList = data
 
+      if (this.pieList != null) {
+
+        for (let i = 0; i < this.pieList.length; i++) {
+
+          this.pieData.push(this.pieList[i].data)
+
+        }
+
+      }
+    })
+
+    this.showPie(this.pieData)
+
+  }
+
+  showPie(pieData: any) {
+    this.chart = new Chart('pieChart', {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          label: '',
+          data: pieData,
+          backgroundColor: [
+            'rgb(15, 105, 165)',
+            'rgb(54, 162, 235)',
+            'rgb(83, 159, 209)',
+            'rgb(140, 197, 235)'
+          ],
+          hoverOffset: 4
+        }]
+      }
+    })
   }
 
 

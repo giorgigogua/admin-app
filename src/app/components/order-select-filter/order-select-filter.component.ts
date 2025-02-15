@@ -2,19 +2,20 @@ import { CommonModule } from '@angular/common';
 import { booleanAttribute, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-filter-box',
-  templateUrl: './filter-box.component.html',
-  styleUrl: './filter-box.component.scss',
+  selector: 'app-order-select-filter',
+  templateUrl: './order-select-filter.component.html',
+  styleUrl: './order-select-filter.component.scss',
   standalone:true,
   imports:[CommonModule]
-
 })
-export class FilterBoxComponent {
+export class OrderSelectFilterComponent {
 
-  @Input({ transform: booleanAttribute }) isInput: boolean = false
+  @Input({transform:booleanAttribute}) selectedContact:boolean = false
+
   @Input({ transform: booleanAttribute }) publDrafts: boolean = false
 
   @Input() filterBoxSpan: any = ''
   @Input() published: any = ''
   @Input() drafts: any = ''
+
 }

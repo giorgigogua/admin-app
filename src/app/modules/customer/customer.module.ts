@@ -7,10 +7,10 @@ import { CustomerDetailComponent } from './customer-detail/customer-detail.compo
 import { NewCustomerComponent } from './new-customer/new-customer.component';
 import { GridListComponent } from '../../components/grid-list/grid-list.component';
 import { UserCardComponent } from '../../components/user-card/user-card.component';
-import { FilterBoxComponent } from '../../components/filter-box/filter-box.component';
 import { UploadTableComponent } from '../../components/upload-table/upload-table.component';
 import { TableComponent } from '../../components/table/table.component';
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
+import { OrderSelectFilterComponent } from '../../components/order-select-filter/order-select-filter.component';
 
 
 @NgModule({
@@ -22,7 +22,12 @@ import { PageTitleComponent } from '../../components/page-title/page-title.compo
   imports: [
     CommonModule,
     CustomerRoutingModule,
-    GridListComponent, UserCardComponent, FilterBoxComponent, TableComponent, UploadTableComponent, PageTitleComponent
+    GridListComponent,
+    UserCardComponent,
+    TableComponent,
+    UploadTableComponent,
+    PageTitleComponent,
+    OrderSelectFilterComponent,
   ]
 })
 export class CustomerModule { }

@@ -20,35 +20,47 @@
         </div>
     </div>
     <hr>
-    <div class="row d-flex align-items-center justify-content-center py-5 container">
-        <div class="col-lg" *ngFor="let item of gridList">
-            <app-grid-list title="hours logged" content="34hrs" icon={{item.icon}}></app-grid-list>
+    <div class="row py-5">
+        <div class="col-lg" *ngFor="let item of gridListItem">
+            <app-grid-list title={{item.name}} content={{item.price}} icon={{item.icon}}></app-grid-list>
         </div>
 
     </div>
-    <div>
-        <app-goals></app-goals>
+    <div class="row gap-2">
+        <div
+            class="col-xl-8 col-lg-8 col-md-12 border border-1 border-card rounded-3 d-flex flex-column justify-content-center">
+            <app-bar-chart></app-bar-chart>
+        </div>
+
+        <div class="card col">
+            <div class="card-header py-2 p-3 bg-white border-card">
+                <h5>Goals</h5>
+            </div>
+            <div>
+                <app-goals></app-goals>
+            </div>
+        </div>
+
     </div>
-    <div>
-        <div class="container">
-            <div class="row gap-3 py-4">
-                <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-card rounded-3 p-4">
-                    <app-browse-all title="Active Projects"></app-browse-all>
-                    <hr>
-                    <app-table></app-table>
-                </div>
-                <div class="card border-card col" style="height: max-content;">
-                    <div class="card-header border-card bg-body">
-                        <h5>Recent Activity</h5>
-                    </div>
-                    <div class="card-body">
-                        <div *ngFor="let item of cryptoList">
-                            <app-recent-activity name={{item.name}} time={{item.date}}
-                                activity={{item.activity}}></app-recent-activity>
-                        </div>
-                    </div>
-                </div>
+
+
+    <div class="row py-3 gap-2">
+        <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-card rounded-3">
+            <div class="p-2">
+                <app-browse-all title="Table list"></app-browse-all>
+            </div>
+            <app-table></app-table>
+        </div>
+        <div class="card col">
+            <div class="card-header bg-body">
+                <h5>Recent activity</h5>
+            </div>
+            <div *ngFor="let item of cryptoListItem">
+                <app-recent-activity name={{item.name}} time={{item.date}}
+                    activity={{item.activity}}></app-recent-activity>
             </div>
         </div>
     </div>
+
+
 </div>

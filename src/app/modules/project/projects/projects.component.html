@@ -3,22 +3,8 @@
     <app-page-title titleOne="Projects" titleTwo="Projects" titleThree="Projects" icon="bi bi-journal-text text-primary"
         buttons="true" buttonText="+ New Project"></app-page-title>
 
-    <div class="d-flex justify-content-between mt-5">
-        <div class="d-flex gap-2">
-            <div>
-                <span class="text-muted">3 contacts selected</span>
-            </div>
-            <div>
-                <span class="badge badge-danger bg-danger text-white">Delete</span>
-            </div>
-        </div>
-        <div class="input-group w-25">
-            <input class="form-control" id="topnavSearchInput" type="search" placeholder="Search" aria-label="Search"
-                aria-describedby="navbarSearch">
-            <span class="input-group-text" id="navbarSearch">
-                <i class="bi bi-search"></i>
-            </span>
-        </div>
+    <div>
+        <app-order-select-filter selectedContact="true"></app-order-select-filter>
     </div>
     <div class="mt-5">
         <app-table></app-table>

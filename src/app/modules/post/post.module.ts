@@ -7,9 +7,9 @@ import { PostsComponent } from './posts/posts.component';
 import { NewPostComponent } from './new-post/new-post.component';
 import { PostListCardComponent } from '../../components/post-list-card/post-list-card.component';
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
-import { FilterBoxComponent } from '../../components/filter-box/filter-box.component';
 import { PostCardComponent } from '../../components/post-card/post-card.component';
 import { TopAuthorsComponent } from '../../components/top-authors/top-authors.component';
+import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
 
 
 @NgModule({
@@ -23,9 +23,9 @@ import { TopAuthorsComponent } from '../../components/top-authors/top-authors.co
     PostRoutingModule,
     PostListCardComponent,
     PageTitleComponent,
-    FilterBoxComponent,
     PostCardComponent,
-    TopAuthorsComponent
-  ]
+    TopAuthorsComponent,
+    OrderSelectFilterComponent
+]
 })
 export class PostModule { }

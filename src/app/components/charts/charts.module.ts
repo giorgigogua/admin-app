@@ -11,7 +11,7 @@ import { ChartModule } from 'angular-highcharts';
   imports: [
     CommonModule,
     ChartsRoutingModule,
-    ChartModule
+    ChartModule,
   ]
 })
 export class ChartsModule { }

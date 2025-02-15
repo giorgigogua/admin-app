@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CommonModule } from '@angular/common';
 import { ChartModule } from 'angular-highcharts';
 import { SearchFormComponent } from "./components/header/search-form/search-form.component";
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SearchFormComponent } from "./components/header/search-form/search-form
     AppRoutingModule,
     CommonModule,
     ChartModule,
-    SearchFormComponent
+    SearchFormComponent,
+    HttpClientModule
 ],
   providers: [],
   bootstrap: [AppComponent]
