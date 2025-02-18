@@ -1,127 +1,227 @@
 {
-    "gridList": [
-        {
-            "name": "Earned",
-            "price": "$1250",
-            "icon": "bi bi-credit-card-fill text-primary"
-        },
-        {
-            "name": "Earned",
-            "price": "$12502",
-            "icon": "bi bi-credit-card-fill text-primary"
-        },
-        {
-            "name": "Earned",
-            "price": "$1250",
-            "icon": "bi bi-credit-card-fill text-primary"
-        },
-        {
-            "name": "Earned",
-            "price": "$1250",
-            "icon": "bi bi-credit-card-fill text-primary"
-        }
-    ],
-    "cryptoList": [
-        {
-            "name": "Bought 1.5 BTC",
-            "date": "Oct 1",
-            "activity": "Transaction completed on Coinbase",
-            "icon": "bi bi-person"
-        },
-        {
-            "name": "Bought 1.5 BTC",
-            "date": "Oct 1",
-            "activity": "Transaction completed on Coinbase",
-            "icon": "bi bi-person"
-        },
-        {
-            "name": "Bought 1.5 BTC",
-            "date": "Oct 1",
-            "activity": "Transaction completed on Coinbase",
-            "icon": "bi bi-person"
-        },
-        {
-            "name": "Bought 1.5 BTC",
-            "date": "Oct 1",
-            "activity": "Transaction completed on Coinbase",
-            "icon": "bi bi-person"
-        }
-    ],
-    "bar": [
-        {
-            "label": "Mon",
-            "dataOne": "199",
-            "dataTwo": "222",
-            "backgroundColor": "black"
-        },
-        {
-            "label": "Thu",
-            "dataOne": "199",
-            "dataTwo": "222",
-            "backgroundColor": "black"
-        },
-        {
-            "label": "Mon",
-            "dataOne": "199",
-            "dataTwo": "222",
-            "backgroundColor": "black"
-        },
-        {
-            "label": "Mon",
-            "dataOne": "199",
-            "dataTwo": "222",
-            "backgroundColor": "black"
-        },
-        {
-            "label": "Mon",
-            "dataOne": "199",
-            "dataTwo": "222",
-            "backgroundColor": "black"
-        },
-        {
-            "label": "Mon",
-            "dataOne": "199",
-            "dataTwo": "222",
-            "backgroundColor": "black"
-        },
-        {
-            "label": "Mon",
-            "dataOne": "199",
-            "dataTwo": "222",
-            "backgroundColor": "black"
-        }
-    ],
-    "line": [
-        {
-            "label": "Jan 01",
-            "data": "75"
-        },
-        {
-            "label": "Jan 01",
-            "data": "55"
-        },
-        {
-            "label": "Jan 01",
-            "data": "75"
-        },
-        {
-            "label": "Jan 01",
-            "data": "20"
-        },
-        {
-            "label": "Jan 01",
-            "data": "30"
-        }
-    ],
-    "pie": [
-        {
-            "data": "44"
-        },
-        {
-            "data": "55"
-        },
-        {
-            "data": "300"
-        }
-    ]
+  "gridList": [
+    {
+      "name": "Earned",
+      "price": "$1250",
+      "icon": "bi bi-credit-card-fill text-primary",
+      "id": "1fb8"
+    },
+    {
+      "name": "Earned",
+      "price": "$12502",
+      "icon": "bi bi-credit-card-fill text-primary",
+      "id": "2ead"
+    },
+    {
+      "name": "Earned",
+      "price": "$1250",
+      "icon": "bi bi-credit-card-fill text-primary",
+      "id": "4634"
+    },
+    {
+      "name": "Earned",
+      "price": "$1250",
+      "icon": "bi bi-credit-card-fill text-primary",
+      "id": "6124"
+    }
+  ],
+  "cryptoList": [
+    {
+      "name": "Bought 1.5 BTC",
+      "date": "Oct 1",
+      "activity": "Transaction completed on Coinbase",
+      "icon": "bi bi-hand-thumbs-up-fill",
+      "id": "dfa4"
+    },
+    {
+      "name": "Bought 1.5 BTC",
+      "date": "Oct 1",
+      "activity": "Transaction completed on Coinbase",
+      "icon": "bi bi-chat-left-fill",
+      "id": "22e5"
+    },
+    {
+      "name": "Bought 1.5 BTC",
+      "date": "Oct 1",
+      "activity": "Transaction completed on Coinbase",
+      "icon": "bi bi-person",
+      "id": "eb1c"
+    },
+    {
+      "name": "Bought 1.5 BTC",
+      "date": "Oct 1",
+      "activity": "Transaction completed on Coinbaseaaa",
+      "icon": "bi bi-chat-left-fill",
+      "id": "c899"
+    }
+  ],
+  "bar": [
+    {
+      "label": "Mon",
+      "dataOne": "199",
+      "dataTwo": "222",
+      "backgroundColor": "lightgrey",
+      "backgroundColor2": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Thu",
+      "dataOne": "199",
+      "dataTwo": "222",
+      "backgroundColor": "lightgrey",
+      "backgroundColor2": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Mon",
+      "dataOne": "199",
+      "dataTwo": "222",
+      "backgroundColor": "lightgrey",
+      "backgroundColor2": "blue",
+      "id": "d4b9"
+    },
+    {
+      "label": "Mon",
+      "dataOne": "199",
+      "dataTwo": "222",
+      "backgroundColor": "lightgrey",
+      "backgroundColor2": "blue",
+      "id": "8339"
+    },
+    {
+      "label": "Mon",
+      "dataOne": "199",
+      "dataTwo": "222",
+      "backgroundColor": "lightgrey",
+      "backgroundColor2": "blue",
+      "id": "60d1"
+    },
+    {
+      "label": "Mon",
+      "dataOne": "199",
+      "dataTwo": "222",
+      "backgroundColor": "lightgrey",
+      "backgroundColor2": "blue",
+      "id": "575d"
+    },
+    {
+      "label": "Mon",
+      "dataOne": "199",
+      "dataTwo": "222",
+      "backgroundColor": "lightgrey",
+      "backgroundColor2": "blue",
+      "id": "93a2"
+    }
+  ],
+  "line": [
+    {
+      "label": "Jan 01",
+      "data": "75",
+      "id": "e825"
+    },
+    {
+      "label": "Jan 01",
+      "data": "55",
+      "id": "f66d"
+    },
+    {
+      "label": "Jan 01",
+      "data": "75",
+      "id": "a840"
+    },
+    {
+      "label": "Jan 01",
+      "data": "20",
+      "id": "913b"
+    },
+    {
+      "label": "Jan 01",
+      "data": "30",
+      "id": "2896"
+    }
+  ],
+  "pie": [
+    {
+      "data": "44",
+      "id": "3f8f"
+    },
+    {
+      "data": "55",
+      "id": "01f7"
+    },
+    {
+      "data": "300",
+      "id": "e92c"
+    }
+  ],
+  "cryptoTable": [
+    {
+      "id": 1,
+      "name": "3232",
+      "lastPrice": "2323",
+      "change": "2323",
+      "lastHour": "3223",
+      "icon": "3223"
+    },
+    {
+      "id": 2,
+      "name": "2121",
+      "lastPrice": "2121",
+      "change": "2121",
+      "lastHour": "2121",
+      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+    }
+  ],
+  "defaultTableList": [
+    {
+      "title": "Title",
+      "author": "Title",
+      "status": "Title",
+      "updated": "Title",
+      "img": "Title",
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+    },
+    {
+      "title": "Title",
+      "author": "Title",
+      "status": "Title",
+      "updated": "Title",
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+    }
+  ],
+  "customersTable": [
+    {
+      "userName": "John Williams",
+      "userMail": "John@gmail.com",
+      "userPhoto": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "userCompany": "Tech",
+      "userPhone": "33232323",
+      "userLocation": "San Francisco"
+    },
+    {
+      "userName": "John Williams",
+      "userMail": "John@gmail.com",
+      "userPhoto": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "userCompany": "Tech",
+      "userPhone": "33232323",
+      "userLocation": "San Francisco"
+    }
+  ],
+  "customerDetails": [
+    {
+      "id": 3422,
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Pending",
+      "price": "32233"
+    },
+    {
+      "id": 3421,
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Pending",
+      "price": "32233"
+    }
+  ]
 }

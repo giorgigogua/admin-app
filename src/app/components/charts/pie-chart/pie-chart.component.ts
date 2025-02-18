@@ -48,6 +48,11 @@ export class PieChartComponent implements OnInit {
     this.chart = new Chart('pieChart', {
       type: 'doughnut',
       data: {
+        labels: [
+          'Red',
+          'Blue',
+          'Yellow'
+        ],
         datasets: [{
           label: '',
           data: pieData,

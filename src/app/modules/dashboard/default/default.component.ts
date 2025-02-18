@@ -15,6 +15,7 @@ export class DefaultComponent {
 
   constructor(private gridListService: GridListService, private cryptoListService: CryptoListService) {
 
+
     this.gridListService.getGridList().subscribe((data: any) => {
       this.gridListItem = data
     })
@@ -26,6 +27,7 @@ export class DefaultComponent {
     })
 
   }
+
 
 
 }

@@ -1,0 +1,66 @@
+<div class="table-responsive">
+    <table class="table table-selectable align-middle">
+        <!-- <thead *ngIf="thead">
+            <tr>
+                <th><input type="checkbox"></th>
+                <th scope="col" class="text-muted">User</th>
+                <th scope="col" class="text-muted">Company</th>
+                <th scope="col" class="text-muted">Phone</th>
+                <th scope="col" class="text-muted">Location</th>
+            </tr>
+        </thead> -->
+        <thead *ngIf="theadTwo">
+            <tr>
+                <th scope="col" class="text-muted">ID</th>
+                <th scope="col" class="text-muted">Product</th>
+                <th scope="col" class="text-muted">Date</th>
+                <th scope="col" class="text-muted">Status</th>
+                <th scope="col" class="text-muted">Price</th>
+            </tr>
+        </thead>
+        <!-- <tbody *ngIf="tbody">
+            <tr *ngFor="let item of customerTableList">
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td class="w-25">
+                    <div class="d-flex gap-3">
+                        <div style="width: 40px; height: 40px;">
+                            <img class="w-100 h-100 rounded-4" src={{item.userPhoto}} alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span>{{item.userName}}</span>
+                            <small class="text-muted">{{item.userMail}}</small>
+                        </div>
+                    </div>
+                </td>
+                <td>{{item.userCompany}}</td>
+                <td>
+                    <h6 class="text-muted">{{item.userPhone}}</h6>
+                </td>
+                <td>
+                    <h6>{{item.userLocation}}</h6>
+                </td>
+            </tr>
+        </tbody> -->
+
+        <tbody *ngIf="tbodyTwo">
+            <tr *ngFor="let item of customerDetailsList; index as i">
+                <td>
+                    <span>{{i+1}}</span>
+                </td>
+                <td>{{item.product}}</td>
+                <td>
+                    <span class="text-muted">{{item.date}}</span>
+                </td>
+                <td>
+                    <span>{{item.status}}</span>
+                </td>
+                <td>
+                    <span>{{item.price}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

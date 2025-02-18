@@ -1,0 +1,44 @@
+import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { booleanAttribute, Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { CustomersTableService } from '../../services/customers-table.service';
+import { CustomerDetailsTableService } from '../../services/customer-details-table.service';
+
+@Component({
+  selector: 'app-customers-table',
+  templateUrl: './customers-table.component.html',
+  styleUrl: './customers-table.component.scss',
+  standalone: true,
+  imports: [CommonModule, TranslateModule]
+})
+export class CustomersTableComponent {
+  @Input({ transform: booleanAttribute }) thead: boolean = true
+  @Input({ transform: booleanAttribute }) tbody: boolean = true
+
+  @Input({ transform: booleanAttribute }) theadTwo: boolean = false
+  @Input({ transform: booleanAttribute }) tbodyTwo: boolean = false
+
+  customerTableList: any
+
+  customerDetailsList: any
+
+
+  constructor(private customersTableService: CustomersTableService, private customerDetailsService: CustomerDetailsTableService) {
+
+    this.customersTableService.getAll().subscribe((data) => {
+
+      this.customerTableList = data
+
+    })
+
+    this.customerDetailsService.getAll().subscribe((data) => {
+
+      this.customerDetailsList = data
+
+    })
+
+  }
+
+
+}

@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col"><small class="text-muted">Name</small></th>
+            <th scope="col"><small class="text-muted">Last price (USD)</small></th>
+            <th scope="col"><small class="text-muted">Change</small></th>
+            <th scope="col"><small class="text-muted">Last 24hr</small></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of crypto">
+            <td>
+                <div class="d-flex gap-2">
+                    <div>
+                        <img width="30" height="30" src={{item.icon}} alt="">
+                    </div>
+                    <div>
+                        <strong class="fw-semibold">{{item.name}}</strong>
+                    </div>
+                </div>
+            </td>
+            <td>{{item.lastPrice}}</td>
+            <td>{{item.change}}</td>
+            <td>{{item.lastHour}}</td>
+            <td><span class="bg-light p-2" role="button">Trade</span></td>
+        </tr>
+    </tbody>
+</table>

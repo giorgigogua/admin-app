@@ -15,6 +15,9 @@ import { GoalsComponent } from '../../components/goals/goals.component';
 import { GridListComponent } from '../../components/grid-list/grid-list.component';
 import { BarChartComponent } from '../../components/charts/bar-chart/bar-chart.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
+import { CryptoTableComponent } from '../../components/crypto-table/crypto-table.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -30,13 +33,17 @@ import { AccordionComponent } from '../../components/accordion/accordion.compone
     PieChartComponent,
     RecentActivityComponent,
     LineChartComponent,
-    BrowseAllComponent, 
-    TableComponent, 
-    GoalsComponent, 
+    BrowseAllComponent,
+    TableComponent,
+    GoalsComponent,
     GridListComponent,
     BarChartComponent,
     AccordionComponent,
     CommonModule,
+    CryptoTableComponent,
+    ReactiveFormsModule,
+    FormsModule,
+    TranslateModule
   ]
 })
 export class DashboardModule { }

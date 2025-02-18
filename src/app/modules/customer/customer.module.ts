@@ -8,9 +8,9 @@ import { NewCustomerComponent } from './new-customer/new-customer.component';
 import { GridListComponent } from '../../components/grid-list/grid-list.component';
 import { UserCardComponent } from '../../components/user-card/user-card.component';
 import { UploadTableComponent } from '../../components/upload-table/upload-table.component';
-import { TableComponent } from '../../components/table/table.component';
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
 import { OrderSelectFilterComponent } from '../../components/order-select-filter/order-select-filter.component';
+import { CustomersTableComponent } from '../../components/customers-table/customers-table.component';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { OrderSelectFilterComponent } from '../../components/order-select-filter
     CustomerRoutingModule,
     GridListComponent,
     UserCardComponent,
-    TableComponent,
+    CustomersTableComponent,
     UploadTableComponent,
     PageTitleComponent,
     OrderSelectFilterComponent,

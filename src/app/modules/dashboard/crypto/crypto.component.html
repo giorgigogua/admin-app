@@ -26,37 +26,13 @@
       <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-card p-3 rounded-3 card">
         <div class="d-flex justify-content-between card-header bg-white border-light">
           <p>Watchlist</p>
-          <p>+ Add</p>
+          <button type="button" class="btn btn-white" (click)="openModel()">Add +</button>
         </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col"><small class="text-muted">Name</small></th>
-              <th scope="col"><small class="text-muted">Last price (USD)</small></th>
-              <th scope="col"><small class="text-muted">Change</small></th>
-              <th scope="col"><small class="text-muted">Last 24hr</small></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="d-flex gap-2">
-                  <div>
-                    <img width="30" height="30"
-                      src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/btc.svg" alt="">
-                  </div>
-                  <div>
-                    <strong class="fw-semibold">Bitcoin</strong>
-                  </div>
-                </div>
-              </td>
-              <td>621,879.81</td>
-              <td>+0.53%</td>
-              <td>Line</td>
-              <td><span class="bg-light p-2" role="button">Trade</span></td>
-            </tr>
-          </tbody>
-        </table>
+
+        <div>
+          <app-crypto-table></app-crypto-table>
+        </div>
+
       </div>
       <div class="card col rounded-3">
         <div class="card-header border-card bg-white">
@@ -91,9 +67,44 @@
       <div class="card-header border-card bg-white py-2 px-3">
         <app-browse-all title="Crypto"></app-browse-all>
       </div>
-      <div *ngFor="let item of cryptoList">
+      <div *ngFor="let item of cryptoListItem">
         <app-recent-activity name={{item.name}} time={{item.date}} activity={{item.activity}}></app-recent-activity>
       </div>
     </div>
   </div>
+
+
+  <!--MODAL-->
+
+  <div id="myModal" class="modal" style="z-index: 10000;">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close border-0 bg-body" data-dismiss="modal"
+            (click)="closeModel()">&times;</button>
+          <h4 class="modal-title">Add crypto list</h4>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-column gap-2">
+            <form>
+              <input type="text" name="name" [(ngModel)]="cryptoTableFormData.name">
+
+              <input type="text" name="lastPrice" [(ngModel)]="cryptoTableFormData.lastPrice">
+              <input type="text" name="change" [(ngModel)]="cryptoTableFormData.change">
+              <input type="text" name="lastHour" [(ngModel)]="cryptoTableFormData.lastHour">
+              <input type="text" name="icon" [(ngModel)]="cryptoTableFormData.icon">
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModel()">Close</button>
+          <button type="button" class="btn btn-primary" (click)="createList()">Create</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--MODAL END-->
 </div>

@@ -22,17 +22,19 @@ export class BarChartComponent implements OnInit {
   dataOne: any[] = []
   dataTwo: any[] = []
   background: any[] = []
+  background2: any[] = []
+
 
   chart: any;
 
   constructor(private barChartService: BarChartService) {
+
 
   }
 
 
 
   ngOnInit(): void {
-
 
     this.barChartService.getBarData().subscribe((data: any) => {
       this.barOptions = data
@@ -45,6 +47,8 @@ export class BarChartComponent implements OnInit {
           this.dataOne.push(this.barOptions[i].dataOne)
           this.dataTwo.push(this.barOptions[i].dataTwo)
           this.background.push(this.barOptions[i].backgroundColor)
+          this.background2.push(this.barOptions[i].backgroundColor2)
+
 
 
         }
@@ -53,14 +57,17 @@ export class BarChartComponent implements OnInit {
 
     })
 
-    this.showBarChart(this.dataOne, this.dataTwo, this.labels, this.background)
+    this.showBarChart(this.dataOne, this.dataTwo, this.labels, this.background, this.background2)
+
+
+
   }
 
-  showBarChart(dataOne: any, dataTwo: any, labels: any, background: any) {
+
+  showBarChart(dataOne: any, dataTwo: any, labels: any, background: any, background2:any) {
 
 
     this.chart = new Chart('MyChart', {
-
       type: 'bar',
       data: {
         labels: labels,
@@ -68,16 +75,19 @@ export class BarChartComponent implements OnInit {
           {
             label: '',
             data: dataOne,
-            backgroundColor: background
+            backgroundColor: background,
+            borderRadius: 50
           },
           {
             label: '',
             data: dataTwo,
-            backgroundColor: background
+            backgroundColor: background2,
+            borderRadius: 50
           }
         ]
       },
       options: {
+        responsive:true,
         scales: {
           y: {
             beginAtZero: true
