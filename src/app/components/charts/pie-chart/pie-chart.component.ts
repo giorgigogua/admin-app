@@ -21,6 +21,8 @@ export class PieChartComponent implements OnInit {
   pieList: any
   pieData: any[] = []
 
+  pieBackground: any[] = []
+
 
   chart: any
 
@@ -34,34 +36,26 @@ export class PieChartComponent implements OnInit {
         for (let i = 0; i < this.pieList.length; i++) {
 
           this.pieData.push(this.pieList[i].data)
+          this.pieBackground.push(this.pieList[i].backgroundColor)
+
 
         }
 
       }
+      this.showPie(this.pieData, this.pieBackground)
     })
 
-    this.showPie(this.pieData)
 
   }
 
-  showPie(pieData: any) {
+  showPie(pieData: any, pieBackground: any) {
     this.chart = new Chart('pieChart', {
       type: 'doughnut',
       data: {
-        labels: [
-          'Red',
-          'Blue',
-          'Yellow'
-        ],
         datasets: [{
           label: '',
           data: pieData,
-          backgroundColor: [
-            'rgb(15, 105, 165)',
-            'rgb(54, 162, 235)',
-            'rgb(83, 159, 209)',
-            'rgb(140, 197, 235)'
-          ],
+          backgroundColor: pieBackground,
           hoverOffset: 4
         }]
       }

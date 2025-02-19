@@ -42,10 +42,9 @@ export class LineChartComponent implements OnInit {
           this.datas.push(this.lineData[i].data)
         }
       }
-
+      this.showChart(this.labels, this.datas);
     })
 
-    this.showChart(this.labels, this.datas)
 
 
   }

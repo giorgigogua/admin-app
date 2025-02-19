@@ -54,17 +54,16 @@ export class BarChartComponent implements OnInit {
         }
       }
 
-
+      this.showBarChart(this.dataOne, this.dataTwo, this.labels, this.background, this.background2);
     })
 
-    this.showBarChart(this.dataOne, this.dataTwo, this.labels, this.background, this.background2)
 
 
 
   }
 
 
-  showBarChart(dataOne: any, dataTwo: any, labels: any, background: any, background2:any) {
+  showBarChart(dataOne: any, dataTwo: any, labels: any, background: any, background2: any) {
 
 
     this.chart = new Chart('MyChart', {
@@ -87,7 +86,7 @@ export class BarChartComponent implements OnInit {
         ]
       },
       options: {
-        responsive:true,
+        responsive: true,
         scales: {
           y: {
             beginAtZero: true
