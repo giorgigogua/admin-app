@@ -164,19 +164,35 @@
   ],
   "cryptoTable": [
     {
-      "id": 1,
+      "id": "e56c",
       "name": "3232",
-      "lastPrice": "2323",
-      "change": "2323",
-      "lastHour": "3223",
-      "icon": "3223"
+      "lastPrice": "3223",
+      "change": "3223",
+      "lastHour": "2323",
+      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
     },
     {
-      "id": 2,
-      "name": "2121",
-      "lastPrice": "2121",
-      "change": "2121",
-      "lastHour": "2121",
+      "id": "bc9a",
+      "name": "",
+      "lastPrice": "",
+      "change": "",
+      "lastHour": "",
+      "icon": "C:\\fakepath\\project-2.png"
+    },
+    {
+      "id": "0f0e",
+      "name": "",
+      "lastPrice": "",
+      "change": "",
+      "lastHour": "",
+      "icon": "3https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+    },
+    {
+      "id": "d225",
+      "name": "",
+      "lastPrice": "",
+      "change": "",
+      "lastHour": "",
       "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
     }
   ],
@@ -187,7 +203,8 @@
       "status": "Title",
       "updated": "Title",
       "img": "Title",
-      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "id": "2696"
     },
     {
       "title": "Title",
@@ -195,37 +212,91 @@
       "status": "Title",
       "updated": "Title",
       "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
-      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
-    }
-  ],
-  "customersTable": [
-    {
-      "userName": "John Williams",
-      "userMail": "John@gmail.com",
-      "userPhoto": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
-      "userCompany": "Tech",
-      "userPhone": "33232323",
-      "userLocation": "San Francisco"
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "id": "ca5c"
     },
     {
-      "userName": "John Williams",
-      "userMail": "John@gmail.com",
-      "userPhoto": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
-      "userCompany": "Tech",
-      "userPhone": "33232323",
-      "userLocation": "San Francisco"
+      "id": "5a2f",
+      "image": "",
+      "description": "",
+      "title": "",
+      "status": "",
+      "authorImage": "",
+      "authorName": "",
+      "teamImage": ""
+    },
+    {
+      "id": "aa46",
+      "image": "",
+      "description": "",
+      "title": "",
+      "status": "",
+      "authorImage": "",
+      "authorName": "",
+      "teamImage": ""
+    },
+    {
+      "id": "1f17",
+      "image": "",
+      "description": "",
+      "title": "",
+      "status": "",
+      "authorImage": "",
+      "authorName": "",
+      "teamImage": ""
+    },
+    {
+      "id": "d3d8",
+      "image": "",
+      "description": "",
+      "title": "",
+      "status": "",
+      "authorImage": "",
+      "authorName": "",
+      "teamImage": ""
+    },
+    {
+      "id": "f22f",
+      "image": "",
+      "description": "3223",
+      "title": "2323",
+      "status": "",
+      "authorImage": "",
+      "authorName": "3232",
+      "teamImage": ""
+    },
+    {
+      "id": "5cbe",
+      "image": "",
+      "description": "dfdfs",
+      "title": "sfsd",
+      "status": "",
+      "authorImage": "",
+      "authorName": "fdds",
+      "teamImage": ""
+    },
+    {
+      "id": "65ad",
+      "image": "",
+      "description": "3223",
+      "title": "3223",
+      "status": "",
+      "authorImage": "",
+      "authorName": "",
+      "teamImage": ""
     }
   ],
+  "customersTable": [],
   "customerDetails": [
     {
-      "id": 3422,
+      "id": "3422",
       "product": "Apple macbook",
       "date": "2021",
       "status": "Pending",
       "price": "32233"
     },
     {
-      "id": 3421,
+      "id": "3421",
       "product": "Apple macbook",
       "date": "2021",
       "status": "Pending",

@@ -16,4 +16,5 @@ export class RecentActivityComponent {
   @Input() activity:string = ''
   @Input() icon:string = ''
 
+  
 }

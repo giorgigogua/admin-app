@@ -14,7 +14,6 @@ export class TableComponent {
 
   defaultTableList: any
 
-  statuses: any
 
   constructor(private defaultTableService: DefaultTableService) {
 

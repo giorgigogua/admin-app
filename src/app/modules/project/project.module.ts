@@ -11,6 +11,7 @@ import { LineChartComponent } from '../../components/charts/line-chart/line-char
 import { UserCommentComponent } from '../../components/user-comment/user-comment.component';
 import { UploadTableComponent } from '../../components/upload-table/upload-table.component';
 import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { OrderSelectFilterComponent } from "../../components/order-select-filter
     LineChartComponent,
     UserCommentComponent,
     UploadTableComponent,
-    OrderSelectFilterComponent
+    OrderSelectFilterComponent,
+    FormsModule,
+    ReactiveFormsModule
 ]
 })
 export class ProjectModule { }

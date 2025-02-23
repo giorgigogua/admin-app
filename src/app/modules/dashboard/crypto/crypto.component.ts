@@ -15,7 +15,6 @@ export class CryptoComponent implements OnInit {
   }
 
   cryptoTableFormData: CryptoTableInterface = {
-    id: 0,
     name: '',
     lastPrice: '',
     change: '',
@@ -70,25 +69,25 @@ export class CryptoComponent implements OnInit {
       name: 'Bought 1.5 BTC',
       date: 'Oct 1',
       activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-person'
+      icon: 'bi bi-hand-thumbs-up-fill'
     },
     {
       name: 'Bought 1.5 BTC',
       date: 'Oct 1',
       activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-person'
+      icon: 'bi bi-chat-left-fill'
     },
     {
       name: 'Bought 1.5 BTC',
       date: 'Oct 1',
       activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-person'
+      icon: 'bi bi-share-fill'
     },
     {
       name: 'Bought 1.5 BTC',
       date: 'Oct 1',
       activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-person'
+      icon: 'bi bi-person-circle'
     }
   ]
 }

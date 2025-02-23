@@ -11,6 +11,7 @@ import { UploadTableComponent } from '../../components/upload-table/upload-table
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
 import { OrderSelectFilterComponent } from '../../components/order-select-filter/order-select-filter.component';
 import { CustomersTableComponent } from '../../components/customers-table/customers-table.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { CustomersTableComponent } from '../../components/customers-table/custom
     UploadTableComponent,
     PageTitleComponent,
     OrderSelectFilterComponent,
+    FormsModule
   ]
 })
 export class CustomerModule { }
