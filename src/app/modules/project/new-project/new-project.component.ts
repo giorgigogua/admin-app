@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-new-project',
   templateUrl: './new-project.component.html',
-  styleUrl: './new-project.component.scss'
+  styleUrl: './new-project.component.scss',
+  providers:[DefaultTableService]
 })
 export class NewProjectComponent {
 

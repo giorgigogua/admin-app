@@ -30,13 +30,13 @@
       "name": "Bought 1.5 BTC",
       "date": "Oct 1",
       "activity": "Transaction completed on Coinbase",
-      "icon": "bi bi-hand-thumbs-up-fill",
+      "icon": "bi bi-person",
       "id": "dfa4"
     },
     {
       "name": "Bought 1.5 BTC",
       "date": "Oct 1",
-      "activity": "Transaction completed on Coinbase",
+      "activity": "Transaction completed on Coinbasess",
       "icon": "bi bi-chat-left-fill",
       "id": "22e5"
     },
@@ -194,6 +194,14 @@
       "change": "",
       "lastHour": "",
       "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+    },
+    {
+      "id": "36e2",
+      "name": "21",
+      "lastPrice": "",
+      "change": "",
+      "lastHour": "",
+      "icon": ""
     }
   ],
   "defaultTableList": [

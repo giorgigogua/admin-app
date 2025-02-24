@@ -6,6 +6,7 @@ import { GridListService } from '../../../services/grid-list.service';
   selector: 'app-customer-detail',
   templateUrl: './customer-detail.component.html',
   styleUrl: './customer-detail.component.scss',
+  providers:[GridListService]
 })
 export class CustomerDetailComponent {
 

@@ -13,7 +13,8 @@ import { setThrowInvalidWriteToSignalError } from '@angular/core/primitives/sign
   templateUrl: './customers-table.component.html',
   styleUrl: './customers-table.component.scss',
   standalone: true,
-  imports: [CommonModule, TranslateModule, FormsModule]
+  imports: [CommonModule, TranslateModule, FormsModule],
+  providers:[CustomersTableService, CustomerDetailsTableService]
 })
 export class CustomersTableComponent {
   @Input({ transform: booleanAttribute }) thead: boolean = true

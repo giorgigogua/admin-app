@@ -2,11 +2,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CryptoService } from '../../../services/crypto.service';
 import { CryptoTableInterface } from '../../../interfaces/crypto-table';
+import { LineChartService } from '../../../services/line-chart.service';
+import { PieChartService } from '../../../services/pie-chart.service';
 
 @Component({
   selector: 'app-crypto',
   templateUrl: './crypto.component.html',
   styleUrl: './crypto.component.scss',
+  providers:[CryptoService, LineChartService, PieChartService]
 })
 export class CryptoComponent implements OnInit {
 

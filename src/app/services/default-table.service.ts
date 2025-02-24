@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DefaultTableInterface } from '../interfaces/default-table';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DefaultTableService {
 
   apiUrl = "http://localhost:3000/defaultTableList"

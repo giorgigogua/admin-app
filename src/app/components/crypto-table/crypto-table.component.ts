@@ -8,7 +8,8 @@ import { CryptoTableInterface } from '../../interfaces/crypto-table';
   templateUrl: './crypto-table.component.html',
   styleUrl: './crypto-table.component.scss',
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule],
+  providers:[CryptoService]
 })
 export class CryptoTableComponent implements OnInit {
 

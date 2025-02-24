@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CustomerTableInterface } from '../interfaces/customer-table';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CustomersTableService {
 
   apiUrl = "http://localhost:3000/customersTable"

@@ -10,7 +10,8 @@ Chart.register(...registerables)
   templateUrl: './bar-chart.component.html',
   styleUrl: './bar-chart.component.scss',
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule],
+  providers:[BarChartService]
 
 
 })

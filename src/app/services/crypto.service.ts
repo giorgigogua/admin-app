@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CryptoTableInterface } from '../interfaces/crypto-table';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CryptoService {
 
   apiUrl = "http://localhost:3000/cryptoTable"

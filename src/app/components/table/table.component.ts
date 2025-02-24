@@ -7,7 +7,8 @@ import { DefaultTableService } from '../../services/default-table.service';
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss',
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule],
+  providers:[DefaultTableService]
 
 })
 export class TableComponent {
