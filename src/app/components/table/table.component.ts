@@ -1,4 +1,4 @@
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule, NgIf, NgIfContext } from '@angular/common';
 import { booleanAttribute, Component, Input } from '@angular/core';
 import { DefaultTableService } from '../../services/default-table.service';
 

@@ -508,133 +508,100 @@
   "cryptoTable": [
     {
       "id": "e56c",
-      "name": "3232",
-      "lastPrice": "3223",
-      "change": "3223",
+      "name": "Bitcoin",
+      "lastPrice": "63,879.81",
+      "change": "+0.53%",
       "lastHour": "2323",
-      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/btc.svg"
     },
     {
       "id": "bc9a",
-      "name": "",
-      "lastPrice": "",
-      "change": "",
+      "name": "Ethereum",
+      "lastPrice": "2,642.53",
+      "change": "+1.84%",
       "lastHour": "",
-      "icon": "C:\\fakepath\\project-2.png"
+      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/ethereum.svg"
     },
     {
       "id": "0f0e",
-      "name": "",
-      "lastPrice": "",
-      "change": "",
+      "name": "Dogecoin",
+      "lastPrice": "0.118413",
+      "change": "+1.06%",
       "lastHour": "",
-      "icon": "3https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/dogecoin.svg"
     },
     {
       "id": "d225",
-      "name": "",
-      "lastPrice": "",
-      "change": "",
+      "name": "Tether",
+      "lastPrice": "0.9999",
+      "change": "-0.02%",
       "lastHour": "",
-      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png"
+      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/tether.svg"
     },
     {
       "id": "36e2",
-      "name": "21",
-      "lastPrice": "",
-      "change": "",
+      "name": "Cardano",
+      "lastPrice": "0.3844",
+      "change": "-0.93%",
       "lastHour": "",
-      "icon": ""
+      "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/cardano.svg"
     }
   ],
   "defaultTableList": [
     {
-      "title": "Title",
-      "author": "Title",
-      "status": "Title",
+      "title": "Filters AI",
+      "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg",
+      "authorName":"Michael Johnson",
+      "description": "Updated on Apr 10, 2024",
+      "status": "Ready to Ship",
       "updated": "Title",
-      "img": "Title",
-      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
-      "id": "2696"
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-1.png",
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg",
+      "id": "ca5c"
     },
     {
-      "title": "Title",
-      "author": "Title",
-      "status": "Title",
+      "title": "Design landing page",
+      "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-1.jpg",
+      "authorName":"Emily Thompson",
+      "description": "Created on Mar 05, 2024",
+      "status": "Cancelled",
       "updated": "Title",
       "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
       "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
       "id": "ca5c"
     },
     {
-      "id": "5a2f",
-      "image": "",
-      "description": "",
-      "title": "",
-      "status": "",
-      "authorImage": "",
-      "authorName": "",
-      "teamImage": ""
+      "title": "Update documentation",
+      "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg",
+      "authorName":"Michael Johnson",
+      "status": "In Testing",
+      "updated": "Title",
+      "description": "Created on Jan 22, 2024",
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "id": "ca5c"
     },
     {
-      "id": "aa46",
-      "image": "",
-      "description": "",
-      "title": "",
-      "status": "",
-      "authorImage": "",
-      "authorName": "",
-      "teamImage": ""
+      "title": "Update Touche",
+      "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-5.jpg",
+      "authorName":"Jessica Miller",
+      "status": "Ready to Ship",
+      "description": "Updated on Apr 14, 2024",
+      "updated": "Title",
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png",
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "id": "ca5c"
     },
     {
-      "id": "1f17",
-      "image": "",
-      "description": "",
-      "title": "",
-      "status": "",
-      "authorImage": "",
-      "authorName": "",
-      "teamImage": ""
-    },
-    {
-      "id": "d3d8",
-      "image": "",
-      "description": "",
-      "title": "",
-      "status": "",
-      "authorImage": "",
-      "authorName": "",
-      "teamImage": ""
-    },
-    {
-      "id": "f22f",
-      "image": "",
-      "description": "3223",
-      "title": "2323",
-      "status": "",
-      "authorImage": "",
-      "authorName": "3232",
-      "teamImage": ""
-    },
-    {
-      "id": "5cbe",
-      "image": "",
-      "description": "dfdfs",
-      "title": "sfsd",
-      "status": "",
-      "authorImage": "",
-      "authorName": "fdds",
-      "teamImage": ""
-    },
-    {
-      "id": "65ad",
-      "image": "",
-      "description": "3223",
-      "title": "3223",
-      "status": "",
-      "authorImage": "",
-      "authorName": "",
-      "teamImage": ""
+      "title": "Add Transactions",
+      "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-4.jpg",
+      "authorName":"Olivia Davis",
+      "status": "Backlog",
+      "description": "Created on Apr 25, 2024",
+      "updated": "Title",
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
+      "id": "ca5c"
     }
   ],
   "customerDetails": [

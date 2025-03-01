@@ -56,7 +56,7 @@ export class PieChartComponent implements OnInit {
           label: '',
           data: pieData,
           backgroundColor: pieBackground,
-          hoverOffset: 4
+          hoverOffset: 4,
         }]
       }
     })

@@ -7,7 +7,7 @@ import { BarChartComponent } from '../charts/bar-chart/bar-chart.component';
   templateUrl: './goals.component.html',
   styleUrl: './goals.component.scss',
   standalone: true,
-  imports: [CommonModule, BarChartComponent]
+  imports: [CommonModule]
 
 })
 export class GoalsComponent {
