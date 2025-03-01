@@ -4,14 +4,15 @@ import { Component, Input } from '@angular/core';
   selector: 'app-accordion',
   templateUrl: './accordion.component.html',
   styleUrl: './accordion.component.scss',
-  standalone:true
+  standalone: true
 })
 export class AccordionComponent {
 
 
-  @Input() title:string = ''
-  @Input() content:string = ''
-  @Input() date:string = ''
+  @Input() title: string = ''
+  @Input() content: string = ''
+  @Input() date: string = ''
+  @Input() dataBsTarget: string = ''
 
 
 }

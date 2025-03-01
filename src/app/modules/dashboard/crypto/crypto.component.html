@@ -1,8 +1,13 @@
 <div class="container">
   <div class="d-flex justify-content-between align-items-center">
     <div class="d-flex flex-column">
-      <p>Performance</p>
-      <h1>$20.000</h1>
+      <span>Performance</span>
+      <div class="d-flex gap-2">
+        <h1>$20.000</h1>
+        <div>
+          <small class="bg-success text-white p-1 rounded-3">+21%</small>
+        </div>
+      </div>
     </div>
     <div>
       <li class="nav-item dropdown">
@@ -18,8 +23,27 @@
       </li>
     </div>
   </div>
-  <div>
-    <app-line-chart></app-line-chart>
+  <nav class="">
+    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+      <button class="nav-link active text-dark" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Trading profits</button>
+      <button class="nav-link text-dark" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Staking rewards</button>
+      <button class="nav-link text-dark" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mining income</button>
+    </div>
+    <hr>
+  </nav>
+  <div class="tab-content mt-5" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <app-line-chart lineChartId="homeChart"></app-line-chart>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <app-line-chart lineChartId="profileChart"></app-line-chart>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <app-line-chart lineChartId="contactChart"></app-line-chart>
+    </div>
   </div>
   <div>
     <div class="row mt-5 gap-2 justify-content-center">
@@ -68,7 +92,8 @@
         <app-browse-all title="Crypto"></app-browse-all>
       </div>
       <div *ngFor="let item of cryptoListItem">
-        <app-recent-activity name={{item.name}} time={{item.date}} activity={{item.activity}} icon={{item.icon}}></app-recent-activity>
+        <app-recent-activity name={{item.name}} time={{item.date}} activity={{item.activity}}
+          icon={{item.icon}}></app-recent-activity>
       </div>
     </div>
   </div>

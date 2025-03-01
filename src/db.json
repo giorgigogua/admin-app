@@ -55,7 +55,7 @@
       "id": "c899"
     }
   ],
-  "bar": [
+  "defaultBar": [
     {
       "label": "Mon",
       "dataOne": "199",
@@ -113,7 +113,301 @@
       "id": "93a2"
     }
   ],
-  "line": [
+  "homeBar": [
+    {
+      "label": "Jan 01",
+      "homeBarData": "55",
+      "homeBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "22",
+      "homeBarbackgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "25",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "30",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "33",
+      "homeBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "22",
+      "homeBarbackgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "25",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "30",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "32",
+      "homeBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "22",
+      "homeBarbackgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "25",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "30",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "24",
+      "homeBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "22",
+      "homeBarbackgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "25",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "homeBarData": "30",
+      "homeBarbackgroundColor": "blue",
+      "id": "93a2"
+    }
+  ],
+  "profileBar": [
+    {
+      "label": "Jan 01",
+      "profileBarData": "34",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "32",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "22",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "45",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "22",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "32",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "35",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "34",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "33",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "33",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "32",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "43",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "55",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "34",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "22",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "profileBarData": "43",
+      "profileBarbackgroundColor": "blue",
+      "id": "3a70"
+    }
+  ],
+  "contactBar": [
+    {
+      "label": "Jan 01",
+      "contactBarData": "55",
+      "backgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "21",
+      "backgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "32",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "34",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "21",
+      "backgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "22",
+      "backgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "33",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "34",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "21",
+      "backgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "22",
+      "backgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "33",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "34",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "21",
+      "backgroundColor": "blue",
+      "id": "3a70"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "22",
+      "backgroundColor": "blue",
+      "id": "99fe"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "33",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    },
+    {
+      "label": "Jan 01",
+      "contactBarData": "34",
+      "backgroundColor": "blue",
+      "id": "93a2"
+    }
+  ],
+  "homeLineChart": [
     {
       "label": "Jan 01",
       "data": "75",
@@ -138,6 +432,55 @@
       "label": "Jan 01",
       "data": "30",
       "id": "2896"
+    },
+    {
+      "label": "Jan 01",
+      "data": "30",
+      "id": "2896"
+    }
+  ],
+  "profileLineChart": [
+    {
+      "label": "Jan 01",
+      "data2": "75",
+      "id": "e825"
+    },
+    {
+      "label": "Jan 01",
+      "data2": "55",
+      "id": "f66d"
+    },
+    {
+      "label": "Jan 01",
+      "data2": "75",
+      "id": "e825"
+    },
+    {
+      "label": "Jan 01",
+      "data2": "55",
+      "id": "f66d"
+    }
+  ],
+  "contactLineChart": [
+    {
+      "label": "Jan 01",
+      "data3": "75",
+      "id": "e825"
+    },
+    {
+      "label": "Jan 01",
+      "data3": "55",
+      "id": "f66d"
+    },
+    {
+      "label": "Jan 01",
+      "data3": "75",
+      "id": "e825"
+    },
+    {
+      "label": "Jan 01",
+      "data3": "55",
+      "id": "f66d"
     }
   ],
   "pie": [
@@ -294,7 +637,6 @@
       "teamImage": ""
     }
   ],
-  "customersTable": [],
   "customerDetails": [
     {
       "id": "3422",
