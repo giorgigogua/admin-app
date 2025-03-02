@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, Component, Input } from '@angular/core';
-import { LineChartComponent } from "../charts/line-chart/line-chart.component";
 
 @Component({
   selector: 'app-page-title',
   templateUrl: './page-title.component.html',
   styleUrl: './page-title.component.scss',
   standalone: true,
-  imports: [CommonModule, LineChartComponent]
+  imports: [CommonModule]
 
 })
 export class PageTitleComponent {
@@ -20,5 +19,6 @@ export class PageTitleComponent {
   @Input() deleteButton: any = ''
   @Input({ transform: booleanAttribute }) buttons: boolean = false
   @Input() icon: any = ''
+  @Input() buttonClick:any = ''
 
 }

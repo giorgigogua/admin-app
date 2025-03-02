@@ -20,8 +20,4 @@ export class CustomersTableService {
     return this.httpClient.post(this.apiUrl, data)
 
   }
-
-  delete(id: string) {
-    return this.httpClient.delete<CustomerTableInterface>(`http://localhost:3000/customersTable${id}`)
-  }
 }

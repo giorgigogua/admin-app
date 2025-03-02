@@ -12,6 +12,7 @@ import { UserCommentComponent } from '../../components/user-comment/user-comment
 import { UploadTableComponent } from '../../components/upload-table/upload-table.component';
 import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PagerComponent } from '../../components/pager/pager.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UploadTableComponent,
     OrderSelectFilterComponent,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PagerComponent
 ]
 })
 export class ProjectModule { }

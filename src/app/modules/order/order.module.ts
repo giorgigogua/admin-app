@@ -10,6 +10,7 @@ import { TableComponent } from '../../components/table/table.component';
 import { PricingCardComponent } from '../../components/pricing-card/pricing-card.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
 import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
+import { PagerComponent } from '../../components/pager/pager.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { OrderSelectFilterComponent } from "../../components/order-select-filter
     AccordionComponent,
     TableComponent,
     CommonModule,
-    OrderSelectFilterComponent
+    OrderSelectFilterComponent,
+    PagerComponent
 ]
 })
 export class OrderModule { }

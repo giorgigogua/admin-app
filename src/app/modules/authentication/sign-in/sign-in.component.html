@@ -1,1 +1,19 @@
-<p>sign-in works!</p>
+<div class="container">
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center">
+            <h1>Sign in</h1>
+            <p>Access our dashboard and start tracking your tasks.</p>
+        </div>
+        <form class="d-flex flex-column gap-3">
+            <div class="form-group">
+                <input name="name" type="text" class="form-control form-control-lg bg-light border-0" id="name"
+                    aria-describedby="name">
+            </div>
+            <button class="border-0 bg-warning p-2 rounded-3">Sign in</button>
+        </form>
+        <div class="py-3">
+            <span class="text-muted">Dont have any account yet? <span class="text-primary" (click)="navigateToSignUp()">Sign
+                    up.</span></span>
+        </div>
+    </div>
+</div>

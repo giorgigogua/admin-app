@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-top-authors',
@@ -9,5 +9,10 @@ import { Component } from '@angular/core';
   imports: [CommonModule]
 })
 export class TopAuthorsComponent {
+
+  @Input() firstName = ''
+  @Input() image = ''
+  @Input() mail = ''
+
 
 }

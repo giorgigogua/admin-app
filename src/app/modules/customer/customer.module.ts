@@ -12,6 +12,7 @@ import { PageTitleComponent } from '../../components/page-title/page-title.compo
 import { OrderSelectFilterComponent } from '../../components/order-select-filter/order-select-filter.component';
 import { CustomersTableComponent } from '../../components/customers-table/customers-table.component';
 import { FormsModule } from '@angular/forms';
+import { PagerComponent } from '../../components/pager/pager.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     UploadTableComponent,
     PageTitleComponent,
     OrderSelectFilterComponent,
-    FormsModule
+    FormsModule,
+    PagerComponent
   ]
 })
 export class CustomerModule { }

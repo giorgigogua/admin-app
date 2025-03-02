@@ -551,7 +551,7 @@
     {
       "title": "Filters AI",
       "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg",
-      "authorName":"Michael Johnson",
+      "authorName": "Michael Johnson",
       "description": "Updated on Apr 10, 2024",
       "status": "Ready to Ship",
       "updated": "Title",
@@ -562,7 +562,7 @@
     {
       "title": "Design landing page",
       "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-1.jpg",
-      "authorName":"Emily Thompson",
+      "authorName": "Emily Thompson",
       "description": "Created on Mar 05, 2024",
       "status": "Cancelled",
       "updated": "Title",
@@ -573,7 +573,7 @@
     {
       "title": "Update documentation",
       "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg",
-      "authorName":"Michael Johnson",
+      "authorName": "Michael Johnson",
       "status": "In Testing",
       "updated": "Title",
       "description": "Created on Jan 22, 2024",
@@ -584,7 +584,7 @@
     {
       "title": "Update Touche",
       "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-5.jpg",
-      "authorName":"Jessica Miller",
+      "authorName": "Jessica Miller",
       "status": "Ready to Ship",
       "description": "Updated on Apr 14, 2024",
       "updated": "Title",
@@ -595,13 +595,44 @@
     {
       "title": "Add Transactions",
       "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-4.jpg",
-      "authorName":"Olivia Davis",
+      "authorName": "Olivia Davis",
       "status": "Backlog",
       "description": "Created on Apr 25, 2024",
       "updated": "Title",
       "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
       "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
       "id": "ca5c"
+    },
+    {
+      "id": "eec4",
+      "image": "",
+      "description": "",
+      "title": "",
+      "status": "",
+      "authorImage": "",
+      "authorName": "",
+      "teamImage": ""
+    },
+    {
+      "id": "7b71",
+      "image": "",
+      "description": "",
+      "title": "",
+      "status": "",
+      "authorImage": "",
+      "authorName": "",
+      "teamImage": ""
+    }
+  ],
+  "customersTable": [
+    {
+      "id": "36a2",
+      "userName": "John Williams",
+      "userMail": "james.smith@example.com",
+      "userPhone": "(202) 555-0126",
+      "userLocation": "San Francisco, CA",
+      "userImage": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-6.jpg",
+      "company": "TechPinnacle Solutions"
     }
   ],
   "customerDetails": [

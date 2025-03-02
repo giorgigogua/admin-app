@@ -4,9 +4,7 @@ import { booleanAttribute, Component, Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CustomersTableService } from '../../services/customers-table.service';
 import { CustomerDetailsTableService } from '../../services/customer-details-table.service';
-import { CustomerTableInterface } from '../../interfaces/customer-table';
 import { FormsModule } from '@angular/forms';
-import { setThrowInvalidWriteToSignalError } from '@angular/core/primitives/signals';
 
 @Component({
   selector: 'app-customers-table',
@@ -14,7 +12,7 @@ import { setThrowInvalidWriteToSignalError } from '@angular/core/primitives/sign
   styleUrl: './customers-table.component.scss',
   standalone: true,
   imports: [CommonModule, TranslateModule, FormsModule],
-  providers:[CustomersTableService, CustomerDetailsTableService]
+  providers: [CustomersTableService, CustomerDetailsTableService]
 })
 export class CustomersTableComponent {
   @Input({ transform: booleanAttribute }) thead: boolean = true
@@ -30,19 +28,6 @@ export class CustomersTableComponent {
   customerDetailsList: any
 
 
-
-  deleteUser(id: string) {
-
-    return this.httpClient.delete(`http://localhost:3000/customersTable/${id}`).subscribe(
-      {
-        next: () => {
-          this.customerDetailsList = this.customerTableList.filter(_ => _.id != id)
-          window.location.reload();
-        }
-      }
-    )
-
-  }
 
 
   constructor(private customersTableService: CustomersTableService, private customerDetailsService: CustomerDetailsTableService, private httpClient: HttpClient) {

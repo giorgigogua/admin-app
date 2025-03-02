@@ -3,12 +3,13 @@ import { PageTitleComponent } from '../../../components/page-title/page-title.co
 import { CustomersTableService } from '../../../services/customers-table.service';
 import { CustomerTableInterface } from '../../../interfaces/customer-table';
 import { DefaultTableInterface } from '../../../interfaces/default-table';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-customer',
   templateUrl: './new-customer.component.html',
   styleUrl: './new-customer.component.scss',
-  providers:[CustomersTableService]
+  providers: [CustomersTableService]
 })
 export class NewCustomerComponent {
 
@@ -22,7 +23,7 @@ export class NewCustomerComponent {
     company: ''
   }
 
-  constructor(private customersTableService: CustomersTableService) {
+  constructor(private customersTableService: CustomersTableService, private router: Router) {
 
   }
 
@@ -31,7 +32,7 @@ export class NewCustomerComponent {
   post() {
     this.customersTableService.postList(this.initialValue).subscribe({
       next: () => {
-
+        this.router.navigate(["/customer/customers"])
       }
     })
   }

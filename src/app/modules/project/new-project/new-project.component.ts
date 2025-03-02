@@ -35,7 +35,7 @@ export class NewProjectComponent {
   postList() {
     this.tableService.postTableList(this.initialValue).subscribe({
       next:()=>{
-        
+        this.router.navigate(["/project/projects"])
       }
     })
   }
