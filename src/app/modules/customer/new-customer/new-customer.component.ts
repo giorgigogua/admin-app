@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { PageTitleComponent } from '../../../components/page-title/page-title.component';
 import { CustomersTableService } from '../../../services/customers-table.service';
 import { CustomerTableInterface } from '../../../interfaces/customer-table';
-import { DefaultTableInterface } from '../../../interfaces/default-table';
 import { Router } from '@angular/router';
 
 @Component({

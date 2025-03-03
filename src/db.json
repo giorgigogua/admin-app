@@ -633,6 +633,15 @@
       "userLocation": "San Francisco, CA",
       "userImage": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-6.jpg",
       "company": "TechPinnacle Solutions"
+    },
+    {
+      "id": "740c",
+      "userName": "ssd",
+      "userMail": "sdsda",
+      "userPhone": "sdsad",
+      "userLocation": "sdadsa",
+      "userImage": "",
+      "company": "sddsa"
     }
   ],
   "customerDetails": [
