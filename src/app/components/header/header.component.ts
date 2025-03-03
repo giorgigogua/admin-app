@@ -2,6 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { NavService } from '../../services/nav.service';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnDestroy {
   showNavbar: boolean = true;
   subscripition: Subscription;
 
-  constructor(private translateService: TranslateService, private navService: NavService) {
+  constructor(private translateService: TranslateService, private navService: NavService, private router: Router) {
 
     this.translateService.setDefaultLang('en')
 
@@ -21,6 +22,10 @@ export class HeaderComponent implements OnDestroy {
       this.showNavbar = value
     })
 
+  }
+
+  navigateToDefault() {
+    return this.router.navigate(['dashboard/default'])
   }
 
   switchLanguage(language: string) {

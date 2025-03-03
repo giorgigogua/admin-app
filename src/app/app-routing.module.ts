@@ -5,6 +5,11 @@ import { DefaultComponent } from './modules/dashboard/default/default.component'
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/dashboard/default',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     component: DefaultComponent
   },
   {

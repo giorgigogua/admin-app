@@ -1,7 +1,7 @@
 <div *ngIf="showNavbar">
   <nav class="navbar navbar-expand-lg bg-body-white">
     <div class="container">
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center" role="button" (click)="navigateToDefault()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
           class="fs-4 text-warning me-1 duo-icon duo-icon-box-2" data-duoicon="box-2">
           <path fill="currentColor"
@@ -14,7 +14,7 @@
             d="M3.235 7.982 11 12.571v8.988a2.339 2.339 0 0 1-.25-.126l-6.294-3.634a2.502 2.502 0 0 1-1.25-2.165V8.366c0-.13.01-.258.03-.384h-.001Z"
             class="duoicon-secondary-layer" opacity=".3"></path>
         </svg>
-        <a class="navbar-brand h1 mt-2" routerLink="/">Dashbrd</a>
+        <a role="button" class="navbar-brand h1 mt-2">Dashbrd</a>
       </div>
       <div class="d-flex gap-3">
 
