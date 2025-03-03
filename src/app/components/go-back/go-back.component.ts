@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-go-back',
   templateUrl: './go-back.component.html',
-  styleUrl: './go-back.component.scss',
   standalone: true,
   imports: []
 })

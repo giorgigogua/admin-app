@@ -4,8 +4,7 @@ import { NavService } from '../../../services/nav.service';
 
 @Component({
   selector: 'app-sign-in',
-  templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.scss',
+  templateUrl: './sign-in.component.html'
 })
 export class SignInComponent implements OnInit, OnDestroy {
 

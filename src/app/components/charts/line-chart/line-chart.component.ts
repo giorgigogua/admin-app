@@ -5,7 +5,6 @@ import { LineChartService } from '../../../services/line-chart.service';
 @Component({
   selector: 'app-line-chart',
   templateUrl: './line-chart.component.html',
-  styleUrl: './line-chart.component.scss',
   standalone: true
 
 })

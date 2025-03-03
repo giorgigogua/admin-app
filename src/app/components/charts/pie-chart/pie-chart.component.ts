@@ -8,7 +8,6 @@ Chart.register(...registerables)
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
-  styleUrl: './pie-chart.component.scss',
   standalone: true
 
 })

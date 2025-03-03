@@ -4,7 +4,6 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-validation-error',
   templateUrl: './validation-error.component.html',
-  styleUrl: './validation-error.component.scss',
   standalone: true,
   imports: [CommonModule]
 })

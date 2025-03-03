@@ -4,8 +4,7 @@ import { NavService } from '../../../services/nav.service';
 
 @Component({
   selector: 'app-password-reset',
-  templateUrl: './password-reset.component.html',
-  styleUrl: './password-reset.component.scss'
+  templateUrl: './password-reset.component.html'
 })
 export class PasswordResetComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private navService: NavService) {

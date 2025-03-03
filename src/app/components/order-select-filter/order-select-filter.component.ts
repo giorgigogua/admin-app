@@ -4,7 +4,6 @@ import { booleanAttribute, Component, Input } from '@angular/core';
 @Component({
   selector: 'app-order-select-filter',
   templateUrl: './order-select-filter.component.html',
-  styleUrl: './order-select-filter.component.scss',
   standalone:true,
   imports:[CommonModule]
 })

@@ -1,11 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { BarChartComponent } from '../charts/bar-chart/bar-chart.component';
 
 @Component({
   selector: 'app-goals',
   templateUrl: './goals.component.html',
-  styleUrl: './goals.component.scss',
   standalone: true,
   imports: [CommonModule]
 

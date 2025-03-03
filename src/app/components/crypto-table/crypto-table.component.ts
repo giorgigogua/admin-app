@@ -6,7 +6,6 @@ import { CryptoTableInterface } from '../../interfaces/crypto-table';
 @Component({
   selector: 'app-crypto-table',
   templateUrl: './crypto-table.component.html',
-  styleUrl: './crypto-table.component.scss',
   standalone: true,
   imports: [CommonModule],
   providers:[CryptoService]

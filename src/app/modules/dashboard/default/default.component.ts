@@ -6,7 +6,6 @@ import { CryptoListService } from '../../../services/crypto-list.service';
 @Component({
   selector: 'app-default',
   templateUrl: './default.component.html',
-  styleUrl: './default.component.scss',
   providers: [GridListService, CryptoListService]
 })
 export class DefaultComponent {

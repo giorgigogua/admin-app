@@ -4,8 +4,7 @@ import { NavService } from '../../../services/nav.service';
 
 @Component({
   selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  styleUrl: './sign-up.component.scss'
+  templateUrl: './sign-up.component.html'
 })
 export class SignUpComponent implements OnInit, OnDestroy {
 

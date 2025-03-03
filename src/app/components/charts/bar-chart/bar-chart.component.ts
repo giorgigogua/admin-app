@@ -8,7 +8,6 @@ Chart.register(...registerables)
 @Component({
   selector: 'app-bar-chart',
   templateUrl: './bar-chart.component.html',
-  styleUrl: './bar-chart.component.scss',
   standalone: true,
   imports: [CommonModule],
   providers: [BarChartService]

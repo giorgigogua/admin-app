@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-customers-table',
   templateUrl: './customers-table.component.html',
-  styleUrl: './customers-table.component.scss',
   standalone: true,
   imports: [CommonModule, TranslateModule, FormsModule],
   providers: [CustomersTableService, CustomerDetailsTableService]
