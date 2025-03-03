@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { CommonModule } from '@angular/common';
 import { ChartModule } from 'angular-highcharts';
 import { SearchFormComponent } from "./components/header/search-form/search-form.component";
 import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HeaderComponent } from './components/header/header.component';
+import { NavService } from './services/nav.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -19,7 +20,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(), NavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,20 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavService } from '../../../services/nav.service';
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.scss'
 })
-export class SignUpComponent {
+export class SignUpComponent implements OnInit, OnDestroy {
 
-  constructor(private router: Router){
+  constructor(private router: Router, private navService: NavService) {
 
   }
 
 
-  navigateToSignIn(){
+  navigateToSignIn() {
     this.router.navigate(['/authentication/sign-in'])
+  }
+
+
+  ngOnInit(): void {
+    this.navService.hideNav()
+  }
+
+  ngOnDestroy(): void {
+    this.navService.showNav()
   }
 
 }
