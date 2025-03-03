@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CustomersTableService } from '../../../services/customers-table.service';
 import { CustomerTableInterface } from '../../../interfaces/customer-table';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-new-customer',
@@ -10,6 +11,10 @@ import { Router } from '@angular/router';
   providers: [CustomersTableService]
 })
 export class NewCustomerComponent {
+
+
+  validationForm: FormGroup
+
 
 
   initialValue: CustomerTableInterface = {
@@ -23,16 +28,26 @@ export class NewCustomerComponent {
 
   constructor(private customersTableService: CustomersTableService, private router: Router) {
 
+    this.validationForm = new FormGroup({
+      name: new FormControl("", [Validators.required]),
+      mail: new FormControl("", [Validators.required]),
+      company: new FormControl("", [Validators.required]),
+      phone: new FormControl(0, [Validators.required, Validators.minLength(9), Validators.maxLength(9)]),
+      location: new FormControl("", [Validators.required])
+
+    })
   }
 
 
 
   post() {
-    this.customersTableService.postList(this.initialValue).subscribe({
-      next: () => {
-        this.router.navigate(["/customer/customers"])
-      }
-    })
+    if (this.validationForm.valid) {
+      this.customersTableService.postList(this.initialValue).subscribe({
+        next: () => {
+          this.router.navigate(["/customer/customers"])
+        }
+      })
+    }
   }
 
 }

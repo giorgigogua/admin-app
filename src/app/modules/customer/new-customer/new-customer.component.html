@@ -4,7 +4,7 @@
             buttonText="Save draft"></app-page-title>
     </div>
     <div class="py-5">
-        <form class="d-flex flex-column gap-5">
+        <form class="d-flex flex-column gap-5" [formGroup]="validationForm">
             <div class="form-group">
                 <label for="image">Enter Image Url</label>
                 <input type="text" name="image" [(ngModel)]="initialValue.userImage">
@@ -12,29 +12,49 @@
             <div class="form-group">
                 <label for="name">Enter Name</label>
                 <input [(ngModel)]="initialValue.userName" name="name" type="text"
-                    class="form-control form-control-lg bg-light border-0" id="name" aria-describedby="name">
+                    class="form-control form-control-lg bg-light border-0" id="name" aria-describedby="name"
+                    formControlName="name">
             </div>
+            <app-validation-error [control]="validationForm.get('name')" [errorMessages]="{
+                'required': 'Validations.isRequired' | translate,
+              }"></app-validation-error>
             <div class="form-group">
                 <label for="mail">Mail</label>
                 <input type="text" [(ngModel)]="initialValue.userMail" name="mail"
-                    class="form-control form-control-lg bg-light border-0" id="mail">
+                    class="form-control form-control-lg bg-light border-0" id="mail" formControlName="mail">
             </div>
+            <app-validation-error [control]="validationForm.get('mail')" [errorMessages]="{
+                'required': 'Validations.isRequired' | translate,
+              }"></app-validation-error>
             <div class="form-group">
-                <label for="company">Compaany</label>
+                <label for="company">Company</label>
                 <input type="text" [(ngModel)]="initialValue.company" name="company"
-                    class="form-control form-control-lg bg-light border-0" id="company">
+                    class="form-control form-control-lg bg-light border-0" id="company" formControlName="company">
             </div>
+            <app-validation-error [control]="validationForm.get('company')" [errorMessages]="{
+                'required': 'Validations.isRequired' | translate,
+              }"></app-validation-error>
             <div class="form-group">
                 <label for="company">Phone</label>
                 <input type="text" [(ngModel)]="initialValue.userPhone" name="phone"
-                    class="form-control form-control-lg bg-light border-0" id="phone" placeholder="(___)___-____">
+                    class="form-control form-control-lg bg-light border-0" id="phone" placeholder="(___)___-____"
+                    formControlName="phone">
             </div>
+            <app-validation-error [control]="validationForm.get('phone')" [errorMessages]="{
+                'required': 'Validations.isRequired' | translate,
+                'minlength': 'Validations.minLength' | translate,
+                'maxlength': 'Validations.maxLength' | translate
+              }"></app-validation-error>
             <div class="form-group">
                 <label for="Location">Location</label>
                 <input type="text" [(ngModel)]="initialValue.userLocation" name="location"
-                    class="form-control form-control-lg bg-light border-0" id="location">
+                    class="form-control form-control-lg bg-light border-0" id="location" formControlName="location">
             </div>
-            <button type="submit" class="btn btn-warning" (click)="post()">Submit</button>
+            <app-validation-error [control]="validationForm.get('location')" [errorMessages]="{
+                'required': 'Validations.isRequired' | translate,
+              }"></app-validation-error>
+            <button type="submit" [disabled]="validationForm.invalid" class="btn btn-warning"
+                (click)="post()">Submit</button>
             <button type="reset" class="btn btn-light">Reset Form</button>
         </form>
     </div>
