@@ -29,9 +29,9 @@ export class NewCustomerComponent {
 
     this.validationForm = new FormGroup({
       name: new FormControl("", [Validators.required]),
-      mail: new FormControl("", [Validators.required]),
+      mail: new FormControl("", [Validators.required, Validators.email]),
       company: new FormControl("", [Validators.required]),
-      phone: new FormControl(0, [Validators.required, Validators.minLength(9), Validators.maxLength(9)]),
+      phone: new FormControl("", [Validators.required, Validators.minLength(9), Validators.maxLength(9)]),
       location: new FormControl("", [Validators.required])
 
     })

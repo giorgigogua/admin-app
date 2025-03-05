@@ -16,45 +16,35 @@
                     class="form-control form-control-lg bg-light" id="name" aria-describedby="name"
                     formControlName="name">
             </div>
-            <app-validation-error [control]="validationForm.get('name')" [errorMessages]="{
-                'required': 'Validations.isRequired' | translate,
-              }"></app-validation-error>
+            <app-validation-error-message [control]="validationForm.get('name')"></app-validation-error-message>
             <div class="form-group d-flex flex-column gap-3">
                 <label for="mail">Mail</label>
                 <input [ngClass]="{ 'border border-success': validationForm.get('mail')?.valid}" type="text"
                     [(ngModel)]="initialValue.userMail" name="mail" class="form-control form-control-lg bg-light"
                     id="mail" formControlName="mail">
             </div>
-            <app-validation-error [control]="validationForm.get('mail')" [errorMessages]="{
-                'required': 'Validations.isRequired' | translate,
-              }"></app-validation-error>
+            <app-validation-error-message [control]="validationForm.get('mail')"></app-validation-error-message>
+
             <div class="form-group d-flex flex-column gap-3">
                 <label for="company">Company</label>
                 <input type="text" [(ngModel)]="initialValue.company" name="company"
                     class="form-control form-control-lg bg-light border-0" id="company" formControlName="company">
             </div>
-            <app-validation-error [control]="validationForm.get('company')" [errorMessages]="{
-                'required': 'Validations.isRequired' | translate,
-              }"></app-validation-error>
+            <app-validation-error-message [control]="validationForm.get('company')"></app-validation-error-message>
             <div class="form-group d-flex flex-column gap-3">
                 <label for="company">Phone</label>
                 <input type="text" [(ngModel)]="initialValue.userPhone" name="phone"
                     class="form-control form-control-lg bg-light border-0" id="phone" placeholder="(___)___-____"
                     formControlName="phone">
             </div>
-            <app-validation-error [control]="validationForm.get('phone')" [errorMessages]="{
-                'required': 'Validations.isRequired' | translate,
-                'minlength': 'Validations.minLength' | translate,
-                'maxlength': 'Validations.maxLength' | translate
-              }"></app-validation-error>
+            <app-validation-error-message [control]="validationForm.get('phone')"></app-validation-error-message>
+
             <div class="form-group">
                 <label for="Location">Location</label>
                 <input type="text" [(ngModel)]="initialValue.userLocation" name="location"
                     class="form-control form-control-lg bg-light border-0" id="location" formControlName="location">
             </div>
-            <app-validation-error [control]="validationForm.get('location')" [errorMessages]="{
-                'required': 'Validations.isRequired' | translate,
-              }"></app-validation-error>
+            <app-validation-error-message [control]="validationForm.get('location')"></app-validation-error-message>
             <button type="submit" [disabled]="validationForm.invalid" class="btn btn-warning"
                 (click)="post()">Submit</button>
             <button type="reset" class="btn btn-light">Reset Form</button>

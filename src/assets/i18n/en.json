@@ -3,7 +3,8 @@
     "WelcomeText": "Here's a summary of your account activity for thiw week",
     "Validations": {
         "isRequired": "This field is required",
-        "maxLength": "The phone number must be a maximum of 9 characters.",
-        "minLength": "Phone must be at least 9 characters long."
+        "maxLength": "Maximum length is",
+        "minLength": "Minimum length is",
+        "email":"Invalid email format , must be with '@'"
     }
 }

@@ -1,27 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-validation-error',
+  selector: 'app-validation-error-message',
   templateUrl: './validation-error.component.html',
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule, TranslateModule]
 })
 export class ValidationErrorComponent {
 
 
   @Input() control: any;
-  @Input() errorMessages: { [key: string]: string } = {};
 
-
-  getErrorMessages(): string[] {
-    if (!this.control?.errors) {
-      return [];
-    }
-
-    return Object.keys(this.control.errors).map(errorKey => {
-      return this.errorMessages[errorKey] || `Error: ${errorKey}`;
-    });
-  }
 
 }
