@@ -30,9 +30,9 @@ export class CryptoComponent implements OnInit {
   cryptoTableFormData: CryptoTableInterface = {
     name: '',
     lastPrice: '',
-    change: '',
+    change: 0,
     lastHour: '',
-    icon: ''
+    icon: '',
   }
 
   refresh(): void {

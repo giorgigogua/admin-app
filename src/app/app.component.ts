@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavService } from './services/nav.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,7 @@ import { NavService } from './services/nav.service';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  
+
+  title = 'Dashboard'
+
 }

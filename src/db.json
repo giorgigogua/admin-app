@@ -510,7 +510,7 @@
       "id": "e56c",
       "name": "Bitcoin",
       "lastPrice": "63,879.81",
-      "change": "+0.53%",
+      "change": 0.53,
       "lastHour": "2323",
       "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/btc.svg"
     },
@@ -518,7 +518,7 @@
       "id": "bc9a",
       "name": "Ethereum",
       "lastPrice": "2,642.53",
-      "change": "+1.84%",
+      "change": 1.84,
       "lastHour": "",
       "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/ethereum.svg"
     },
@@ -526,7 +526,7 @@
       "id": "0f0e",
       "name": "Dogecoin",
       "lastPrice": "0.118413",
-      "change": "+1.06%",
+      "change": 1.06,
       "lastHour": "",
       "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/dogecoin.svg"
     },
@@ -534,7 +534,7 @@
       "id": "d225",
       "name": "Tether",
       "lastPrice": "0.9999",
-      "change": "-0.02%",
+      "change": -0.02,
       "lastHour": "",
       "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/tether.svg"
     },
@@ -542,7 +542,7 @@
       "id": "36e2",
       "name": "Cardano",
       "lastPrice": "0.3844",
-      "change": "-0.93%",
+      "change": -0.93,
       "lastHour": "",
       "icon": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/crypto/cardano.svg"
     }
@@ -553,7 +553,7 @@
       "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg",
       "authorName": "Michael Johnson",
       "description": "Updated on Apr 10, 2024",
-      "status": "Ready to Ship",
+      "status": "Ready to ship",
       "updated": "Title",
       "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-1.png",
       "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg",
@@ -585,7 +585,7 @@
       "title": "Update Touche",
       "author": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-5.jpg",
       "authorName": "Jessica Miller",
-      "status": "Ready to Ship",
+      "status": "Ready to ship",
       "description": "Updated on Apr 14, 2024",
       "updated": "Title",
       "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-3.png",
@@ -602,26 +602,6 @@
       "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
       "team": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/projects/project-2.png",
       "id": "ca5c"
-    },
-    {
-      "id": "eec4",
-      "image": "",
-      "description": "",
-      "title": "",
-      "status": "",
-      "authorImage": "",
-      "authorName": "",
-      "teamImage": ""
-    },
-    {
-      "id": "7b71",
-      "image": "",
-      "description": "",
-      "title": "",
-      "status": "",
-      "authorImage": "",
-      "authorName": "",
-      "teamImage": ""
     }
   ],
   "customersTable": [

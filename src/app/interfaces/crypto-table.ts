@@ -1,7 +1,7 @@
 export interface CryptoTableInterface {
     name: string,
     lastPrice: string,
-    change: string,
+    change: number,
     lastHour: string,
     icon: string,
 }

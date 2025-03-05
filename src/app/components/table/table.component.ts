@@ -1,5 +1,5 @@
 import { CommonModule, NgIf, NgIfContext } from '@angular/common';
-import { booleanAttribute, Component, Input } from '@angular/core';
+import { booleanAttribute, Component, Input, OnInit } from '@angular/core';
 import { DefaultTableService } from '../../services/default-table.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { DefaultTableService } from '../../services/default-table.service';
   styleUrl: './table.component.scss',
   standalone: true,
   imports: [CommonModule],
-  providers:[DefaultTableService]
+  providers: [DefaultTableService]
 
 })
 export class TableComponent {
@@ -21,10 +21,8 @@ export class TableComponent {
     this.defaultTableService.getAll().subscribe((data: any) => {
       this.defaultTableList = data
 
-    
+
     })
-
-
 
   }
 

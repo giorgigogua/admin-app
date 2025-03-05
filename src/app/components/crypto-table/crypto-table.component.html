@@ -20,7 +20,9 @@
                 </div>
             </td>
             <td>{{item.lastPrice}}</td>
-            <td><span class="bg-success-subtle text-success p-2 rounded-3 badge fw-normal">{{item.change}}</span></td>
+            <td><span class="p-2 rounded-3 badge fw-normal"
+                    [ngClass]="{'bg-success-subtle text-success': item.change > 0, 'bg-danger-subtle text-danger': item.change < 0}">{{item.change}}%</span>
+            </td>
             <td>{{item.lastHour}}</td>
             <td><span class="bg-light p-2" role="button">Trade</span></td>
         </tr>
