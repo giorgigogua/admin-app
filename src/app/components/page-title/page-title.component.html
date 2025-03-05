@@ -22,7 +22,7 @@
         <button class="btn btn-light col col-sm-12 col-12">{{editButton}}</button>
     </div>
     <div *ngIf="buttonText" class="col col-lg-2 col-md-auto col-12">
-        <button class="btn btn-warning col col-sm-12 col-12">{{buttonText}}</button>
+        <button class="btn btn-warning col col-sm-12 col-12" [disabled]="Disabled" (click)="buttonClick">{{buttonText}}</button>
     </div>
     <div *ngIf="deleteButton" class="col col-lg-2 col-md-auto col-12">
         <button class="btn btn-danger col col-sm-12 col-12">{{deleteButton}}</button>

@@ -16,31 +16,58 @@
                 <div id="general">
                     <h4>General</h4>
                     <p>Update your general account information.</p>
-                    <form>
+                    <form [formGroup]="validationForm">
                         <div class="form-group">
                             <label for="file">Avatar</label>
                             <input type="file" class="form-control form-control-lg bg-body border-0" id="file">
                         </div>
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="name" class="form-control form-control-lg bg-body border-0" id="name">
+                            <input formControlName="fullName" id="fullName" type="name"
+                                class="form-control form-control-lg bg-body border-0" id="name">
                         </div>
+
+
+                        <app-validation-error-message
+                            [control]="validationForm.get('fullName')"></app-validation-error-message>
+
+
                         <div class="form-group">
                             <label for="company">Company</label>
-                            <input type="company" class="form-control form-control-lg bg-body border-0" id="company">
+                            <input formControlName="company" id="company" type="company"
+                                class="form-control form-control-lg bg-body border-0" id="company">
+
                         </div>
+
+
+                        <app-validation-error-message
+                            [control]="validationForm.get('company')"></app-validation-error-message>
+
+
                         <div class="form-group">
                             <label for="bio">Bio</label>
-                            <input type="bio" class="form-control form-control-lg bg-body border-0" id="bio">
+                            <input formControlName="bio" type="bio"
+                                class="form-control form-control-lg bg-body border-0" id="bio">
                         </div>
+
+                        <app-validation-error-message
+                        [control]="validationForm.get('bio')"></app-validation-error-message>
+
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control form-control-lg bg-body border-0" id="email">
+                            <input formControlName="email" type="email"
+                                class="form-control form-control-lg bg-body border-0" id="email">
                         </div>
+                        <app-validation-error-message
+                            [control]="validationForm.get('email')"></app-validation-error-message>
+
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="phone" class="form-control form-control-lg bg-body border-0" id="phone">
+                            <input formControlName="phone" type="phone"
+                                class="form-control form-control-lg bg-body border-0" id="phone">
                         </div>
+                        <app-validation-error-message
+                        [control]="validationForm.get('phone')"></app-validation-error-message>
                     </form>
                 </div>
             </div>

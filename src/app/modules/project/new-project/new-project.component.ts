@@ -2,13 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { DefaultTableService } from '../../../services/default-table.service';
 import { DefaultTableInterface } from '../../../interfaces/default-table';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-new-project',
   templateUrl: './new-project.component.html',
-  providers:[DefaultTableService]
+  providers: [DefaultTableService]
 })
 export class NewProjectComponent {
+
+  validationForm: FormGroup
 
 
   initialValue: DefaultTableInterface = {
@@ -25,7 +28,15 @@ export class NewProjectComponent {
 
   constructor(private tableService: DefaultTableService, private router: Router) {
 
+    this.validationForm = new FormGroup({
+      title: new FormControl("", [Validators.required]),
+      desc: new FormControl(""),
+      author: new FormControl("")
+
+    })
   }
+
+
 
 
 
@@ -33,7 +44,7 @@ export class NewProjectComponent {
 
   postList() {
     this.tableService.postTableList(this.initialValue).subscribe({
-      next:()=>{
+      next: () => {
         this.router.navigate(["/project/projects"])
       }
     })

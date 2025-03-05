@@ -33,7 +33,7 @@
             <app-validation-error-message [control]="validationForm.get('company')"></app-validation-error-message>
             <div class="form-group d-flex flex-column gap-3">
                 <label for="company">Phone</label>
-                <input type="text" [(ngModel)]="initialValue.userPhone" name="phone"
+                <input maxlength="9" type="text" [(ngModel)]="initialValue.userPhone" name="phone"
                     class="form-control form-control-lg bg-light border-0" id="phone" placeholder="(___)___-____"
                     formControlName="phone">
             </div>

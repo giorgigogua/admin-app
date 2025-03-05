@@ -18,6 +18,7 @@ import { AccordionComponent } from '../../components/accordion/accordion.compone
 import { CryptoTableComponent } from '../../components/crypto-table/crypto-table.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { ValidationErrorComponent } from "../../components/validation-error/validation-error.component";
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { TranslateModule } from '@ngx-translate/core';
     CryptoTableComponent,
     ReactiveFormsModule,
     FormsModule,
-    TranslateModule
-  ]
+    TranslateModule,
+    ValidationErrorComponent
+]
 })
 export class DashboardModule { }

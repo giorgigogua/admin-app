@@ -115,19 +115,45 @@
         </div>
         <div class="modal-body">
           <div class="d-flex flex-column gap-2">
-            <form>
-              <input type="text" name="name" [(ngModel)]="cryptoTableFormData.name">
+            <form [formGroup]="validationForm" class="d-flex flex-column gap-3">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input formControlName="name" type="text" [(ngModel)]="cryptoTableFormData.name" name="name"
+                  class="form-control form-control-lg bg-light border-0" id="name">
+              </div>
+              <app-validation-error-message [control]="validationForm.get('name')"></app-validation-error-message>
+              <div class="form-group">
+                <label for="lastPrice">Last Price</label>
+                <input formControlName="lastPrice" type="text" [(ngModel)]="cryptoTableFormData.lastPrice"
+                  name="lastPrice" class="form-control form-control-lg bg-light border-0" id="lastPrice">
+              </div>
+              <app-validation-error-message [control]="validationForm.get('lastPrice')"></app-validation-error-message>
 
-              <input type="text" name="lastPrice" [(ngModel)]="cryptoTableFormData.lastPrice">
-              <input type="text" name="change" [(ngModel)]="cryptoTableFormData.change">
-              <input type="text" name="lastHour" [(ngModel)]="cryptoTableFormData.lastHour">
-              <input type="text" name="icon" [(ngModel)]="cryptoTableFormData.icon">
+              <div class="form-group">
+                <label for="change">Change</label>
+                <input type="text" formControlName="change" [(ngModel)]="cryptoTableFormData.change" name="phone"
+                  class="form-control form-control-lg bg-light border-0" id="phone">
+              </div>
+              <app-validation-error-message [control]="validationForm.get('change')"></app-validation-error-message>
+
+              <div class="form-group">
+                <label for="lastHour">Last Hour</label>
+                <input type="text" formControlName="lastHour" [(ngModel)]="cryptoTableFormData.lastHour" name="lastHour"
+                  class="form-control form-control-lg bg-light border-0" id="lastHour">
+              </div>
+              <app-validation-error-message [control]="validationForm.get('lastHour')"></app-validation-error-message>
+
+              <div class="form-group">
+                <label for="image">Image</label>
+                <input type="text" [(ngModel)]="cryptoTableFormData.icon" name="image"
+                  class="form-control form-control-lg bg-light border-0" id="image">
+              </div>
             </form>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModel()">Close</button>
-          <button type="button" class="btn btn-primary" (click)="createList()">Create</button>
+          <button type="button" class="btn btn-primary" (click)="createList()" [disabled]="!validationForm.valid">Create</button>
         </div>
       </div>
 

@@ -13,6 +13,7 @@ import { UploadTableComponent } from '../../components/upload-table/upload-table
 import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PagerComponent } from '../../components/pager/pager.component';
+import { ValidationErrorComponent } from "../../components/validation-error/validation-error.component";
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { PagerComponent } from '../../components/pager/pager.component';
     OrderSelectFilterComponent,
     FormsModule,
     ReactiveFormsModule,
-    PagerComponent
+    PagerComponent,
+    ValidationErrorComponent
 ]
 })
 export class ProjectModule { }

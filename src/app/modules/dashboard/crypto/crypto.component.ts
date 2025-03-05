@@ -4,16 +4,26 @@ import { CryptoService } from '../../../services/crypto.service';
 import { CryptoTableInterface } from '../../../interfaces/crypto-table';
 import { LineChartService } from '../../../services/line-chart.service';
 import { PieChartService } from '../../../services/pie-chart.service';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-crypto',
   templateUrl: './crypto.component.html',
   styleUrl: './crypto.component.scss',
-  providers:[CryptoService, LineChartService, PieChartService]
+  providers: [CryptoService, LineChartService, PieChartService]
 })
 export class CryptoComponent implements OnInit {
 
+  validationForm: FormGroup
+
   constructor(private cryptoTableListService: CryptoService) {
+
+    this.validationForm = new FormGroup({
+      name: new FormControl("", [Validators.required]),
+      lastPrice: new FormControl("", [Validators.required]),
+      change: new FormControl("", [Validators.required]),
+      lastHour: new FormControl("", [Validators.required])
+    })
 
   }
 

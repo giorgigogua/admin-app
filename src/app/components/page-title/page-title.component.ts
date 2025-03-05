@@ -18,6 +18,7 @@ export class PageTitleComponent {
   @Input() deleteButton: any = ''
   @Input({ transform: booleanAttribute }) buttons: boolean = false
   @Input() icon: any = ''
-  @Input() buttonClick:any = ''
+  @Input() buttonClick: any = ''
+  @Input() Disabled: any = ''
 
 }
