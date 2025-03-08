@@ -1,14 +1,15 @@
-<div class="d-flex align-items-center gap-2 card-body" *ngFor="let item of goals">
-    <div>
-        <i class="bg-light p-2 rounded-circle" class={{item.icon}}></i>
+<div class="d-flex align-items-center gap-3 card-body" *ngFor="let item of goals">
+    <div class="bg-light p-2 rounded-circle">
+        <app-progress-circle width="20px" height="20px" [progress]="item.percent"
+            [color]="item.color"></app-progress-circle>
     </div>
     <div class="w-100 d-flex justify-content-between">
         <div>
-            <span>{{item.name}}</span>
-            <p>{{item.price}}</p>
+            <span class="small">{{item.name}}</span>
+            <p class="small">{{item.price}}</p>
         </div>
         <div>
-            <span>{{item.date}}</span>
+            <span class="text-muted">{{item.date}}</span>
         </div>
     </div>
 </div>
