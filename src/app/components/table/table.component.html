@@ -21,13 +21,15 @@
                         </div>
                     </div>
                 </td>
-                <td><span id="status" class="p-1 rounded-3 badge fw-normal" [ngClass]="{
+                <td>
+                    <!-- <span id="status" class="p-1 rounded-3 badge fw-normal" [ngClass]="{
                         'bg-danger-subtle text-danger': item.status === 'Cancelled',
                         'bg-warning-subtle text-warning': item.status === 'In Testing',
                         'bg-success-subtle text-success': item.status === 'Ready to ship',
                         'bg-secondary-subtle text-secondary': item.status === 'Backlog',
 
-                        }">{{item.status}}</span>
+                        }">{{item.status}}</span> -->
+                        <app-status [status]="item.status"></app-status>
                 </td>
                 <td>
                     <div class="d-flex gap-2">
