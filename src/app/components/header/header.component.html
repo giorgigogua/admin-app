@@ -46,11 +46,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse gap-3 px-5" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse gap-2 px-5" id="navbarNavDropdown">
 
         <div class="col col-md-12 col-sm-12 col-12 d-lg-block d-xl-none d-sm-block d-xs-block mb-5">
-          <div class="input-group ">
-            <input class="form-control form-control-lg border-0 bg-light" id="topnavSearchInput" type="search"
+          <div class="input-group mt-4">
+            <input class="form-control form-control-md border-0 bg-light p-2" id="topnavSearchInput" type="search"
               placeholder="Search" aria-label="Search" aria-describedby="navbarSearch">
             <span class="input-group-text border-0" id="navbarSearch">
               <kbd class="badge bg-body-secondary text-body">⌘</kbd>
@@ -64,7 +64,7 @@
         <ul class="navbar-nav gap-3 col-10">
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small">Dashboards</span>
+              <span class="small p-1">Dashboards</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/default">Default</a></li>
@@ -75,7 +75,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small">Customers</span>
+              <span class="small p-1">Customers</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="customer/customers">Customers</a>
@@ -90,7 +90,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small">Projects</span>
+              <span class="small p-1">Projects</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/projects">Proejects</a>
@@ -105,7 +105,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small">Account</span>
+              <span class="small p-1">Account</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="account/account-overview">Account
@@ -118,7 +118,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small">Orders</span>
+              <span class="small p-1">Orders</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="order/order">Orders</a></li>
@@ -131,7 +131,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small">Posts</span>
+              <span class="small p-1">Posts</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/categories">Categories</a>
@@ -144,7 +144,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small">Authentication</span>
+              <span class="small p-1">Authentication</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-in">Sign in</a>
