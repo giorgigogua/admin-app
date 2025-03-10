@@ -6,6 +6,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { PasswordResetComponent } from './password-reset/password-reset.component';
 import { GoBackComponent } from "../../components/go-back/go-back.component";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ValidationErrorComponent } from "../../components/validation-error/validation-error.component";
 
 
 @NgModule({
@@ -17,7 +19,10 @@ import { GoBackComponent } from "../../components/go-back/go-back.component";
   imports: [
     CommonModule,
     AuthenticationRoutingModule,
-    GoBackComponent
+    GoBackComponent,
+    ReactiveFormsModule,
+    FormsModule,
+    ValidationErrorComponent
 ]
 })
 export class AuthenticationModule { }

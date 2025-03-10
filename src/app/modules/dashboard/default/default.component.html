@@ -30,19 +30,18 @@
 
         <div
             class="col-xl-8 col-lg-8 col-md-12 border border-1 border-card rounded-3 d-flex flex-column justify-content-center h-100">
-            <div class="d-flex justify-content-between p-2 mt-3">
+            <div class="d-flex justify-content-between align-items-center mt-2">
                 <div>
                     <h5>Performance</h5>
                 </div>
                 <div class="d-flex gap-2">
                     <div class="d-flex gap-2">
-                        <i class="bi bi-circle-fill text-light small"></i>
-                        <small>Total</small>
-
-                    </div>
-                    <div class="d-flex gap-2">
                         <i class="bi bi-circle-fill text-primary small"></i>
                         <small>Tracked</small>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <i class="bi bi-circle-fill text-light small"></i>
+                        <small>Total</small>
                     </div>
                 </div>
             </div>
@@ -66,9 +65,10 @@
 
     <div class="row py-3 gap-2">
         <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-card rounded-3 h-100">
-            <div class="p-2">
+            <div class="mt-2">
                 <app-browse-all title="Table list"></app-browse-all>
             </div>
+            <hr>
             <app-table></app-table>
         </div>
         <div class="card col h-100">

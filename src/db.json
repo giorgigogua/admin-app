@@ -30,28 +30,67 @@
       "name": "Bought 1.5 BTC",
       "date": "Oct 1",
       "activity": "Transaction completed on Coinbase",
-      "icon": "bi bi-person",
+      "icon": "bi bi-cart-fill"
+    },
+    {
+      "name": "Sold 0.75 ETH",
+      "date": "Sep 30",
+      "activity": "Sale processed through Binance",
+      "icon": "bi bi-wallet-fill"
+    },
+    {
+      "name": "Transferred 2.3 LTC to Wallet",
+      "date": "Sep 30",
+      "activity": "Funds moved to external wallet",
+      "icon": "bi bi-credit-card-2-back-fill"
+    },
+    {
+      "name": "Received 0.4 BTC",
+      "date": "Sep 29",
+      "activity": "Received from peer-to-peer transaction",
+      "icon": "bi bi-arrow-down-left"
+    },
+    {
+      "name": "Staked 50 ADA",
+      "date": "Sep 28",
+      "activity": "Staking initiated on Cardano blockchain",
+      "icon": "bi bi-currency-exchange"
+    }
+  ],
+  "recentActivity": [
+    {
+      "name": "You",
+      "date": "1hr ago",
+      "activity": "Liked a post by @john_doe",
+      "icon": "bi bi-hand-thumbs-up-fill",
       "id": "dfa4"
     },
     {
-      "name": "Bought 1.5 BTC",
-      "date": "Oct 1",
-      "activity": "Transaction completed on Coinbasess",
+      "name": "Jessica Miller",
+      "date": "3hr ago",
+      "activity": "Commented on a photo",
       "icon": "bi bi-chat-left-fill",
       "id": "22e5"
     },
     {
-      "name": "Bought 1.5 BTC",
-      "date": "Oct 1",
-      "activity": "Transaction completed on Coinbase",
-      "icon": "bi bi-person",
+      "name": "Emily Thompson",
+      "date": "3hr ago",
+      "activity": "Shared an article: 'Top 10 Travel Destinations'",
+      "icon": "bi bi-share-fill",
       "id": "eb1c"
     },
     {
-      "name": "Bought 1.5 BTC",
-      "date": "Oct 1",
-      "activity": "Transaction completed on Coinbaseaaa",
-      "icon": "bi bi-chat-left-fill",
+      "name": "You",
+      "date": "1 day ago",
+      "activity": "Started following @jane_smith",
+      "icon": "bi bi-person-fill-add",
+      "id": "c899"
+    },
+    {
+      "name": "Olivia Davis",
+      "date": "2 days ago",
+      "activity": "Updated profile picture",
+      "icon": "bi bi-person-circle",
       "id": "c899"
     }
   ],
@@ -65,7 +104,7 @@
       "id": "3a70"
     },
     {
-      "label": "Thu",
+      "label": "Tue",
       "dataOne": "199",
       "dataTwo": "222",
       "backgroundColor": "lightgrey",
@@ -73,7 +112,7 @@
       "id": "99fe"
     },
     {
-      "label": "Mon",
+      "label": "Wed",
       "dataOne": "199",
       "dataTwo": "222",
       "backgroundColor": "lightgrey",
@@ -81,7 +120,7 @@
       "id": "d4b9"
     },
     {
-      "label": "Mon",
+      "label": "Thu",
       "dataOne": "199",
       "dataTwo": "222",
       "backgroundColor": "lightgrey",
@@ -89,7 +128,7 @@
       "id": "8339"
     },
     {
-      "label": "Mon",
+      "label": "Fri",
       "dataOne": "199",
       "dataTwo": "222",
       "backgroundColor": "lightgrey",
@@ -97,7 +136,7 @@
       "id": "60d1"
     },
     {
-      "label": "Mon",
+      "label": "Sat",
       "dataOne": "199",
       "dataTwo": "222",
       "backgroundColor": "lightgrey",
@@ -105,7 +144,7 @@
       "id": "575d"
     },
     {
-      "label": "Mon",
+      "label": "Sun",
       "dataOne": "199",
       "dataTwo": "222",
       "backgroundColor": "lightgrey",
@@ -618,71 +657,71 @@
   "customerDetails": [
     {
       "id": "3422",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple MacBook Pro",
+      "date": "2021-08-12",
       "status": "Completed",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple iPhone 12 Pro",
+      "date": "2021-08-11",
       "status": "Pending",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple AirPods Pro",
+      "date": "2021-08-10",
       "status": "Cancelled",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple Watch Series 6",
+      "date": "2021-08-09",
       "status": "Completed",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple iPad Pro",
+      "date": "2021-08-08",
       "status": "Completed",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple MacBook Air",
+      "date": "2021-08-07",
       "status": "Cancelled",
       "price": "32233"
     },
     {
       "id": "3421",
       "product": "Apple macbook",
-      "date": "2021",
+      "date": "2021-08-07",
       "status": "Cancelled",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple HomePod Mini",
+      "date": "2021-08-06",
       "status": "Pending",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple Magic Keyboard",
+      "date": "2021-08-05",
       "status": "Completed",
       "price": "32233"
     },
     {
       "id": "3421",
-      "product": "Apple macbook",
-      "date": "2021",
+      "product": "Apple Magic Mouse",
+      "date": "2021-08-04",
       "status": "Cancelled",
       "price": "32233"
     }

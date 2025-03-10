@@ -13,16 +13,16 @@ export class GoalsComponent {
   goals = [
     {
       name: 'Increase monthly revenue',
-      price: '$10,000',
-      date: 'mar 15',
+      desc: '$10,000',
+      date: 'Mar 15',
       icon: 'bi bi-circle-fill text-primary ',
       color: 'blue',
       percent: 75
     },
     {
       name: 'Launch new feature',
-      price: 'Dark mode',
-      date: 'mar 15',
+      desc: 'Dark mode',
+      date: 'Oct 01',
       icon: 'bi bi-circle-fill text-danger ',
       color: 'yellow',
       percent: 50
@@ -30,8 +30,8 @@ export class GoalsComponent {
     },
     {
       name: 'Grow user base',
-      price: '75%',
-      date: 'mar 15',
+      desc: '75%',
+      date: 'Dec 12',
       icon: 'bi bi-circle-fill text-primary ',
       color: 'red',
       percent: 45
@@ -40,8 +40,8 @@ export class GoalsComponent {
     },
     {
       name: 'Improve customer satisfaction',
-      price: '85%',
-      date: 'mar 15',
+      desc: '85%',
+      date: 'Dec 15',
       icon: 'bi bi-circle-fill text-warning ',
       color: 'blue',
       percent: 60
@@ -49,8 +49,8 @@ export class GoalsComponent {
     },
     {
       name: 'Reduce response time',
-      price: '1hr',
-      date: 'mar 15',
+      desc: '1hr',
+      date: 'Jan 01',
       icon: 'bi bi-circle-fill text-success ',
       color: 'green',
       percent: 100

@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import { GridListService } from '../../../services/grid-list.service';
-import { CryptoListService } from '../../../services/crypto-list.service';
+import { CryptoListService } from '../../../services/recent-activity.service';
 
 @Component({
   selector: 'app-default',

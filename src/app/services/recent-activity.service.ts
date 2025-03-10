@@ -3,15 +3,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable()
-
 export class CryptoListService {
 
-  apiUrl = "http://localhost:3000/cryptoList"
+  apiUrl = "http://localhost:3000/recentActivity"
 
   constructor(private httpClient: HttpClient) { }
 
   getCryptoList(): Observable<any> {
-    return this.httpClient.get(this.apiUrl)
+    return this.httpClient.get(this.apiUrl);
   }
-
 }

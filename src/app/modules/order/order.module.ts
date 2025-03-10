@@ -6,11 +6,11 @@ import { OrdersComponent } from './orders/orders.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
-import { TableComponent } from '../../components/table/table.component';
 import { PricingCardComponent } from '../../components/pricing-card/pricing-card.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
 import { OrderSelectFilterComponent } from "../../components/order-select-filter/order-select-filter.component";
 import { PagerComponent } from '../../components/pager/pager.component';
+import { CustomersTableComponent } from "../../components/customers-table/customers-table.component";
 
 
 @NgModule({
@@ -25,10 +25,10 @@ import { PagerComponent } from '../../components/pager/pager.component';
     PricingCardComponent,
     PageTitleComponent,
     AccordionComponent,
-    TableComponent,
     CommonModule,
     OrderSelectFilterComponent,
-    PagerComponent
+    PagerComponent,
+    CustomersTableComponent
 ]
 })
 export class OrderModule { }

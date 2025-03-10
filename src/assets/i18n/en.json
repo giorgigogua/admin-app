@@ -3,8 +3,8 @@
     "WelcomeText": "Here's a summary of your account activity for thiw week",
     "Validations": {
         "isRequired": "This field is required",
-        "maxLength": "Maximum length is",
-        "minLength": "Minimum length is",
+        "maxLength": "Maximum length is 9",
+        "minLength": "Minimum length is 9",
         "email":"Invalid email format , must be with '@'"
     }
 }

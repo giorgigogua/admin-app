@@ -5,18 +5,25 @@ import { CryptoTableInterface } from '../../../interfaces/crypto-table';
 import { LineChartService } from '../../../services/line-chart.service';
 import { PieChartService } from '../../../services/pie-chart.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { CryptoListService } from '../../../services/crypto-list.service';
 
 @Component({
   selector: 'app-crypto',
   templateUrl: './crypto.component.html',
   styleUrl: './crypto.component.scss',
-  providers: [CryptoService, LineChartService, PieChartService]
+  providers: [CryptoService, LineChartService, PieChartService, CryptoListService]
 })
 export class CryptoComponent implements OnInit {
 
   validationForm: FormGroup
 
-  constructor(private cryptoTableListService: CryptoService) {
+  cryptoListItem: any
+
+  constructor(private cryptoTableListService: CryptoService, private cryptoList: CryptoListService) {
+
+    this.cryptoList.getCryptoList().subscribe((res) => {
+      this.cryptoListItem = res
+    })
 
     this.validationForm = new FormGroup({
       name: new FormControl("", [Validators.required]),
@@ -72,35 +79,4 @@ export class CryptoComponent implements OnInit {
   }
 
 
-
-
-
-
-
-  cryptoListItem: any = [
-    {
-      name: 'Bought 1.5 BTC',
-      date: 'Oct 1',
-      activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-hand-thumbs-up-fill'
-    },
-    {
-      name: 'Bought 1.5 BTC',
-      date: 'Oct 1',
-      activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-chat-left-fill'
-    },
-    {
-      name: 'Bought 1.5 BTC',
-      date: 'Oct 1',
-      activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-share-fill'
-    },
-    {
-      name: 'Bought 1.5 BTC',
-      date: 'Oct 1',
-      activity: 'Transaction completed on Coinbase',
-      icon: 'bi bi-person-circle'
-    }
-  ]
 }
