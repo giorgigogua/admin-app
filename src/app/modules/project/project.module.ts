@@ -14,6 +14,7 @@ import { OrderSelectFilterComponent } from "../../components/order-select-filter
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PagerComponent } from '../../components/pager/pager.component';
 import { ValidationErrorComponent } from "../../components/validation-error/validation-error.component";
+import { StatusComponent } from "../../components/status/status.component";
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ValidationErrorComponent } from "../../components/validation-error/vali
     FormsModule,
     ReactiveFormsModule,
     PagerComponent,
-    ValidationErrorComponent
+    ValidationErrorComponent,
+    StatusComponent
 ]
 })
 export class ProjectModule { }

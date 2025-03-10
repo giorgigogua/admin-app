@@ -613,56 +613,18 @@
       "userLocation": "San Francisco, CA",
       "userImage": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-6.jpg",
       "company": "TechPinnacle Solutions"
-    },
-    {
-      "id": "740c",
-      "userName": "ssd",
-      "userMail": "sdsda",
-      "userPhone": "sdsad",
-      "userLocation": "sdadsa",
-      "userImage": "",
-      "company": "sddsa"
-    },
-    {
-      "id": "0d9a",
-      "userName": "",
-      "userMail": "",
-      "userPhone": "",
-      "userLocation": "",
-      "userImage": "",
-      "company": ""
-    },
-    {
-      "id": "dec6",
-      "userName": "dsadas",
-      "userMail": "dsaad",
-      "userPhone": "dsaads",
-      "userLocation": "dsadsa",
-      "userImage": "",
-      "company": "ddddd"
-    },
-    {
-      "id": "072e",
-      "userName": "dsadsa",
-      "userMail": "dsadsadsa",
-      "userPhone": "222222222",
-      "userLocation": "dsadsadsa",
-      "userImage": "",
-      "company": "dsadasds"
-    },
-    {
-      "id": "9643",
-      "userName": "dssd",
-      "userMail": "dsds",
-      "userPhone": "sddsdsdsd",
-      "userLocation": "dssd",
-      "userImage": "",
-      "company": "dssd"
     }
   ],
   "customerDetails": [
     {
       "id": "3422",
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Completed",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
       "product": "Apple macbook",
       "date": "2021",
       "status": "Pending",
@@ -672,7 +634,56 @@
       "id": "3421",
       "product": "Apple macbook",
       "date": "2021",
+      "status": "Cancelled",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Completed",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Completed",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Cancelled",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Cancelled",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
+      "product": "Apple macbook",
+      "date": "2021",
       "status": "Pending",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Completed",
+      "price": "32233"
+    },
+    {
+      "id": "3421",
+      "product": "Apple macbook",
+      "date": "2021",
+      "status": "Cancelled",
       "price": "32233"
     }
   ]

@@ -5,12 +5,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CustomersTableService } from '../../services/customers-table.service';
 import { CustomerDetailsTableService } from '../../services/customer-details-table.service';
 import { FormsModule } from '@angular/forms';
+import { StatusComponent } from "../status/status.component";
 
 @Component({
   selector: 'app-customers-table',
   templateUrl: './customers-table.component.html',
   standalone: true,
-  imports: [CommonModule, TranslateModule, FormsModule],
+  imports: [CommonModule, TranslateModule, FormsModule, StatusComponent],
   providers: [CustomersTableService, CustomerDetailsTableService]
 })
 export class CustomersTableComponent {

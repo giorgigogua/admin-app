@@ -1,5 +1,6 @@
 <div class="progress-container" [ngStyle]="circleStyles">
-    <div class="progress-circle" [ngStyle]="circleProgressStyles">
+    <div class="progress-circle" [ngStyle]="circleProgressStyles" data-toggle="tooltip" data-placement="top"
+        [title]="progress + '%'">
         <div class="progress-text">
         </div>
     </div>

@@ -37,6 +37,18 @@ export class StatusComponent implements OnInit {
         this.statusColor = '#CBD3D8';
         this.textColor = 'gray'
         break;
+      case 'Completed':
+        this.statusColor = '#b5cbbb';
+        this.textColor = 'green'
+        break;
+      case 'Cancelled':
+        this.statusColor = '#FF9999';
+        this.textColor = 'red'
+        break;
+      case 'Pending':
+        this.statusColor = '#FFD580';
+        this.textColor = 'orange'
+        break;
     }
   }
 

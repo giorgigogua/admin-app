@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 import { PieChartService } from '../../../services/pie-chart.service';
+import { CommonModule } from '@angular/common';
 
 Chart.register(...registerables)
 
@@ -8,7 +9,8 @@ Chart.register(...registerables)
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
-  standalone: true
+  standalone: true,
+  imports: [CommonModule]
 
 })
 export class PieChartComponent implements OnInit {
