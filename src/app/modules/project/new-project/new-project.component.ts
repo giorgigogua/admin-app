@@ -30,8 +30,11 @@ export class NewProjectComponent {
 
     this.validationForm = new FormGroup({
       title: new FormControl("", [Validators.required]),
-      desc: new FormControl(""),
-      author: new FormControl("")
+      desc: new FormControl("", [Validators.required]),
+      startDate: new FormControl("", [Validators.required]),
+      endDate: new FormControl("", [Validators.required]),
+      teamTitle: new FormControl("", [Validators.required]),
+      team: new FormControl("", [Validators.required])
 
     })
   }

@@ -6,9 +6,14 @@
     <div class="py-5">
         <form class="d-flex flex-column gap-4" [formGroup]="validationForm">
             <div class="form-group d-flex flex-column gap-3">
-                <label for="image">Enter Image Url</label>
-                <input type="text" name="image" [(ngModel)]="initialValue.userImage">
+                <label for="image">Enter image URL</label>
+                <input [(ngModel)]="initialValue.userImage" name="name" type="text"
+                    [ngClass]="{ 'border border-success': validationForm.get('image')?.valid}"
+                    class="form-control form-control-lg bg-light" id="image" aria-describedby="image"
+                    formControlName="image">
             </div>
+            <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
+
             <div class="form-group d-flex flex-column gap-3">
                 <label for="name">Enter Name</label>
                 <input [(ngModel)]="initialValue.userName" name="name" type="text"

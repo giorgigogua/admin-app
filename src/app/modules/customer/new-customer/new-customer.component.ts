@@ -28,6 +28,7 @@ export class NewCustomerComponent {
   constructor(private customersTableService: CustomersTableService, private router: Router) {
 
     this.validationForm = new FormGroup({
+      image: new FormControl("", [Validators.required]),
       name: new FormControl("", [Validators.required]),
       mail: new FormControl("", [Validators.required, Validators.email]),
       company: new FormControl("", [Validators.required]),

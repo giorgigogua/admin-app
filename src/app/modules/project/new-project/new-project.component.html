@@ -20,19 +20,26 @@
 
                 <div class="form-group d-flex flex-column gap-3">
                     <label for="description">Description</label>
-                    <input formControlName="desc" id="desc" type="text" name="description"
+                    <input formControlName="desc" id="desc" type="text" name="desc"
                         [(ngModel)]="initialValue.description" class="form-control form-control-lg bg-white border-0"
-                        id="description">
+                        id="desc">
                 </div>
+                <app-validation-error-message [control]="validationForm.get('desc')"></app-validation-error-message>
                 <div class="row">
                     <div class="form-group col-6 d-flex flex-column gap-3">
                         <label for="date">Start Date</label>
-                        <input type="date" class="form-control form-control-lg bg-white border-0" id="date">
+                        <input type="date" formControlName="startDate" class="form-control form-control-lg bg-white border-0"
+                            id="date">
+                        <app-validation-error-message
+                            [control]="validationForm.get('startDate')"></app-validation-error-message>
+
                     </div>
                     <div class="form-group col-6 d-flex flex-column gap-3">
                         <label for="date">End Date</label>
-                        <input type="date" class="form-control form-control-lg bg-white border-0" id="date">
+                        <input type="date" formControlName="endDate" class="form-control form-control-lg bg-white border-0"
+                            id="date">
                     </div>
+                    <app-validation-error-message [control]="validationForm.get('endDate')"></app-validation-error-message>
                 </div>
             </div>
         </div>
@@ -60,16 +67,23 @@
                     <h1>Team</h1>
                     <p>Team members working on the project.</p>
                 </div>
+
                 <div class="card-body bg-light d-flex flex-column gap-3">
                     <div class="form-group d-flex flex-column gap-3">
                         <label for="title">Team title</label>
-                        <input type="text" class="form-control form-control-lg bg-white border-0" id="title">
-                    </div>
-                    <div class="form-group d-flex flex-column gap-3">
-                        <label for="authorName">Title</label>
-                        <input type="text" name="authorName" [(ngModel)]="initialValue.authorName"
+                        <input formControlName="teamTitle" type="text"
                             class="form-control form-control-lg bg-white border-0" id="title">
                     </div>
+                    <app-validation-error-message
+                        [control]="validationForm.get('teamTitle')"></app-validation-error-message>
+
+                    <div class="form-group d-flex flex-column gap-3">
+                        <label for="authorName">Title</label>
+                        <input formControlName="team" type="text" name="authorName"
+                            [(ngModel)]="initialValue.authorName" class="form-control form-control-lg bg-white border-0"
+                            id="title">
+                    </div>
+                    <app-validation-error-message [control]="validationForm.get('team')"></app-validation-error-message>
                 </div>
             </div>
         </div>

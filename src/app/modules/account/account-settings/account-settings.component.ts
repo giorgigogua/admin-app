@@ -18,7 +18,10 @@ export class AccountSettingsComponent {
       company: new FormControl("", [Validators.required]),
       email: new FormControl("", [Validators.required, Validators.email]),
       phone: new FormControl("", [Validators.required, Validators.minLength(9), Validators.maxLength(9)]),
-      bio: new FormControl("", [Validators.required])
+      bio: new FormControl("", [Validators.required]),
+      card: new FormControl("", [Validators.required]),
+      CV: new FormControl("", [Validators.required]),
+      date: new FormControl("", [Validators.required])
 
     })
   }
