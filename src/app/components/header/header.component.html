@@ -1,5 +1,5 @@
 <div *ngIf="showNavbar">
-  <nav class="navbar navbar-expand-lg bg-body-white">
+  <nav class="navbar navbar-expand-xl bg-body-white">
     <div class="container">
       <div class="d-flex align-items-center" role="button" (click)="navigateToDefault()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -19,7 +19,7 @@
       <div class="d-flex gap-3">
 
 
-        <div class="col col-lg-2  d-lg-none d-xl-none">
+        <div class="col d-lg-block d-xl-none">
           <div class="d-flex bg-body">
             <li class="nav-item dropdown">
               <div class="d-flex align-items-center gap-2">
@@ -41,9 +41,6 @@
           </div>
         </div>
 
-
-
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,7 +48,7 @@
       </div>
       <div class="collapse navbar-collapse gap-5 px-5" id="navbarNavDropdown">
 
-        <div class="col col-md-12 col-sm-12 col-12 d-lg-none d-xl-none d-sm-block d-xs-block mb-5">
+        <div class="col col-md-12 col-sm-12 col-12 d-lg-block d-xl-none d-sm-block d-xs-block mb-5">
           <div class="input-group ">
             <input class="form-control form-control-lg border-0 bg-light" id="topnavSearchInput" type="search"
               placeholder="Search" aria-label="Search" aria-describedby="navbarSearch">
@@ -67,7 +64,7 @@
         <ul class="navbar-nav gap-3">
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dashboards
+              <span class="small">Dashboards</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/default">Default</a></li>
@@ -78,7 +75,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Customers
+              <span class="small">Customers</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="customer/customers">Customers</a>
@@ -93,7 +90,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
+              <span class="small">Projects</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/projects">Proejects</a>
@@ -108,7 +105,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Account
+              <span class="small">Account</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="account/account-overview">Account
@@ -121,7 +118,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Orders
+              <span class="small">Orders</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="order/order">Orders</a></li>
@@ -134,7 +131,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Posts
+              <span class="small">Posts</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/categories">Categories</a>
@@ -147,7 +144,7 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Authentication
+              <span class="small">Authentication</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
               <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-in">Sign in</a>
