@@ -1,7 +1,7 @@
 <div *ngIf="showNavbar">
   <nav class="navbar navbar-expand-xl bg-body-white">
     <div class="container">
-      <div class="d-flex align-items-center" role="button" (click)="navigateToDefault()">
+      <div class="d-flex align-items-center col-2" role="button" (click)="navigateToDefault()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
           class="fs-4 text-warning me-1 duo-icon duo-icon-box-2" data-duoicon="box-2">
           <path fill="currentColor"
@@ -46,7 +46,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse gap-5 px-5" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse gap-3 px-5" id="navbarNavDropdown">
 
         <div class="col col-md-12 col-sm-12 col-12 d-lg-block d-xl-none d-sm-block d-xs-block mb-5">
           <div class="input-group ">
@@ -61,7 +61,7 @@
 
 
 
-        <ul class="navbar-nav gap-3">
+        <ul class="navbar-nav gap-3 col-10">
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="small">Dashboards</span>
@@ -158,7 +158,11 @@
           </li>
         </ul>
         <hr>
+
+
         <!--LG BLOCK-->
+
+
         <div class="d-lg-block d-xl-block d-none d-sm-none d-xs-none d-md-none">
           <div class="d-flex gap-4 px-3">
             <div>
