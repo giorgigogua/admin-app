@@ -4,10 +4,11 @@
         buttons="true" buttonText="+ New Project"></app-page-title>
 
     <div>
-        <app-order-select-filter selectedContact="true"></app-order-select-filter>
+        <app-order-select-filter [filterBoxSearchControl]="searchControl"
+            selectedContact="true"></app-order-select-filter>
     </div>
     <div class="mt-5">
-        <app-table></app-table>
+        <app-table [defaultTableList]="defaultTableList"></app-table>
         <app-pager></app-pager>
     </div>
 </div>

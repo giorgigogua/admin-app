@@ -24,8 +24,8 @@
 
 
     <div class="input-group col">
-        <input class="form-control" id="topnavSearchInput" type="search" placeholder="Search" aria-label="Search"
-            aria-describedby="navbarSearch">
+        <input class="form-control" id="topnavSearchInput" type="text" [formControl]="filterBoxSearchControl"
+            placeholder="Search" aria-label="Search" aria-describedby="navbarSearch">
         <span class="input-group-text" id="navbarSearch">
             <i class="bi bi-search"></i>
         </span>
