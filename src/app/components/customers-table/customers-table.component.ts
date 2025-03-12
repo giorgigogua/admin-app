@@ -25,7 +25,7 @@ export class CustomersTableComponent {
 
   @Input() customerTableList: any[] = []
 
-  customerDetailsList: any
+  @Input() customerDetailsList: any
 
 
 

@@ -4,10 +4,12 @@
         buttonText="+ New Project"></app-page-title>
 
     <div>
-        <app-order-select-filter selectedContact="false" noSelected="true"></app-order-select-filter>
+        <app-order-select-filter [filterBoxSearchControl]="searchControl" selectedContact="false"
+            noSelected="true"></app-order-select-filter>
     </div>
     <div class="mt-5">
-        <app-customers-table thead="false" tbody="false" theadTwo="true" tbodyTwo="true"></app-customers-table>
+        <app-customers-table [customerDetailsList]="customerDetailList" thead="false" tbody="false" theadTwo="true"
+            tbodyTwo="true"></app-customers-table>
         <app-pager></app-pager>
     </div>
 </div>

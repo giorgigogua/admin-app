@@ -24,7 +24,7 @@ export class DefaultTableService {
   // get data with filter
 
 
-  getFilteredProducts(searchByTitle: string = ''): Observable<any[]> {
+  getFilteredData(searchByTitle: string = ''): Observable<any[]> {
     let params = new HttpParams();
 
     if (searchByTitle) {
@@ -33,11 +33,11 @@ export class DefaultTableService {
     }
 
     return this.httpClient.get<DefaultTableInterface[]>(this.apiUrl).pipe(
-      map((data: any[]) => this.filterProducts(data, searchByTitle))
+      map((data: any[]) => this.filterData(data, searchByTitle))
     );
   }
 
-  private filterProducts(data: any[], searchByTitle: string): any[] {
+  private filterData(data: any[], searchByTitle: string): any[] {
     let filteredProducts = data;
 
     if (searchByTitle) {

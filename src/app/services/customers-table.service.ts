@@ -34,11 +34,11 @@ export class CustomersTableService {
     }
 
     return this.httpClient.get<CustomerTableInterface[]>(this.apiUrl).pipe(
-      map((data: any[]) => this.filterProducts(data, searchByUserName))
+      map((data: any[]) => this.filterUser(data, searchByUserName))
     );
   }
 
-  private filterProducts(data: any[], searchByUserName: string): any[] {
+  private filterUser(data: any[], searchByUserName: string): any[] {
     let filteredProducts = data;
 
     if (searchByUserName) {

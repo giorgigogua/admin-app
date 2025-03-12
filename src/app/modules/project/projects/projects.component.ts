@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
 
     this.searchControl.valueChanges.pipe(
-      switchMap((filterData) => this.defaultTableService.getFilteredProducts(filterData))
+      switchMap((filterData) => this.defaultTableService.getFilteredData(filterData))
     ).subscribe((data) => {
       this.defaultTableList = data;
     });
