@@ -33,16 +33,16 @@ export class DefaultTableService {
     }
 
     return this.httpClient.get<DefaultTableInterface[]>(this.apiUrl).pipe(
-      map((products: any[]) => this.filterProducts(products, searchByTitle))
+      map((data: any[]) => this.filterProducts(data, searchByTitle))
     );
   }
 
-  private filterProducts(products: any[], searchByTitle: string,): any[] {
-    let filteredProducts = products;
+  private filterProducts(data: any[], searchByTitle: string): any[] {
+    let filteredProducts = data;
 
     if (searchByTitle) {
-      filteredProducts = filteredProducts.filter(product =>
-        product.title.toLowerCase().includes(searchByTitle.toLowerCase())
+      filteredProducts = filteredProducts.filter(data =>
+        data.title.toLowerCase().includes(searchByTitle.toLowerCase())
       );
     }
 

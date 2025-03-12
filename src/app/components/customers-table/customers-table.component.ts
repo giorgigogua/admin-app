@@ -23,7 +23,7 @@ export class CustomersTableComponent {
 
   isChecked = false
 
-  customerTableList: any[] = []
+  @Input() customerTableList: any[] = []
 
   customerDetailsList: any
 

@@ -5,14 +5,14 @@
 
 
     <div>
-        <app-order-select-filter selectedContact="true"></app-order-select-filter>
+        <app-order-select-filter [filterBoxSearchControl]="searchControl"></app-order-select-filter>
     </div>
 
 
 
 
     <div class="mt-5">
-        <app-customers-table tbody="true" thead="true"></app-customers-table>
+        <app-customers-table [customerTableList]="customerServiceData" tbody="true" thead="true"></app-customers-table>
         <app-pager></app-pager>
     </div>
 </div>

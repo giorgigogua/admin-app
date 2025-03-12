@@ -652,6 +652,15 @@
       "userLocation": "San Francisco, CA",
       "userImage": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-6.jpg",
       "company": "TechPinnacle Solutions"
+    },
+    {
+      "id": "36a23",
+      "userName": "Nick Williams",
+      "userMail": "james.smith@example.com",
+      "userPhone": "(202) 555-0126",
+      "userLocation": "San Francisco, CA",
+      "userImage": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-6.jpg",
+      "company": "TechPinnacle Solutions"
     }
   ],
   "customerDetails": [

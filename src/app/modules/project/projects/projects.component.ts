@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { debounceTime, switchMap } from 'rxjs';
+import { switchMap } from 'rxjs';
 import { DefaultTableService } from '../../../services/default-table.service';
 
 @Component({
@@ -14,16 +14,16 @@ export class ProjectsComponent implements OnInit {
 
   }
 
-  @Input() defaultTableList: any[] = []
+  defaultTableList: any[] = []
 
 
-  searchTerm: string = '';
+  filterData: string = '';
   searchControl: FormControl = new FormControl('');
 
   ngOnInit(): void {
+
     this.searchControl.valueChanges.pipe(
-      debounceTime(300),
-      switchMap((searchTerm) => this.defaultTableService.getFilteredProducts(searchTerm))
+      switchMap((filterData) => this.defaultTableService.getFilteredProducts(filterData))
     ).subscribe((data) => {
       this.defaultTableList = data;
     });
