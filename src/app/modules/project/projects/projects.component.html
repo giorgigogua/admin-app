@@ -4,7 +4,7 @@
         buttons="true" buttonText="+ New Project"></app-page-title>
 
     <div>
-        <app-order-select-filter (statusChange)="onStatusChange($event)" [statuses]="statuses"
+        <app-order-select-filter [isStatus]="true" (statusChange)="onStatusChange($event)" [statuses]="statuses"
             [filterBoxSearchControl]="searchControl" selectedContact="true"></app-order-select-filter>
     </div>
     <div class="mt-5">

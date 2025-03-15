@@ -50,10 +50,12 @@
                     id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"></button>
                 <div class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item">
-                        <select (change)="onStatusChange($event)">
-                            <option value="">All</option>
-                            <option *ngFor="let status of statuses" [value]="status">{{status}}</option>
-                        </select>
+                        <div *ngIf="isStatus">
+                            <select (change)="onStatusChange($event)">
+                                <option value="">All</option>
+                                <option *ngFor="let status of statuses" [value]="status">{{status}}</option>
+                            </select>
+                        </div>
                     </a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>

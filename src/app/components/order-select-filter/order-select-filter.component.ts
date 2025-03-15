@@ -13,7 +13,7 @@ export class OrderSelectFilterComponent {
   @Input() filterBoxSearchControl: FormControl = new FormControl('');
 
   @Input({ transform: booleanAttribute }) selectedContact: boolean = false
-
+  @Input({ transform: booleanAttribute }) isStatus: boolean = false
   @Input({ transform: booleanAttribute }) publDrafts: boolean = false
   @Input({ transform: booleanAttribute }) noSelected: boolean = false
 

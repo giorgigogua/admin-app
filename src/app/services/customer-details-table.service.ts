@@ -46,4 +46,22 @@ export class CustomerDetailsTableService {
   }
 
   //get products with filter end
+
+  getProducts(status?: string): Observable<any[]> {
+    let params = new HttpParams();
+    if (status) {
+      params = params.set('status', status);
+    }
+    return this.httpClient.get<any[]>(this.apiUrl, { params });
+  }
+
+  getProductStatuses(): Observable<string[]> {
+    return this.httpClient.get<any[]>(this.apiUrl).pipe(
+      map((items) => {
+
+        const statuses = items.map(item => item.status);
+        return [...new Set(statuses)];
+      })
+    );
+  }
 }

@@ -4,7 +4,8 @@
         buttonText="+ New Project"></app-page-title>
 
     <div>
-        <app-order-select-filter [filterBoxSearchControl]="searchControl" selectedContact="false"
+        <app-order-select-filter [isStatus]="true" [statuses]="statuses" (statusChange)="onStatusChange($event)"
+            [filterBoxSearchControl]="searchControl" selectedContact="false"
             noSelected="true"></app-order-select-filter>
     </div>
     <div class="mt-5">
