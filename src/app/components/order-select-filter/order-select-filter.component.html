@@ -49,7 +49,12 @@
                 <button class="bi bi-sort-alpha-down rounded-3 bg-dark-subtle p-2 border-0 " type="button"
                     id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"></button>
                 <div class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item">
+                        <select (change)="onStatusChange($event)">
+                            <option value="">All</option>
+                            <option *ngFor="let status of statuses" [value]="status">{{status}}</option>
+                        </select>
+                    </a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>

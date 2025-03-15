@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { booleanAttribute, Component, Input } from '@angular/core';
+import { booleanAttribute, Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -20,5 +20,15 @@ export class OrderSelectFilterComponent {
   @Input() filterBoxSpan: any = ''
   @Input() published: any = ''
   @Input() drafts: any = ''
+
+  @Output() statusChange = new EventEmitter<string>();
+
+  @Input() statuses: string[] = []
+
+
+  onStatusChange(event: Event) {
+    const status = (event.target as HTMLSelectElement);
+    this.statusChange.emit(status.value);
+  }
 
 }
