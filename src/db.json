@@ -2,26 +2,26 @@
   "gridList": [
     {
       "name": "Earned",
-      "price": "$1250",
-      "icon": "bi bi-credit-card-fill text-primary",
+      "price": "$1,250",
+      "icon": "bi bi-credit-card-fill",
       "id": "1fb8"
     },
     {
-      "name": "Earned",
-      "price": "$12502",
-      "icon": "bi bi-credit-card-fill text-primary",
+      "name": "Hours logged",
+      "price": "35.5 hrs",
+      "icon": "bi bi-alarm-fill",
       "id": "2ead"
     },
     {
-      "name": "Earned",
-      "price": "$1250",
-      "icon": "bi bi-credit-card-fill text-primary",
+      "name": "Avg. time",
+      "price": "2:55 hrs",
+      "icon": "bi bi-reception-4",
       "id": "4634"
     },
     {
-      "name": "Earned",
-      "price": "$1250",
-      "icon": "bi bi-credit-card-fill text-primary",
+      "name": "Weekly growth",
+      "price": "14.5%",
+      "icon": "bi bi-percent",
       "id": "6124"
     }
   ],

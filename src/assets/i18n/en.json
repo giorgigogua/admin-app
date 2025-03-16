@@ -7,6 +7,16 @@
         "minLength": "Minimum length is 9",
         "email": "Invalid email format , must be with '@'"
     },
+    "User": {
+        "Name": "Name",
+        "LastName": "Last name",
+        "Mail": "Mail",
+        "Company": "Company",
+        "Phone": "Phone",
+        "Location": "Location",
+        "Description": "Description",
+        "Title": "Title"
+    },
     "Country": {
         "English": "English",
         "Georgian": "Georgian"
@@ -16,12 +26,16 @@
         "AlreadyHaveAccount": "Already have any account?",
         "Signin": "Sign in",
         "Signout": "Sign out",
-        "Signup":"Sign up",
+        "Signup": "Sign up",
         "passwordReset": "Reset Password",
         "account": "Account",
         "changePassword": "Change password"
     },
-    "Input":{
-        "EmailAdress":"Enter your email adress"
+    "Input": {
+        "EmailAdress": "Enter your email adress"
+    },
+    "Action": {
+        "SaveDraft": "Save draft",
+        "Submit": "Submit"
     }
 }

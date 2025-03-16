@@ -1,7 +1,7 @@
 <div class="container mt-5">
     <div>
         <app-page-title titleOne="Customers" titleTwo="New Customers" titleThree="Customers" icon="bi bi-person"
-            buttonText="Save draft"></app-page-title>
+            buttonText="{{'Action.SaveDraft' | translate}}"></app-page-title>
     </div>
     <div class="py-5">
         <form class="d-flex flex-column gap-4" [formGroup]="validationForm">
@@ -15,7 +15,7 @@
             <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
 
             <div class="form-group d-flex flex-column gap-3">
-                <label for="name">Enter Name</label>
+                <label for="name">{{'User.Name'| translate}}</label>
                 <input [(ngModel)]="initialValue.userName" name="name" type="text"
                     [ngClass]="{ 'border border-success': validationForm.get('name')?.valid}"
                     class="form-control form-control-lg bg-light" id="name" aria-describedby="name"
@@ -23,7 +23,7 @@
             </div>
             <app-validation-error-message [control]="validationForm.get('name')"></app-validation-error-message>
             <div class="form-group d-flex flex-column gap-3">
-                <label for="mail">Mail</label>
+                <label for="mail">{{'User.Mail'| translate}}</label>
                 <input [ngClass]="{ 'border border-success': validationForm.get('mail')?.valid}" type="text"
                     [(ngModel)]="initialValue.userMail" name="mail" class="form-control form-control-lg bg-light"
                     id="mail" formControlName="mail">
@@ -31,13 +31,13 @@
             <app-validation-error-message [control]="validationForm.get('mail')"></app-validation-error-message>
 
             <div class="form-group d-flex flex-column gap-3">
-                <label for="company">Company</label>
+                <label for="company">{{'User.Company'| translate}}</label>
                 <input type="text" [(ngModel)]="initialValue.company" name="company"
                     class="form-control form-control-lg bg-light border-0" id="company" formControlName="company">
             </div>
             <app-validation-error-message [control]="validationForm.get('company')"></app-validation-error-message>
             <div class="form-group d-flex flex-column gap-3">
-                <label for="company">Phone</label>
+                <label for="company">{{'User.Phone' | translate}}</label>
                 <input maxlength="9" type="text" [(ngModel)]="initialValue.userPhone" name="phone"
                     class="form-control form-control-lg bg-light border-0" id="phone" placeholder="(___)___-____"
                     formControlName="phone">
@@ -45,13 +45,13 @@
             <app-validation-error-message [control]="validationForm.get('phone')"></app-validation-error-message>
 
             <div class="form-group">
-                <label for="Location">Location</label>
+                <label for="Location">{{'User.Location'| translate}}</label>
                 <input type="text" [(ngModel)]="initialValue.userLocation" name="location"
                     class="form-control form-control-lg bg-light border-0" id="location" formControlName="location">
             </div>
             <app-validation-error-message [control]="validationForm.get('location')"></app-validation-error-message>
             <button type="submit" [disabled]="validationForm.invalid" class="btn btn-warning"
-                (click)="post()">Submit</button>
+                (click)="post()">{{'Action.Submit' | translate}}</button>
             <button type="reset" class="btn btn-light">Reset Form</button>
         </form>
     </div>

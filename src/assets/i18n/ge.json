@@ -6,6 +6,16 @@
         "maxLength": "უნდა შეიცავდეს მაქსიმუმ 9 ციფრს!",
         "minLength": "უნდა შეიცავდეს მინიმუმ 9 ციფრს!"
     },
+    "User": {
+        "Name": "სახელი",
+        "LastName": "გვარი",
+        "Mail": "მეილი",
+        "Company": "კომპანია",
+        "Phone": "მობილური",
+        "Location": "მისამართი",
+        "Description": "აღწერა",
+        "Title": "სათაური"
+    },
     "Country": {
         "English": "ინგლისური",
         "Georgian": "ქართული"
@@ -15,12 +25,16 @@
         "AlreadyHaveAccount": "უკვე გაქვს ანგარიში?",
         "Signin": "შესვლა",
         "Signout": "გამოსვლა",
-        "Signup":"რეგისტრაცია",
+        "Signup": "რეგისტრაცია",
         "passwordReset": "პაროლის განახლება",
         "account": "ანგარიში",
         "changePassword": "პაროლის შეცვლა"
     },
     "Input": {
         "EmailAdress": "შეიყვანე მეილი"
+    },
+    "Action": {
+        "SaveDraft": "მონახაზის შენახვა",
+        "Submit": "წარდგენა"
     }
 }

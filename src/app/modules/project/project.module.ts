@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PagerComponent } from '../../components/pager/pager.component';
 import { ValidationErrorComponent } from "../../components/validation-error/validation-error.component";
 import { StatusComponent } from "../../components/status/status.component";
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { StatusComponent } from "../../components/status/status.component";
     ReactiveFormsModule,
     PagerComponent,
     ValidationErrorComponent,
-    StatusComponent
+    StatusComponent,
+    TranslateModule
 ]
 })
 export class ProjectModule { }

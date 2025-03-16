@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DefaultTableService } from '../../../services/default-table.service';
 import { DefaultTableInterface } from '../../../interfaces/default-table';
 import { Router } from '@angular/router';
@@ -39,12 +39,6 @@ export class NewProjectComponent {
     })
   }
 
-
-
-
-
-
-
   postList() {
     this.tableService.postTableList(this.initialValue).subscribe({
       next: () => {
@@ -52,7 +46,5 @@ export class NewProjectComponent {
       }
     })
   }
-
-
 
 }
