@@ -8,6 +8,7 @@ import { PasswordResetComponent } from './password-reset/password-reset.componen
 import { GoBackComponent } from "../../components/go-back/go-back.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ValidationErrorComponent } from "../../components/validation-error/validation-error.component";
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ValidationErrorComponent } from "../../components/validation-error/vali
     GoBackComponent,
     ReactiveFormsModule,
     FormsModule,
-    ValidationErrorComponent
+    ValidationErrorComponent,
+    TranslateModule
 ]
 })
 export class AuthenticationModule { }

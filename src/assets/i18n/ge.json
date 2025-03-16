@@ -5,5 +5,22 @@
         "isRequired": "ეს ველი სავალდებულოა!",
         "maxLength": "უნდა შეიცავდეს მაქსიმუმ 9 ციფრს!",
         "minLength": "უნდა შეიცავდეს მინიმუმ 9 ციფრს!"
+    },
+    "Country": {
+        "English": "ინგლისური",
+        "Georgian": "ქართული"
+    },
+    "Account": {
+        "DontHaveAccount": "ჯერ არ გაქვს ანგარიში?",
+        "AlreadyHaveAccount": "უკვე გაქვს ანგარიში?",
+        "Signin": "შესვლა",
+        "Signout": "გამოსვლა",
+        "Signup":"რეგისტრაცია",
+        "passwordReset": "პაროლის განახლება",
+        "account": "ანგარიში",
+        "changePassword": "პაროლის შეცვლა"
+    },
+    "Input": {
+        "EmailAdress": "შეიყვანე მეილი"
     }
 }

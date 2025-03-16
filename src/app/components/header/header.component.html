@@ -22,7 +22,8 @@
         <div class="col d-lg-block d-xl-none">
 
           <div class="dropdown">
-            <span class="btn btn-link d-inline-flex align-items-center dropdown-toggle text-black text-decoration-none bg-light"
+            <span
+              class="btn btn-link d-inline-flex align-items-center dropdown-toggle text-black text-decoration-none bg-light"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="avatar avatar-sm me-3">
                 <img class="avatar-img rounded-circle" width="40px" height="40px"
@@ -31,12 +32,12 @@
               <span class="text-black">John Williams</span>
             </span>
             <ul class="dropdown-menu dropdown-menu-end border-0 shadow">
-              <li><a class="dropdown-item">Account</a></li>
-              <li><a class="dropdown-item">Change password</a></li>
+              <li><a class="dropdown-item" role="button">{{'Account.account'| translate}}</a></li>
+              <li><a class="dropdown-item" role="button">{{'Account.changePassword'| translate}}</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item">Sign out</a></li>
+              <li><a class="dropdown-item" role="button">{{'Account.signout'| translate}}</a></li>
             </ul>
           </div>
 
@@ -167,7 +168,7 @@
         <div class="d-lg-block d-xl-block d-none d-sm-none d-xs-none d-md-none">
           <div class="d-flex gap-4 px-3">
             <div>
-              <i class="bi bi-bag-dash-fill text-secondary"></i>
+              <i class="bi bi-bag-dash-fill text-secondary" role="button"></i>
             </div>
             <div>
               <li class="nav-item dropdown" style="list-style-type: none;">
@@ -177,19 +178,19 @@
                 <ul class="dropdown-menu border-0 shadow">
                   <li>
                     <a class="dropdown-item">
-                      <span (click)="switchLanguage('ge')">Georgian</span>
+                      <span (click)="switchLanguage('ge')" role="button">{{'Country.Georgian' | translate}}</span>
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item">
-                      <span (click)="switchLanguage('en')">English</span>
+                      <span (click)="switchLanguage('en')" role="button">{{'Country.English' | translate}}</span>
                     </a>
                   </li>
                 </ul>
               </li>
             </div>
             <div>
-              <i class="bi bi-at"></i>
+              <i class="bi bi-at" role="button"></i>
             </div>
           </div>
         </div>
@@ -199,13 +200,13 @@
 
         <div class="d-lg-none d-xl-none">
           <div class="d-flex flex-column gap-4">
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-2" role="button">
               <i class="bi bi-bag-dash-fill text-secondary"></i>
               <span>Go to product page</span>
             </div>
             <div>
 
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown" style="list-style-type: none;">
                 <button class="nav-link border-0 bg-body bi bi-gear-fill" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <span> Settings</span>
@@ -213,25 +214,23 @@
                 <ul class="dropdown-menu border-0 shadow">
                   <li>
                     <a class="dropdown-item">
-                      <span (click)="switchLanguage('ge')">Georgian</span>
+                      <span (click)="switchLanguage('ge')" role="button">{{'Country.Georgian' | translate}}</span>
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item">
-                      <span (click)="switchLanguage('en')">English</span>
+                      <span (click)="switchLanguage('en')" role="button">{{'Country.English' | translate}}</span>
                     </a>
                   </li>
                 </ul>
               </li>
             </div>
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-2" role="button">
               <i class="bi bi-at"></i>
               <p>Contact us</p>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </nav>

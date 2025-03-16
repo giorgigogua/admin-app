@@ -5,6 +5,23 @@
         "isRequired": "This field is required",
         "maxLength": "Maximum length is 9",
         "minLength": "Minimum length is 9",
-        "email":"Invalid email format , must be with '@'"
+        "email": "Invalid email format , must be with '@'"
+    },
+    "Country": {
+        "English": "English",
+        "Georgian": "Georgian"
+    },
+    "Account": {
+        "DontHaveAccount": "Dont have any account yet?",
+        "AlreadyHaveAccount": "Already have any account?",
+        "Signin": "Sign in",
+        "Signout": "Sign out",
+        "Signup":"Sign up",
+        "passwordReset": "Reset Password",
+        "account": "Account",
+        "changePassword": "Change password"
+    },
+    "Input":{
+        "EmailAdress":"Enter your email adress"
     }
 }

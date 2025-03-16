@@ -3,22 +3,22 @@
     <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
         <div>
             <div class="text-center">
-                <h1>Sign in</h1>
+                <h1>{{'Account.Signin' | translate}}</h1>
                 <p>Access our dashboard and start tracking your tasks.</p>
             </div>
             <form class="d-flex flex-column gap-3" [formGroup]="validationForm">
                 <div class="form-group">
                     <input name="mail" formControlName="mail" type="text"
                         class="form-control form-control-lg bg-light border-0 w-100"
-                        placeholder="Enter your email adress." id="mail" aria-describedby="mail">
+                        placeholder="{{'Input.EmailAdress' | translate}}" id="mail" aria-describedby="mail">
                 </div>
                 <app-validation-error-message [control]="validationForm.get('mail')"></app-validation-error-message>
-                <button class="border-0 bg-warning p-2 rounded-3" [disabled]="validationForm.invalid">Sign in</button>
+                <button class="border-0 bg-warning p-2 rounded-3" [disabled]="validationForm.invalid">{{'Account.Signin'
+                    | translate}}</button>
             </form>
             <div class="py-3 text-center">
-                <span class="text-muted">Dont have any account yet? <span class="text-primary"
-                        (click)="navigateToSignUp()">Sign
-                        up.</span></span>
+                <span class="text-muted">{{'Account.DontHaveAccount'|translate}} <span class="text-primary"
+                        (click)="navigateToSignUp()">{{'Account.Signup' | translate}}.</span></span>
             </div>
         </div>
     </div>
