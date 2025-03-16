@@ -35,9 +35,11 @@
                     </div>
                 </td>
                 <td>
-                    <div class="img2 d-flex">
-                        <img class="w-100 h-100 rounded-circle" alt="" src={{item.team}}>
-
+                    <div class="d-flex">
+                        <div class="img2" *ngFor="let team of item.team">
+                            <img class="w-100 h-100 rounded-circle border border-1 border-body" alt=""
+                                src={{team.image}}>
+                        </div>
                     </div>
                 </td>
             </tr>
