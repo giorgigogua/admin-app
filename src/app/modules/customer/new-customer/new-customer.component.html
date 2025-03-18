@@ -50,7 +50,7 @@
                     class="form-control form-control-lg bg-light border-0" id="location" formControlName="location">
             </div>
             <app-validation-error-message [control]="validationForm.get('location')"></app-validation-error-message>
-            <button type="submit" [disabled]="validationForm.invalid" class="btn btn-warning"
+            <button type="submit" class="btn btn-warning"
                 (click)="post()">{{'Action.Submit' | translate}}</button>
             <button type="reset" class="btn btn-light">Reset Form</button>
         </form>
