@@ -13,6 +13,10 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private defaultTableService: DefaultTableService) {
 
+    this.defaultTableService.getAll().subscribe((data) => {
+      this.defaultTableList = data
+    })
+
   }
 
   defaultTableList: any[] = []

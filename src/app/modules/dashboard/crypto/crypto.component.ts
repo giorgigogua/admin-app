@@ -47,18 +47,18 @@ export class CryptoComponent implements OnInit {
   }
 
 
-  createList() {
-    if (this.validationForm.valid) {
-      this.cryptoTableListService.createCryptoTableList(this.cryptoTableFormData).subscribe({
-        next: (data) => {
-          this.closeModel()
-          this.refresh()
-        }, error: (err) => {
-          console.log(err)
-        }
-      })
-    }
-  }
+  // createList() {
+  //   if (this.validationForm.valid) {
+  //     this.cryptoTableListService.createCryptoTableList(this.cryptoTableFormData).subscribe({
+  //       next: (data) => {
+  //         this.closeModel()
+  //         this.refresh()
+  //       }, error: (err) => {
+  //         console.log(err)
+  //       }
+  //     })
+  //   }
+  // }
 
   ngOnInit(): void {
 

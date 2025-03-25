@@ -39,14 +39,14 @@ export class NewProjectComponent {
     })
   }
 
-  postList() {
-    if (this.validationForm.valid) {
-      this.tableService.postTableList(this.initialValue).subscribe({
-        next: () => {
-          this.router.navigate(["/project/projects"])
-        }
-      })
-    }
-  }
+  // postList() {
+  //   if (this.validationForm.valid) {
+  //     this.tableService.postTableList(this.initialValue).subscribe({
+  //       next: () => {
+  //         this.router.navigate(["/project/projects"])
+  //       }
+  //     })
+  //   }
+  // }
 
 }

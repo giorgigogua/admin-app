@@ -1,12 +1,33 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { CustomerTableInterface } from '../interfaces/customer-table';
 import { map } from 'rxjs/operators';
 
 
 @Injectable()
 export class CustomersTableService {
+
+  private customersTableData = [
+    {
+      "id": "36a2",
+      "userName": "John Williams",
+      "userMail": "james.smith@example.com",
+      "userPhone": "(202) 555-0126",
+      "userLocation": "San Francisco, CA",
+      "userImage": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-6.jpg",
+      "company": "TechPinnacle Solutions"
+    },
+    {
+      "id": "36a23",
+      "userName": "Nick Williams",
+      "userMail": "james.smith@example.com",
+      "userPhone": "(202) 555-0126",
+      "userLocation": "San Francisco, CA",
+      "userImage": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-6.jpg",
+      "company": "TechPinnacle Solutions"
+    }
+  ]
 
   apiUrl = "http://localhost:3000/customersTable"
 
@@ -15,13 +36,13 @@ export class CustomersTableService {
   }
 
   getAll(): Observable<any> {
-    return this.httpClient.get<CustomerTableInterface[]>(this.apiUrl)
+    return of<CustomerTableInterface[]>(this.customersTableData)
   }
 
-  postList(data: CustomerTableInterface) {
-    return this.httpClient.post(this.apiUrl, data)
+  // postList(data: CustomerTableInterface) {
+  //   return this.httpClient.post(this.apiUrl, data)
 
-  }
+  // }
 
   //GET FILTERED USER START
 

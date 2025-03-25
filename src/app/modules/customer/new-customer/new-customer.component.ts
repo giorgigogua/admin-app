@@ -40,14 +40,14 @@ export class NewCustomerComponent {
 
 
 
-  post() {
-    if (this.validationForm.valid) {
-      this.customersTableService.postList(this.initialValue).subscribe({
-        next: () => {
-          this.router.navigate(["/customer/customers"])
-        }
-      })
-    }
-  }
+  // post() {
+  //   if (this.validationForm.valid) {
+  //     this.customersTableService.postList(this.initialValue).subscribe({
+  //       next: () => {
+  //         this.router.navigate(["/customer/customers"])
+  //       }
+  //     })
+  //   }
+  // }
 
 }

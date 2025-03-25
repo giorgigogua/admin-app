@@ -17,6 +17,10 @@ export class CustomersComponent implements OnInit {
 
   constructor(private customerTableService: CustomersTableService) {
 
+    this.customerTableService.getAll().subscribe((data) => {
+      this.customerServiceData = data
+    })
+
   }
 
 

@@ -1,26 +1,26 @@
 
 import { Component } from '@angular/core';
 import { GridListService } from '../../../services/grid-list.service';
-import { CryptoListService } from '../../../services/recent-activity.service';
+import { RecentActivityService } from '../../../services/recent-activity.service';
 
 @Component({
   selector: 'app-default',
   templateUrl: './default.component.html',
-  providers: [GridListService, CryptoListService]
+  providers: [GridListService, RecentActivityService]
 })
 export class DefaultComponent {
 
   gridListItem: any
   cryptoListItem: any
 
-  constructor(private gridListService: GridListService, private cryptoListService: CryptoListService) {
+  constructor(private gridListService: GridListService, private recentActivityService: RecentActivityService) {
 
 
     this.gridListService.getGridList().subscribe((data: any) => {
       this.gridListItem = data
     })
 
-    this.cryptoListService.getCryptoList().subscribe((data: any) => {
+    this.recentActivityService.getCryptoList().subscribe((data: any) => {
 
       this.cryptoListItem = data
 

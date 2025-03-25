@@ -12,6 +12,10 @@ export class OrdersComponent implements OnInit {
 
   constructor(private customerDetailsService: CustomerDetailsTableService) {
 
+    this.customerDetailsService.getAll().subscribe((data) => {
+      this.customerDetailList = data
+    })
+
   }
 
   customerDetailList: any[] = []
