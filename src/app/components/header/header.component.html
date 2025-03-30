@@ -1,7 +1,7 @@
 <div *ngIf="showNavbar">
   <nav class="navbar navbar-expand-xl bg-body-white">
     <div class="container">
-      <div class="d-flex align-items-center col-2" role="button" (click)="navigateToDefault()">
+      <div class="col d-flex align-items-center" role="button" (click)="navigateToDefault()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
           class="fs-4 text-warning me-1 duo-icon duo-icon-box-2" data-duoicon="box-2">
           <path fill="currentColor"
@@ -63,7 +63,7 @@
 
 
 
-        <ul class="navbar-nav gap-3 col-10">
+        <ul class="navbar-nav col-10">
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="small p-1">Dashboards</span>
@@ -117,6 +117,22 @@
             </ul>
           </li>
 
+          <li class="nav-item dropdown" [routerLinkActive]="'active'">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="small p-1">E-commerce</span>
+            </a>
+            <ul class="dropdown-menu border-0 shadow p-1">
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/products">
+                  Products</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/orders">
+                  Orders</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/invoice">
+                  Invoice</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/pricing">
+                  Pricing</a></li>
+            </ul>
+          </li>
+
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -156,6 +172,16 @@
               <li [routerLinkActive]="'active'"><a class="dropdown-item"
                   routerLink="authentication/password-reset">Password reset</a></li>
 
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown" [routerLinkActive]="'active'">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="small p-1">Other</span>
+            </a>
+            <ul class="dropdown-menu border-0 shadow p-1">
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="other/calendar">Calendar</a>
+              </li>
             </ul>
           </li>
         </ul>
