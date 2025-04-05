@@ -61,8 +61,6 @@
           </div>
         </div>
 
-
-
         <ul class="navbar-nav col-10">
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -75,114 +73,142 @@
             </ul>
           </li>
 
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Customers</span>
+
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              aria-expanded="true">
+              Pages
             </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="customer/customers">Customers</a>
-              </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="customer/customer-detail">Customer
-                  details</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="customer/new-customer">New
-                  customer</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Projects</span>
-            </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/projects">Proejects</a>
-              </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/project-overview">Project
-                  overview</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/new-project">New
-                  project</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Account</span>
-            </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="account/account-overview">Account
-                  overview</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="account/account-setting">Account
-                  settings</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">E-commerce</span>
-            </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/products">
-                  Products</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/orders">
-                  Orders</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/invoice">
-                  Invoice</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/pricing">
-                  Pricing</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Orders</span>
-            </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="order/order">Orders</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="order/invoice">Invoice</a>
-              </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="order/pricing">Pricing</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Posts</span>
-            </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/categories">Categories</a>
-              </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/post">Posts</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/new-post">New post</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Authentication</span>
-            </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-in">Sign in</a>
-              </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-up">Sign up</a>
-              </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item"
-                  routerLink="authentication/password-reset">Password reset</a></li>
-
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown" [routerLinkActive]="'active'">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Misc</span>
-            </a>
-            <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="misc/calendar">Calendar</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li class="dropend">
+                <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  Customers
+                </a>
+                <ul class="dropdown-menu border-0 shadow p-1">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                      routerLink="customer/customers">Customers</a>
+                  </li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                      routerLink="customer/customer-detail">Customer
+                      details</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="customer/new-customer">New
+                      customer</a></li>
+                </ul>
               </li>
 
+
+              <li class="dropend">
+                <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu border-0 shadow p-1">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/projects">Proejects</a>
+                  </li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                      routerLink="project/project-overview">Project
+                      overview</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/new-project">New
+                      project</a></li>
+                </ul>
+              </li>
+
+
+              <li class="dropend">
+                <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu border-0 shadow p-1">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                      routerLink="account/account-overview">Account
+                      overview</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                      routerLink="account/account-setting">Account
+                      settings</a></li>
+                </ul>
+              </li>
+
+              <li class="dropend">
+                <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  E-commerce
+                </a>
+                <ul class="dropdown-menu">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/products">
+                      Products</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/orders">
+                      Orders</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/invoice">
+                      Invoice</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/pricing">
+                      Pricing</a></li>
+                </ul>
+              </li>
+
+
+              <li class="dropend">
+                <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  Posts
+                </a>
+                <ul class="dropdown-menu">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/categories">Categories</a>
+                  </li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/post">Posts</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/new-post">New post</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend">
+                <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  Authentication
+                </a>
+                <ul class="dropdown-menu">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-in">Sign
+                      in</a>
+                  </li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-up">Sign
+                      up</a>
+                  </li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                      routerLink="authentication/password-reset">Password
+                      reset</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend">
+                <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  Misc
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item " routerLink="misc/calendar">Calendar</li>
+                </ul>
+              </li>
+
+
+            </ul>
+          </div>
+
+          <li class="nav-item dropdown" [routerLinkActive]="'active'">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="small p-1">Emails</span>
+            </a>
+            <ul class="dropdown-menu border-0 shadow p-1">
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/default">Account
+                  confirmation</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/crypto">New post</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/saas">Order
+                  confirmation</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/saas">Password reset</a>
+              </li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/saas">Product update</a>
+              </li>
             </ul>
           </li>
 
@@ -191,12 +217,11 @@
               <span class="small p-1">Modals</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="modals/product">Product</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item">Product</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="modals/order">Order</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item">Order</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item"
-                  routerLink="modals/event">Event</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item">Event</a></li>
 
             </ul>
           </li>
