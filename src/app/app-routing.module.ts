@@ -43,6 +43,10 @@ const routes: Routes = [
   {
     path: "misc",
     loadChildren: () => import("./modules/misc/misc.module").then(m => m.MiscModule)
+  },
+  {
+    path: "emails",
+    loadChildren: () => import("./modules/emails/emails.module").then(m => m.EmailsModule)
   }
 
 ];
