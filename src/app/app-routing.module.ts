@@ -29,10 +29,6 @@ const routes: Routes = [
     loadChildren: () => import("./modules/customer/customer.module").then(m => m.CustomerModule)
   },
   {
-    path: "order",
-    loadChildren: () => import("./modules/order/order.module").then(m => m.OrderModule)
-  },
-  {
     path: "post",
     loadChildren: () => import("./modules/post/post.module").then(m => m.PostModule)
   },
@@ -45,9 +41,9 @@ const routes: Routes = [
     loadChildren: () => import("./modules/authentication/authentication.module").then(m => m.AuthenticationModule)
   },
   {
-    path: "other",
-    loadChildren: () => import("./modules/other/other.module").then(m => m.OtherModule)
-  },
+    path: "misc",
+    loadChildren: () => import("./modules/misc/misc.module").then(m => m.MiscModule)
+  }
 
 ];
 

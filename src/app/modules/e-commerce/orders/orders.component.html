@@ -1,1 +1,16 @@
-<p>orders works!</p>
+<div class="container mt-5">
+
+    <app-page-title titleOne="Orders" titleTwo="Orders" titleThree="Orders" icon="bi bi-journal-text text-primary"
+        buttonText="+ New Project"></app-page-title>
+
+    <div>
+        <app-order-select-filter [isStatus]="true" [statuses]="statuses" (statusChange)="onStatusChange($event)"
+            [filterBoxSearchControl]="searchControl" selectedContact="false"
+            noSelected="true"></app-order-select-filter>
+    </div>
+    <div class="mt-5">
+        <app-customers-table [customerDetailsList]="customerDetailList" thead="false" tbody="false" theadTwo="true"
+            tbodyTwo="true"></app-customers-table>
+        <app-pager></app-pager>
+    </div>
+</div>

@@ -6,6 +6,12 @@ import { ProductsComponent } from './products/products.component';
 import { OrdersComponent } from './orders/orders.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { PricingCardComponent } from '../../components/pricing-card/pricing-card.component';
+import { PageTitleComponent } from '../../components/page-title/page-title.component';
+import { AccordionComponent } from '../../components/accordion/accordion.component';
+import { OrderSelectFilterComponent } from '../../components/order-select-filter/order-select-filter.component';
+import { PagerComponent } from '../../components/pager/pager.component';
+import { CustomersTableComponent } from '../../components/customers-table/customers-table.component';
 
 
 @NgModule({
@@ -17,7 +23,13 @@ import { PricingComponent } from './pricing/pricing.component';
   ],
   imports: [
     CommonModule,
-    ECommerceRoutingModule
+    ECommerceRoutingModule,
+    PricingCardComponent,
+    PageTitleComponent,
+    AccordionComponent,
+    OrderSelectFilterComponent,
+    PagerComponent,
+    CustomersTableComponent
   ]
 })
 export class ECommerceModule { }

@@ -9,13 +9,15 @@ import { GoBackComponent } from "../../components/go-back/go-back.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ValidationErrorComponent } from "../../components/validation-error/validation-error.component";
 import { TranslateModule } from '@ngx-translate/core';
+import { VerificationCodeComponent } from './verification-code/verification-code.component';
 
 
 @NgModule({
   declarations: [
     SignUpComponent,
     SignInComponent,
-    PasswordResetComponent
+    PasswordResetComponent,
+    VerificationCodeComponent
   ],
   imports: [
     CommonModule,

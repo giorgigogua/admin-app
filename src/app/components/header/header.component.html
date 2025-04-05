@@ -177,11 +177,27 @@
 
           <li class="nav-item dropdown" [routerLinkActive]="'active'">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="small p-1">Other</span>
+              <span class="small p-1">Misc</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="other/calendar">Calendar</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="misc/calendar">Calendar</a>
               </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown" [routerLinkActive]="'active'">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="small p-1">Modals</span>
+            </a>
+            <ul class="dropdown-menu border-0 shadow p-1">
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="modals/product">Product</a>
+              </li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="modals/order">Order</a>
+              </li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                  routerLink="modals/event">Event</a></li>
+
             </ul>
           </li>
         </ul>
