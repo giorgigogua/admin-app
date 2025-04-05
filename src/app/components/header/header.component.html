@@ -55,8 +55,7 @@
             <input class="form-control form-control-md border-0 bg-light p-2" id="topnavSearchInput" type="search"
               placeholder="Search" aria-label="Search" aria-describedby="navbarSearch">
             <span class="input-group-text border-0" id="navbarSearch">
-              <kbd class="badge bg-body-secondary text-body">⌘</kbd>
-              <kbd class="badge bg-body-secondary text-body ms-1">K</kbd>
+              <i class="bi bi-search"></i>
             </span>
           </div>
         </div>
@@ -81,11 +80,14 @@
               aria-expanded="true">
               Pages
             </a>
-            <ul class="dropdown-menu" data-bs-popper="static">
+            <ul class="dropdown-menu border-0 shadow" data-bs-popper="static">
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  Customers
+                  <div class="d-flex justify-content-between w-100">
+                    Customers
+                    <i class="bi bi-chevron-right small"></i>
+                  </div>
                 </a>
                 <ul class="dropdown-menu border-0 shadow p-1">
                   <li [routerLinkActive]="'active'"><a class="dropdown-item"
@@ -103,7 +105,10 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  Projects
+                  <div class="d-flex justify-content-between w-100">
+                    Projects
+                    <i class="bi bi-chevron-right small"></i>
+                  </div>
                 </a>
                 <ul class="dropdown-menu border-0 shadow p-1">
                   <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/projects">Proejects</a>
@@ -120,7 +125,10 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  Account
+                  <div class="d-flex justify-content-between w-100">
+                    Account
+                    <i class="bi bi-chevron-right small"></i>
+                  </div>
                 </a>
                 <ul class="dropdown-menu border-0 shadow p-1">
                   <li [routerLinkActive]="'active'"><a class="dropdown-item"
@@ -135,7 +143,10 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  E-commerce
+                  <div class="d-flex justify-content-between w-100">
+                    E-commerce
+                    <i class="bi bi-chevron-right small"></i>
+                  </div>
                 </a>
                 <ul class="dropdown-menu">
                   <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/products">
@@ -153,7 +164,10 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  Posts
+                  <div class="d-flex justify-content-between w-100">
+                    Posts
+                    <i class="bi bi-chevron-right small"></i>
+                  </div>
                 </a>
                 <ul class="dropdown-menu">
                   <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/categories">Categories</a>
@@ -167,7 +181,10 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  Authentication
+                  <div class="d-flex justify-content-between w-100">
+                    authentication
+                    <i class="bi bi-chevron-right small"></i>
+                  </div>
                 </a>
                 <ul class="dropdown-menu">
                   <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-in">Sign
@@ -186,7 +203,10 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  Misc
+                  <div class="d-flex justify-content-between w-100">
+                    Misc
+                    <i class="bi bi-chevron-right small"></i>
+                  </div>
                 </a>
                 <ul class="dropdown-menu">
                   <li class="dropdown-item " routerLink="misc/calendar">Calendar</li>
