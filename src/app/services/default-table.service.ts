@@ -163,22 +163,21 @@ export class DefaultTableService {
 
   //get data with filter end
 
-  getData(status?: string): Observable<DefaultTableInterface[]> {
-    let params = new HttpParams();
-    if (status) {
-      params = params.set('status', status);
-    }
-    return this.httpClient.get<DefaultTableInterface[]>(this.apiUrl, { params });
+  getData(status: string): Observable<any[]> {
+
+    return of(this.defaultTableData).pipe(
+      map(items => {
+        if (status === 'All') {
+          return this.defaultTableData;
+        }
+        return items.filter(item => item.status === status);
+      })
+    );
   }
 
   getStatuses(): Observable<string[]> {
-    return this.httpClient.get<DefaultTableInterface[]>(this.apiUrl).pipe(
-      map((items) => {
-
-        const statuses = items.map(item => item.status);
-        return [...new Set(statuses)];
-      })
-    );
+    const statuses = Array.from(new Set(this.defaultTableData.map(item => item.status)));
+    return of(['All', ...statuses]);
   }
 
 

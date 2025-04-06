@@ -120,21 +120,21 @@ export class CustomerDetailsTableService {
 
   //get products with filter end
 
-  getProducts(status?: string): Observable<any[]> {
-    let params = new HttpParams();
-    if (status) {
-      params = params.set('status', status);
-    }
-    return this.httpClient.get<any[]>(this.apiUrl, { params });
+  getProducts(status: string): Observable<any[]> {
+
+    return of(this.customerDetailsData
+    ).pipe(
+      map(items => {
+        if (status === 'All') {
+          return this.customerDetailsData;
+        }
+        return items.filter(item => item.status === status);
+      })
+    );
   }
 
   getProductStatuses(): Observable<string[]> {
-    return this.httpClient.get<any[]>(this.apiUrl).pipe(
-      map((items) => {
-
-        const statuses = items.map(item => item.status);
-        return [...new Set(statuses)];
-      })
-    );
+    const statuses = Array.from(new Set(this.customerDetailsData.map(item => item.status)));
+    return of(['All', ...statuses]);
   }
 }

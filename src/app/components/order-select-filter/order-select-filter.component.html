@@ -52,7 +52,6 @@
                     <a class="dropdown-item">
                         <div *ngIf="isStatus">
                             <select (change)="onStatusChange($event)">
-                                <option value="">All</option>
                                 <option *ngFor="let status of statuses" [value]="status">{{status}}</option>
                             </select>
                         </div>
