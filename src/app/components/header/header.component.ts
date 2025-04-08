@@ -23,7 +23,6 @@ export class HeaderComponent implements OnDestroy {
     })
 
   }
-
   navigateToDefault() {
     return this.router.navigate(['dashboard/default'])
   }
