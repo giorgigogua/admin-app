@@ -7,6 +7,7 @@ import { NewPostComponent } from './new-post/new-post.component';
 import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
 import { PasswordResetComponent } from './password-reset/password-reset.component';
 import { ProductUpdateComponent } from './product-update/product-update.component';
+import { TopAuthorsComponent } from "../../components/top-authors/top-authors.component";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProductUpdateComponent } from './product-update/product-update.componen
   ],
   imports: [
     CommonModule,
-    EmailsRoutingModule
-  ]
+    EmailsRoutingModule,
+    TopAuthorsComponent
+]
 })
 export class EmailsModule { }
