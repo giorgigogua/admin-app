@@ -1,1 +1,10 @@
-<p>product works!</p>
+<div class="offcanvas offcanvas-end rounded-3 m-3" tabindex="-1" [id]="modalId" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">{{ title }}</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  
