@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
 import { NavService } from './services/nav.service';
+import { EventComponent } from './modules/modals/event/event.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     CommonModule,
     ChartModule,
+    EventComponent,
     SearchFormComponent,
     HttpClientModule,
     TranslateModule.forRoot({

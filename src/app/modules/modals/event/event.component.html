@@ -1,1 +1,33 @@
-<p>event works!</p>
+<div class="modal fade show d-block" tabindex="-1" [ngClass]="{'d-none': !show}"
+    style="background-color: rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ title }}</h5>
+                <button type="button" class="btn-close" aria-label="Close" (click)="onClose()"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="title" class="py-3">Title</label>
+                        <input type="title" class="form-control form-control-lg border-0 bg-light" id="title">
+                    </div>
+                    <div class="form-group py-2">
+                        <label for="description" class="py-3">Description</label>
+                        <textarea type="text" class="form-control border-0 bg-light" id="description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group py-2">
+                        <label for="date" class="py-3">Date</label>
+                        <div class="row p-2 gap-2">
+                            <input type="date" class="form-control form-control-lg col border-0 bg-light" id="date">
+                            <input type="date" class="form-control form-control-lg col border-0 bg-light" id="date">
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <button class="btn btn-warning btn-lg w-100">Create event</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

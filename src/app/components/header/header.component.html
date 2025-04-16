@@ -246,11 +246,11 @@
               <span class="small p-1">Modals</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item">Product</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" role="button">Product</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item">Order</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" role="button">Order</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item">Event</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item" role="button" (click)="openModal()">Event</a></li>
 
             </ul>
           </li>
@@ -331,4 +331,9 @@
     </div>
   </nav>
   <app-search-form></app-search-form>
+  <app-event 
+  [title]="'New event'" 
+  [show]="isModalOpen" 
+  (close)="closeModal()">
+</app-event>
 </div>

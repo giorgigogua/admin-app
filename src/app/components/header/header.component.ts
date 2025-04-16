@@ -37,5 +37,15 @@ export class HeaderComponent implements OnDestroy {
     this.subscripition.unsubscribe()
   }
 
+  isModalOpen = false;
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
+
 
 }
