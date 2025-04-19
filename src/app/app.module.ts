@@ -14,6 +14,8 @@ import { NavService } from './services/nav.service';
 import { EventComponent } from './modules/modals/event/event.component';
 import { ProductComponent } from './modules/modals/product/product.component';
 import { StatusComponent } from "./components/status/status.component";
+import { OrderComponent } from "./modules/modals/order/order.component";
+import { UserCommentComponent } from "./components/user-comment/user-comment.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -32,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ChartModule,
     EventComponent,
     ProductComponent,
+    OrderComponent,
     SearchFormComponent,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -41,7 +44,9 @@ export function HttpLoaderFactory(http: HttpClient) {
             deps: [HttpClient]
         }
     }),
-    StatusComponent
+    StatusComponent,
+    OrderComponent,
+    UserCommentComponent
 ],
   providers: [provideHttpClient(), NavService],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user-comment',
@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class UserCommentComponent {
 
+  @Input() dropdown: boolean | undefined
 }

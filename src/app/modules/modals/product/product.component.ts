@@ -6,8 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss',
-  standalone:true,
-  imports:[CommonModule,ReactiveFormsModule]
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule]
 })
 export class ProductComponent {
   @Input() modalId: string = 'rightModal';

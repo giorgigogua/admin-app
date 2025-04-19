@@ -338,7 +338,53 @@
   </app-event>
 
 
-  <app-product modalId="product" title="Order #3456">
+  <app-product modalId="product">
+
+    <div>
+      <div>
+        <p>
+          Experience unparalleled audio quality with our Noise-Canceling Earbuds, designed to block out unwanted noise
+          and
+          immerse you in pure sound. Featuring advanced active noise cancellation (ANC), these earbuds reduce ambient
+          distractions, letting you focus on your music, calls, or podcasts with crystal-clear clarity.
+        </p>
+      </div>
+      <div>
+        <h6>Details</h6>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><span class="text-muted">Availability</span>
+              </td>
+              <td class="text-end">
+                <app-status status="In Stock"></app-status>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="text-muted">Shipping</span></td>
+              <td class="text-end">Worldwide</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between w-100 align-items-center">
+          <h6>Reviews</h6>
+          <small class="text-muted">3 reviews</small>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-3">
+        <app-user-comment></app-user-comment>
+        <app-user-comment></app-user-comment>
+        <app-user-comment></app-user-comment>
+
+      </div>
+    </div>
+
+  </app-product>
+
+
+  <app-order modalId="order" title="Order #3456">
     <div>
       <h6>Items</h6>
       <table class="table">
@@ -428,5 +474,5 @@
         </div>
       </div>
     </div>
-  </app-product>
+  </app-order>
 </div>
