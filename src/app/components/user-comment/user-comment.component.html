@@ -10,6 +10,10 @@
             <div *ngIf="dropdown">
                 <span>...</span>
             </div>
+            <div *ngIf="rating">
+                <app-star-rating [rating]="userRating">
+                </app-star-rating>
+            </div>
         </div>
         <div class="py-3">
             <span>Just finished the design for the new filters. What do you think?</span>
