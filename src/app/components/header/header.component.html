@@ -31,13 +31,13 @@
               </span>
               <span class="text-black">John Williams</span>
             </span>
-            <ul class="dropdown-menu dropdown-menu-end border-0 shadow">
-              <li><a class="dropdown-item" role="button">{{'Account.account'| translate}}</a></li>
-              <li><a class="dropdown-item" role="button">{{'Account.changePassword'| translate}}</a></li>
+            <ul class="dropdown-menu dropdown-menu-end border-0 p-1 shadow">
+              <li><a class="dropdown-item p-2" role="button">{{'Account.account'| translate}}</a></li>
+              <li><a class="dropdown-item p-2" role="button">{{'Account.changePassword'| translate}}</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" role="button">{{'Account.signout'| translate}}</a></li>
+              <li><a class="dropdown-item p-2" role="button">{{'Account.signout'| translate}}</a></li>
             </ul>
           </div>
 
@@ -68,9 +68,9 @@
               <span class="small p-1">Dashboards</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/default">Default</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/crypto">Crypto</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="dashboard/saas">Saas</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="dashboard/default">Default</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="dashboard/crypto">Crypto</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="dashboard/saas">Saas</a></li>
             </ul>
           </li>
 
@@ -80,23 +80,23 @@
               aria-expanded="true">
               Pages
             </a>
-            <ul class="dropdown-menu border-0 shadow" data-bs-popper="static">
+            <ul class="dropdown-menu border-0 shadow p-1" data-bs-popper="static">
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex justify-content-between w-100 p-1">
                     Customers
                     <i class="bi bi-chevron-right small"></i>
                   </div>
                 </a>
                 <ul class="dropdown-menu border-0 shadow p-1">
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2"
                       routerLink="customer/customers">Customers</a>
                   </li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2"
                       routerLink="customer/customer-detail">Customer
                       details</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="customer/new-customer">New
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="customer/new-customer">New
                       customer</a></li>
                 </ul>
               </li>
@@ -105,18 +105,18 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex justify-content-between w-100 p-1">
                     Projects
                     <i class="bi bi-chevron-right small"></i>
                   </div>
                 </a>
                 <ul class="dropdown-menu border-0 shadow p-1">
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/projects">Proejects</a>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="project/projects">Proejects</a>
                   </li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2"
                       routerLink="project/project-overview">Project
                       overview</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="project/new-project">New
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="project/new-project">New
                       project</a></li>
                 </ul>
               </li>
@@ -125,16 +125,16 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex justify-content-between w-100 p-1">
                     Account
                     <i class="bi bi-chevron-right small"></i>
                   </div>
                 </a>
                 <ul class="dropdown-menu border-0 shadow p-1">
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2"
                       routerLink="account/account-overview">Account
                       overview</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2"
                       routerLink="account/account-setting">Account
                       settings</a></li>
                 </ul>
@@ -143,19 +143,19 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex justify-content-between w-100 p-1">
                     E-commerce
                     <i class="bi bi-chevron-right small"></i>
                   </div>
                 </a>
-                <ul class="dropdown-menu">
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/products">
+                <ul class="dropdown-menu p-1">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="e-commerce/products">
                       Products</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/orders">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="e-commerce/orders">
                       Orders</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/invoice">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="e-commerce/invoice">
                       Invoice</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="e-commerce/pricing">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="e-commerce/pricing">
                       Pricing</a></li>
                 </ul>
               </li>
@@ -164,16 +164,16 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex justify-content-between w-100 p-1">
                     Posts
                     <i class="bi bi-chevron-right small"></i>
                   </div>
                 </a>
-                <ul class="dropdown-menu">
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/categories">Categories</a>
+                <ul class="dropdown-menu p-1">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="post/categories">Categories</a>
                   </li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/post">Posts</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="post/new-post">New post</a>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="post/post">Posts</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="post/new-post">New post</a>
                   </li>
                 </ul>
               </li>
@@ -181,19 +181,19 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  <div class="d-flex justify-content-between w-100">
-                    authentication
+                  <div class="d-flex justify-content-between w-100 p-1">
+                    Authentication
                     <i class="bi bi-chevron-right small"></i>
                   </div>
                 </a>
                 <ul class="dropdown-menu">
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-in">Sign
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="authentication/sign-in">Sign
                       in</a>
                   </li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="authentication/sign-up">Sign
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="authentication/sign-up">Sign
                       up</a>
                   </li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item"
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2"
                       routerLink="authentication/password-reset">Password
                       reset</a>
                   </li>
@@ -203,13 +203,13 @@
               <li class="dropend">
                 <a class="dropdown-item d-flex" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                   aria-expanded="false">
-                  <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex justify-content-between w-100 p-1">
                     Misc
                     <i class="bi bi-chevron-right small"></i>
                   </div>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-item " routerLink="misc/calendar">Calendar</li>
+                <ul class="dropdown-menu p-1">
+                  <li class="dropdown-item p-2" role="button" routerLink="misc/calendar">Calendar</li>
                 </ul>
               </li>
 
@@ -222,19 +222,19 @@
               <span class="small p-1">Emails</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="emails/account-confirmation"
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="emails/account-confirmation"
                   target="_blank">Account
                   confirmation</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="emails/new-post"
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="emails/new-post"
                   target="_blank">New post</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="emails/order-confirmation"
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="emails/order-confirmation"
                   target="_blank">Order
                   confirmation</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="emails/password-reset"
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="emails/password-reset"
                   target="_blank">Password
                   reset</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" routerLink="emails/product-update"
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="emails/product-update"
                   target="_blank">Product
                   update</a>
               </li>
@@ -246,13 +246,13 @@
               <span class="small p-1">Modals</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" role="button" data-bs-toggle="offcanvas"
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" role="button" data-bs-toggle="offcanvas"
                   data-bs-target="#product">Product</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" role="button" data-bs-toggle="offcanvas"
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" role="button" data-bs-toggle="offcanvas"
                   data-bs-target="#order">Order</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item" role="button" (click)="openModal()">Event</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" role="button" (click)="openModal()">Event</a>
               </li>
 
             </ul>

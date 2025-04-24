@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 export class StarRatingComponent {
 
-  @Input() rating: number = 0;
+  @Input() rating: any = 0;
   @Input() maxStars: number = 5;
 
   @Output() ratingChange = new EventEmitter<number>();
