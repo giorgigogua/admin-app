@@ -46,7 +46,20 @@
                 <div class="vr"></div>
               </div>
               <div>
-                <i class="bi bi-bell-fill"></i>
+                <div class="dropdown">
+                  <button class="btn btn-light position-relative" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bell-fill"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning">
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+                
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
+                    <li><a class="dropdown-item" href="#">New message from John</a></li>
+                    <li><a class="dropdown-item" href="#">Server rebooted</a></li>
+                    <li><a class="dropdown-item" href="#">New comment on post</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
