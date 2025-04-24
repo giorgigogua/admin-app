@@ -1,4 +1,4 @@
-<div class="container w-100 d-flex justify-content-center">
+<div class="w-100 d-flex justify-content-center p-2">
     <div>
         <div class="py-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
@@ -18,22 +18,26 @@
             <h3 class="fw-bold py-3">Your latest read is here!</h3>
             <p>We’ve just published something new, and we think you’ll love it!
             </p>
-            <div>
-                <div class="card">
-                    <div class="card-header">
-                        <app-top-authors
-                            image="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-1.jpg"
-                            firstName="Emily Thompson" mail="emily.thompson@example.com"></app-top-authors>
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0 d-flex flex-column justify-content-center p-3">
+            <div class="card" style="width: 450px;">
+                <div class="card-header bg-white">
+                    <app-top-authors image="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-1.jpg"
+                        firstName="Emily Thompson" mail="emily.thompson@example.com"></app-top-authors>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0 d-flex flex-column justify-content-center p-3">
+                        <div>
                             <h4>Mastering dashboard UX: tips for a seamless user experience </h4>
                             <p>A well-designed dashboard enhances usability and decision-making. Learn key UX
                                 p
                             </p>
-                            <img class="rounded-2" src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/emails/covers/cover-1.jpg" alt="">
-                        </blockquote>
-                    </div>
+                        </div>
+                        <div class="w-100 mb-0">
+                            <img class="img-fluid rounded"
+                                src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/emails/covers/cover-1.jpg"
+                                alt="..."
+                                style="-ms-interpolation-mode: bicubic; border-radius: 0.5rem; height: auto; max-width: 100%; width: 100%;">
+                        </div>
+                    </blockquote>
                 </div>
             </div>
             <div class="py-3">
