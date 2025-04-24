@@ -21,24 +21,34 @@
 
         <div class="col d-lg-block d-xl-none">
 
-          <div class="dropdown">
-            <span
-              class="btn btn-link d-inline-flex align-items-center dropdown-toggle text-black text-decoration-none bg-light"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="avatar avatar-sm me-3">
-                <img class="avatar-img rounded-circle" width="40px" height="40px"
-                  src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg" alt="...">
+          <div class="d-flex align-items-center gap-2">
+            <div class="dropdown">
+              <span
+                class="btn btn-link d-inline-flex align-items-center dropdown-toggle text-black text-decoration-none"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="avatar avatar-sm me-3">
+                  <img class="avatar-img rounded-circle" width="40px" height="40px"
+                    src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg" alt="...">
+                </span>
               </span>
-              <span class="text-black">John Williams</span>
-            </span>
-            <ul class="dropdown-menu dropdown-menu-end border-0 p-1 shadow">
-              <li><a class="dropdown-item p-2" role="button">{{'Account.account'| translate}}</a></li>
-              <li><a class="dropdown-item p-2" role="button">{{'Account.changePassword'| translate}}</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item p-2" role="button">{{'Account.signout'| translate}}</a></li>
-            </ul>
+              <ul class="dropdown-menu dropdown-menu-end border-0 p-1 shadow">
+                <li><a class="dropdown-item p-2" role="button">{{'Account.account'| translate}}</a></li>
+                <li><a class="dropdown-item p-2" role="button">{{'Account.changePassword'| translate}}</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item p-2" role="button">{{'Account.signout'| translate}}</a></li>
+              </ul>
+            </div>
+
+            <div class="d-flex gap-2">
+              <div>
+                <div class="vr"></div>
+              </div>
+              <div>
+                <i class="bi bi-bell-fill"></i>
+              </div>
+            </div>
           </div>
 
         </div>
