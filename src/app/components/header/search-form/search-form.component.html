@@ -46,20 +46,52 @@
           </div>
           <div>
             <div class="dropdown">
-              <button class="btn btn-light position-relative" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn btn-light position-relative" type="button" id="notificationDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-bell-fill"></i>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning">
                   <span class="visually-hidden">unread messages</span>
                 </span>
               </button>
-            
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
-                <li><a class="dropdown-item" href="#">New message from John</a></li>
-                <li><a class="dropdown-item" href="#">Server rebooted</a></li>
-                <li><a class="dropdown-item" href="#">New comment on post</a></li>
+
+              <ul class="dropdown-menu dropdown-menu-end border-0 shadow" style="width: 295px;"
+                aria-labelledby="notificationDropdown">
+                <div class="d-flex justify-content-between w-100 p-2 align-items-center">
+                  <div>
+                    <small class="text-muted">Notifications</small>
+                  </div>
+                  <div class="d-flex">
+                    <div>
+                      <small role="button" class="btn btn-light btn-sm">Mark all as read</small>
+                    </div>
+                    <div>
+                      <i class="bi bi-gear-fill small btn btn-light btn-sm" role="button"></i>
+                    </div>
+                  </div>
+                </div>
+
+                Comments
+
+
+                <div class="px-3">
+                  <hr>
+                </div>
+                <div class="d-flex">
+                  <div class="px-2 py-2">
+                    <i class="bi bi-exclamation-circle-fill bg-light p-3 rounded-circle"></i>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div>
+                      <span class="fw-bold">System alert - <span class="fw-normal">Build failed</span></span>
+                    </div>
+                    <div>
+                      <small class="text-muted">1 hour ago</small>
+                    </div>
+                  </div>
+                </div>
               </ul>
             </div>
-            
+
           </div>
         </div>
 
