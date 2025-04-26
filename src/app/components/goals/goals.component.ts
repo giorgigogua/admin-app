@@ -24,7 +24,7 @@ export class GoalsComponent {
       desc: 'Dark mode',
       date: 'Oct 01',
       icon: 'bi bi-circle-fill text-danger ',
-      color: 'yellow',
+      color: 'orange',
       percent: 50
 
     },

@@ -55,7 +55,7 @@
                     </span>
                   </button>
 
-                  <ul class="dropdown-menu dropdown-menu-end border-0 shadow" style="width: 295px;"
+                  <ul class="dropdown-menu dropdown-menu-end border-0 shadow px-2" style="width: 320px;"
                     aria-labelledby="notificationDropdown">
                     <div class="d-flex justify-content-between w-100 p-2 align-items-center">
                       <div>
@@ -71,14 +71,61 @@
                       </div>
                     </div>
 
-                    Comments
+                    <div>
+                      <div class="d-flex gap-2">
+                        <div class="py-2">
+                          <img width="40px" height="40px"
+                            src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-1.jpg"
+                            class="rounded-circle" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <div>
+                            <span class="fw-semibold">Emily T . <span class="fw-normal small">Commented on your
+                                post</span></span>
+                          </div>
+                          <div>
+                            <small class="text-muted">5 minutes ago</small>
+                          </div>
+                          <div class="border p-2 rounded-3">
+                            <span>Love the new dashboard layout! Super clean and easy to navigate 🔥</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <div class="py-2">
+                          <img width="40px" height="40px"
+                            src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg"
+                            class="rounded-circle" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <div>
+                            <span class="fw-semibold">Michael J . <span class="fw-normal small">requested changes on
+                                your
+                                post</span></span>
+                          </div>
+                          <div>
+                            <small class="text-muted">10 minutes ago</small>
+                          </div>
+                          <div class="border p-2 rounded-3">
+                            <span>Could you update the revenue chart with the latest data? Thanks!</span>
+                            <p class="">
+                              <span>
+                                <button class="border-0 btn btn-light rounded-3 btn-sm p-2">Update now</button>
+                                <button class="border-0 btn btn-white btn-sm rounded-3 p-2">Dismiss</button>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
 
-                    <div class="px-3">
+                    <div>
                       <hr>
                     </div>
                     <div class="d-flex">
-                      <div class="px-2 py-2">
+                      <div class="py-2">
                         <i class="bi bi-exclamation-circle-fill bg-light p-3 rounded-circle"></i>
                       </div>
                       <div class="d-flex flex-column">
@@ -151,7 +198,8 @@
                   <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
                       routerLink="customer/customer-detail">Customer
                       details</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="customer/new-customer">New
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                      routerLink="customer/new-customer">New
                       customer</a></li>
                 </ul>
               </li>
@@ -170,7 +218,8 @@
                   <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
                       routerLink="project/project-overview">Project
                       overview</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="project/new-project">New
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                      routerLink="project/new-project">New
                       project</a></li>
                 </ul>
               </li>
@@ -199,13 +248,17 @@
                   <i class="bi bi-chevron-right small"></i>
                 </a>
                 <ul class="dropdown-menu p-1">
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="e-commerce/products">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                      routerLink="e-commerce/products">
                       Products</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2  text-muted" routerLink="e-commerce/orders">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2  text-muted"
+                      routerLink="e-commerce/orders">
                       Orders</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="e-commerce/invoice">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                      routerLink="e-commerce/invoice">
                       Invoice</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="e-commerce/pricing">
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                      routerLink="e-commerce/pricing">
                       Pricing</a></li>
                 </ul>
               </li>
@@ -221,8 +274,10 @@
                   <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
                       routerLink="post/categories">Categories</a>
                   </li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="post/post">Posts</a></li>
-                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="post/new-post">New post</a>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                      routerLink="post/post">Posts</a></li>
+                  <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                      routerLink="post/new-post">New post</a>
                   </li>
                 </ul>
               </li>
@@ -269,20 +324,20 @@
               <span class="small p-1 text-muted">Emails</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="emails/account-confirmation"
-                  target="_blank">Account
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                  routerLink="emails/account-confirmation" target="_blank">Account
                   confirmation</a></li>
               <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="emails/new-post"
                   target="_blank">New post</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="emails/order-confirmation"
-                  target="_blank">Order
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                  routerLink="emails/order-confirmation" target="_blank">Order
                   confirmation</a></li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="emails/password-reset"
-                  target="_blank">Password
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                  routerLink="emails/password-reset" target="_blank">Password
                   reset</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" routerLink="emails/product-update"
-                  target="_blank">Product
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted"
+                  routerLink="emails/product-update" target="_blank">Product
                   update</a>
               </li>
             </ul>
@@ -293,11 +348,11 @@
               <span class="small p-1 text-muted">Modals</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" role="button" data-bs-toggle="offcanvas"
-                  data-bs-target="#product">Product</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" role="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#product">Product</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" role="button" data-bs-toggle="offcanvas"
-                  data-bs-target="#order">Order</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" role="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#order">Order</a>
               </li>
               <li [routerLinkActive]="'active'"><a class="dropdown-item p-2 text-muted" role="button"
                   (click)="openModal()">Event</a>
