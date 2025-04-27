@@ -46,99 +46,7 @@
                 <div class="vr"></div>
               </div>
               <div>
-                <div class="dropdown">
-                  <button class="btn btn-light position-relative" type="button" id="notificationDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-bell-fill"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning">
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
-
-                  <ul class="dropdown-menu dropdown-menu-end border-0 shadow px-2" style="width: 320px;"
-                    aria-labelledby="notificationDropdown">
-                    <div class="d-flex justify-content-between w-100 p-2 align-items-center">
-                      <div>
-                        <small class="text-muted">Notifications</small>
-                      </div>
-                      <div class="d-flex">
-                        <div>
-                          <small role="button" class="btn btn-light btn-sm">Mark all as read</small>
-                        </div>
-                        <div>
-                          <i class="bi bi-gear-fill small btn btn-light btn-sm" role="button"></i>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <div class="d-flex gap-2">
-                        <div class="py-2">
-                          <img width="40px" height="40px"
-                            src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-1.jpg"
-                            class="rounded-circle" alt="">
-                        </div>
-                        <div class="d-flex flex-column">
-                          <div>
-                            <span class="fw-semibold">Emily T . <span class="fw-normal small">Commented on your
-                                post</span></span>
-                          </div>
-                          <div>
-                            <small class="text-muted">5 minutes ago</small>
-                          </div>
-                          <div class="border p-2 rounded-3">
-                            <span>Love the new dashboard layout! Super clean and easy to navigate 🔥</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="d-flex gap-2">
-                        <div class="py-2">
-                          <img width="40px" height="40px"
-                            src="https://yevgenysim-turkey.github.io/dashbrd/assets/img/photos/photo-2.jpg"
-                            class="rounded-circle" alt="">
-                        </div>
-                        <div class="d-flex flex-column">
-                          <div>
-                            <span class="fw-semibold">Michael J . <span class="fw-normal small">requested changes on
-                                your
-                                post</span></span>
-                          </div>
-                          <div>
-                            <small class="text-muted">10 minutes ago</small>
-                          </div>
-                          <div class="border p-2 rounded-3">
-                            <span>Could you update the revenue chart with the latest data? Thanks!</span>
-                            <p class="">
-                              <span>
-                                <button class="border-0 btn btn-light rounded-3 btn-sm p-2">Update now</button>
-                                <button class="border-0 btn btn-white btn-sm rounded-3 p-2">Dismiss</button>
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div>
-                      <hr>
-                    </div>
-                    <div class="d-flex">
-                      <div class="py-2">
-                        <i class="bi bi-exclamation-circle-fill bg-light p-3 rounded-circle"></i>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div>
-                          <span class="fw-bold">System alert - <span class="fw-normal">Build failed</span></span>
-                        </div>
-                        <div>
-                          <small class="text-muted">1 hour ago</small>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
+                <app-bell></app-bell>
               </div>
             </div>
           </div>
@@ -170,11 +78,11 @@
               <span class="small p-1">Dashboards</span>
             </a>
             <ul class="dropdown-menu border-0 shadow p-1">
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="dashboard/default">Default</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item text-muted p-2" routerLink="dashboard/default">Default</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="dashboard/crypto">Crypto</a>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item text-muted p-2" routerLink="dashboard/crypto">Crypto</a>
               </li>
-              <li [routerLinkActive]="'active'"><a class="dropdown-item p-2" routerLink="dashboard/saas">Saas</a></li>
+              <li [routerLinkActive]="'active'"><a class="dropdown-item text-muted p-2" routerLink="dashboard/saas">Saas</a></li>
             </ul>
           </li>
 

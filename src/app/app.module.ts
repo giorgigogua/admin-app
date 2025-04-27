@@ -16,6 +16,8 @@ import { ProductComponent } from './modules/modals/product/product.component';
 import { StatusComponent } from "./components/status/status.component";
 import { OrderComponent } from "./modules/modals/order/order.component";
 import { UserCommentComponent } from "./components/user-comment/user-comment.component";
+import { UserActionComponent } from './components/user-action/user-action.component';
+import { BellComponent } from './components/bell/bell.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -46,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     StatusComponent,
     OrderComponent,
-    UserCommentComponent
+    UserCommentComponent,
+    BellComponent,
 ],
   providers: [provideHttpClient(), NavService],
   bootstrap: [AppComponent]
