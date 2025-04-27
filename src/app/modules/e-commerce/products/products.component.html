@@ -1,1 +1,54 @@
-<p>products works!</p>
+<div class="container mt-5">
+    <app-page-title titleOne="E-commerce" titleTwo="Products" titleThree="Products" icon="bi bi-card-text text-primary"
+        buttons="true" buttonText="+ New Project"></app-page-title>
+
+    <div>
+        <app-order-select-filter [isStatus]="true" noSelected="true"></app-order-select-filter>
+    </div>
+
+    <div class="mt-5">
+        <div class="table-responsive">
+            <table class="table table-selectable align-middle">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th scope="col" class="text-muted fw-normal">Name</th>
+                        <th scope="col" class="text-muted fw-normal">Category</th>
+                        <th scope="col" class="text-muted fw-normal">Price</th>
+                        <th scope="col" class="text-muted fw-normal">Stock</th>
+                        <th scope="col" class="text-muted fw-normal">Rating</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let item of users">
+                    <tr>
+                        <td class="py-4">
+                            <input type="checkbox">
+                        </td>
+                        <td class="w-25">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div style="width: 40px; height: 40px;">
+                                    <img class="w-100 h-100 rounded-4" src={{item.img}} alt="">
+                                </div>
+                                <div>
+                                    <span>{{item.name}}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>{{item.category}}</td>
+                        <td>
+                            <h6 class="text-muted">{{item.price}}</h6>
+                        </td>
+                        <td>
+                            <span><app-status [status]="item.stock"></app-status></span>
+                        </td>
+                        <td>
+                            <span><app-star-rating [rating]="item.rating"></app-star-rating></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <app-pager></app-pager>
+    </div>
+</div>

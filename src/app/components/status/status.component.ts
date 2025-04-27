@@ -25,10 +25,10 @@ export class StatusComponent implements OnInit {
         this.statusColor = '#b5cbbb';
         this.textColor = 'green'
         break;
-        case 'In Stock':
-          this.statusColor = '#b5cbbb';
-          this.textColor = 'green'
-          break;
+      case 'In Stock':
+        this.statusColor = '#b5cbbb';
+        this.textColor = 'green'
+        break;
       case 'Cancelled':
         this.statusColor = '#FF9999';
         this.textColor = 'red'
@@ -46,6 +46,18 @@ export class StatusComponent implements OnInit {
         this.textColor = 'green'
         break;
       case 'Pending':
+        this.statusColor = '#FFD580';
+        this.textColor = 'orange'
+        break;
+      case 'In Stock':
+        this.statusColor = '#b5cbbb';
+        this.textColor = 'green'
+        break;
+      case 'Out of Stock':
+        this.statusColor = '#FF9999';
+        this.textColor = 'red'
+        break;
+      case 'Limited Stock':
         this.statusColor = '#FFD580';
         this.textColor = 'orange'
         break;

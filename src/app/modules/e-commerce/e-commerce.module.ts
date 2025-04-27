@@ -12,6 +12,9 @@ import { AccordionComponent } from '../../components/accordion/accordion.compone
 import { OrderSelectFilterComponent } from '../../components/order-select-filter/order-select-filter.component';
 import { PagerComponent } from '../../components/pager/pager.component';
 import { CustomersTableComponent } from '../../components/customers-table/customers-table.component';
+import { TableComponent } from "../../components/table/table.component";
+import { StatusComponent } from "../../components/status/status.component";
+import { StarRatingComponent } from "../../components/star-rating/star-rating.component";
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { CustomersTableComponent } from '../../components/customers-table/custom
     AccordionComponent,
     OrderSelectFilterComponent,
     PagerComponent,
-    CustomersTableComponent
-  ]
+    CustomersTableComponent,
+    TableComponent,
+    StatusComponent,
+    StarRatingComponent
+]
 })
 export class ECommerceModule { }
