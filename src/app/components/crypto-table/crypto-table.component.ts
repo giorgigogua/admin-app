@@ -21,8 +21,6 @@ export class CryptoTableComponent implements OnInit {
   ngOnInit(): void {
     this.cryptoService.getCryptoTableList().subscribe((data) => {
       this.crypto = data
-
-      console.log(this.crypto)
     })
   }
 

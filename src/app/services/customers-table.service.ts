@@ -50,7 +50,7 @@ export class CustomersTableService {
       params = params.set('userName', searchByUserName)
     }
 
-    return this.httpClient.get<CustomerTableInterface[]>(this.apiUrl).pipe(
+    return of(this.customersTableData).pipe(
       map((data: any[]) => this.filterUser(data, searchByUserName))
     );
   }

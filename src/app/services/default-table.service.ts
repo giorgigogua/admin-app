@@ -143,8 +143,8 @@ export class DefaultTableService {
       params = params.set('title', searchByTitle)
     }
 
-    return this.httpClient.get<DefaultTableInterface[]>(this.apiUrl).pipe(
-      map((data: any[]) => this.filterData(data, searchByTitle))
+    return of(this.defaultTableData).pipe(
+      map((data: any) => this.filterData(data, searchByTitle))
     );
   }
 

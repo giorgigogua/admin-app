@@ -55,8 +55,8 @@ export class ProductListService {
       params = params.set('name', searchByTitle)
     }
 
-    return this.httpClient.get<any[]>(this.apiUrl).pipe(
-      map((data: any[]) => this.filterProuct(data, searchByTitle))
+    return of(this.productList).pipe(
+      map((data: any) => this.filterProuct(data, searchByTitle))
     );
   }
 
