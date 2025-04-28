@@ -792,5 +792,31 @@
       "status": "Cancelled",
       "price": "32233"
     }
+  ],
+  "productList": [
+    {
+      "name": "Mackbook",
+      "category": "Electronics",
+      "price": "$99.99",
+      "stock": "Out of Stock",
+      "rating": 1,
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/products/smart-watch.jpg"
+    },
+    {
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": "$99.99",
+      "stock": "In Stock",
+      "rating": 3,
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/products/smart-watch.jpg"
+    },
+    {
+      "name": "Watch",
+      "category": "Electronics",
+      "price": "$99.99",
+      "stock": "Out of Stock",
+      "rating": 5,
+      "img": "https://yevgenysim-turkey.github.io/dashbrd/assets/img/products/smart-watch.jpg"
+    }
   ]
 }

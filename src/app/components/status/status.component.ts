@@ -25,10 +25,6 @@ export class StatusComponent implements OnInit {
         this.statusColor = '#b5cbbb';
         this.textColor = 'green'
         break;
-      case 'In Stock':
-        this.statusColor = '#b5cbbb';
-        this.textColor = 'green'
-        break;
       case 'Cancelled':
         this.statusColor = '#FF9999';
         this.textColor = 'red'

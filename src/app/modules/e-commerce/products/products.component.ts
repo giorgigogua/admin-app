@@ -1,29 +1,56 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProductListService } from '../../../services/product-list.service';
+import { FormControl } from '@angular/forms';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrl: './products.component.scss'
+  styleUrl: './products.component.scss',
+  providers: [ProductListService]
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit {
 
-  users: any = [
-    {
-      name: 'Wireless Headphones',
-      category: 'Electronics',
-      price: '$99.99,',
-      stock: 'In Stock',
-      rating: 5,
-      img: 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/products/gaming-laptop.jpg'
-    },
-    {
-      name: 'Wireless Headphones',
-      category: 'Electronics',
-      price: '$99.99,',
-      stock: 'Out of Stock',
-      rating: 3,
-      img: 'https://yevgenysim-turkey.github.io/dashbrd/assets/img/products/smart-watch.jpg'
-    }
-  ]
+  productList: any[] = []
+
+  filterData: string = '';
+  searchControl: FormControl = new FormControl('');
+  selectedStatus: string = '';
+  stock: any[] = []
+
+  constructor(private productListService: ProductListService) {
+
+    this.productListService.getAll().subscribe((data) => {
+      this.productList = data
+    })
+
+  }
+
+
+  ngOnInit(): void {
+    this.searchControl.valueChanges.pipe(
+      switchMap((filterData) => this.productListService.getFilteredProduct(filterData))
+    ).subscribe((data) => {
+      this.productList = data;
+    });
+
+    this.productListService.getStatuses().subscribe((stock: string[]) => {
+      this.stock = stock;
+    });
+  }
+
+  onStatusChange(status: string): void {
+    this.selectedStatus = status;
+    this.fetchItems();
+  }
+
+  private fetchItems(): void {
+    this.productListService.getProduct(this.selectedStatus).subscribe((data: any[]) => {
+      this.productList = data;
+    });
+  }
+
+
+
 
 }

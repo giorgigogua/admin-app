@@ -39,10 +39,6 @@ export class CustomersTableService {
     return of<CustomerTableInterface[]>(this.customersTableData)
   }
 
-  // postList(data: CustomerTableInterface) {
-  //   return this.httpClient.post(this.apiUrl, data)
-
-  // }
 
   //GET FILTERED USER START
 

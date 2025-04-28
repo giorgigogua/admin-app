@@ -3,7 +3,8 @@
         buttons="true" buttonText="+ New Project"></app-page-title>
 
     <div>
-        <app-order-select-filter [isStatus]="true" noSelected="true"></app-order-select-filter>
+        <app-order-select-filter [isStatus]="true" (statusChange)="onStatusChange($event)" [statuses]="stock"
+            [filterBoxSearchControl]="searchControl" noSelected="true"></app-order-select-filter>
     </div>
 
     <div class="mt-5">
@@ -19,7 +20,7 @@
                         <th scope="col" class="text-muted fw-normal">Rating</th>
                     </tr>
                 </thead>
-                <tbody *ngFor="let item of users">
+                <tbody *ngFor="let item of productList">
                     <tr>
                         <td class="py-4">
                             <input type="checkbox">
