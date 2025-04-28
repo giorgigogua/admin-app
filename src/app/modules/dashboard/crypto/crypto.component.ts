@@ -20,6 +20,9 @@ export class CryptoComponent implements OnInit {
 
   cryptoListItem: any
 
+  fileName: string | null = null;
+
+
 
   lineData: any
 
@@ -174,6 +177,15 @@ export class CryptoComponent implements OnInit {
     if(this.validationForm.invalid){
       this.validationForm.markAllAsTouched()
       return
+    }
+  }
+
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      this.fileName = input.files[0].name;
+    } else {
+      this.fileName = null;
     }
   }
 

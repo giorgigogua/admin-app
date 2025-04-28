@@ -14,6 +14,8 @@ export class NewCustomerComponent {
 
   validationForm: FormGroup
 
+  fileName: string | null = null;
+
 
 
   initialValue: CustomerTableInterface = {
@@ -44,6 +46,16 @@ export class NewCustomerComponent {
     if (this.validationForm.invalid) {
       this.validationForm.markAllAsTouched()
       return
+    }
+  }
+
+
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      this.fileName = input.files[0].name;
+    } else {
+      this.fileName = null;
     }
   }
 

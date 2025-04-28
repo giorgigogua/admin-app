@@ -117,6 +117,15 @@
           <div class="d-flex flex-column gap-2">
             <form [formGroup]="validationForm" class="d-flex flex-column gap-3">
               <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" [(ngModel)]="cryptoTableFormData.icon" formControlName="image" name="image"
+                  class="form-control form-control-lg bg-light border-0" id="image" (change)="onFileSelected($event)">
+              </div>
+              <div *ngIf="fileName" class="alert alert-info">
+                Selected file: <strong>{{ fileName }}</strong>
+              </div>
+              <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
+              <div class="form-group">
                 <label for="name">Name</label>
                 <input formControlName="name" type="text" [(ngModel)]="cryptoTableFormData.name" name="name"
                   class="form-control form-control-lg bg-light border-0" id="name">
@@ -142,13 +151,6 @@
                   class="form-control form-control-lg bg-light border-0" id="lastHour">
               </div>
               <app-validation-error-message [control]="validationForm.get('lastHour')"></app-validation-error-message>
-
-              <div class="form-group">
-                <label for="image">Image</label>
-                <input type="file" [(ngModel)]="cryptoTableFormData.icon" formControlName="image" name="image"
-                  class="form-control form-control-lg bg-light border-0" id="image">
-              </div>
-              <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
             </form>
           </div>
         </div>

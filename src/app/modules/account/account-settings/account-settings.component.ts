@@ -7,7 +7,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AccountSettingsComponent {
 
-
+  fileName: string | null = null;
   validationForm: FormGroup
 
 
@@ -21,9 +21,28 @@ export class AccountSettingsComponent {
       bio: new FormControl("", [Validators.required]),
       card: new FormControl("", [Validators.required]),
       CV: new FormControl("", [Validators.required]),
-      date: new FormControl("", [Validators.required])
+      date: new FormControl("", [Validators.required]),
+      image: new FormControl("", [Validators.required])
 
     })
+  }
+
+
+  onSubmit(){
+    if(this.validationForm.invalid){
+      this.validationForm.markAllAsTouched()
+      return
+    }
+  }
+
+  
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      this.fileName = input.files[0].name;
+    } else {
+      this.fileName = null;
+    }
   }
 
 

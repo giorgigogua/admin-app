@@ -55,9 +55,14 @@
                     <div class="form-group d-flex flex-column gap-3">
                         <label for="image">Files</label>
                         <p>Attach files to this customer.</p>
-                        <input type="file" class="form-control form-control-lg bg-white border-0" id="image" formControlName="image">
+                        <input type="file" class="form-control form-control-lg bg-white border-0" id="image"
+                            formControlName="image" (change)="onFileSelected($event)">
                     </div>
-                    <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
+                    <div *ngIf="fileName" class="alert alert-info">
+                        Selected file: <strong>{{ fileName }}</strong>
+                    </div>
+                    <app-validation-error-message
+                        [control]="validationForm.get('image')"></app-validation-error-message>
                 </div>
             </div>
         </div>

@@ -19,8 +19,14 @@
                     <form [formGroup]="validationForm" class="d-flex flex-column gap-3">
                         <div class="form-group d-flex flex-column gap-2">
                             <label for="file">Avatar</label>
-                            <input type="file" class="form-control form-control-lg bg-body border-0" id="file">
+                            <input type="file" class="form-control form-control-lg bg-body border-0"
+                                (change)="onFileSelected($event)" id="file" formControlName="image">
                         </div>
+                        <div *ngIf="fileName" class="alert alert-info">
+                            Selected file: <strong>{{ fileName }}</strong>
+                        </div>
+                        <app-validation-error-message
+                            [control]="validationForm.get('image')"></app-validation-error-message>
                         <div class="form-group d-flex flex-column gap-2">
                             <label for="name">Full Name</label>
                             <input formControlName="fullName" id="fullName" type="name"

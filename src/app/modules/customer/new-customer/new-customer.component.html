@@ -10,7 +10,10 @@
                 <input [(ngModel)]="initialValue.userImage" name="name" type="file"
                     [ngClass]="{ 'border border-success': validationForm.get('image')?.valid}"
                     class="form-control form-control-lg bg-light" id="image" aria-describedby="image"
-                    formControlName="image">
+                    formControlName="image" (change)="onFileSelected($event)">
+            </div>
+            <div *ngIf="fileName" class="alert alert-info">
+                Selected file: <strong>{{ fileName }}</strong>
             </div>
             <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
 
