@@ -7,7 +7,7 @@
         <form class="d-flex flex-column gap-4" [formGroup]="validationForm">
             <div class="form-group d-flex flex-column gap-3">
                 <label for="image">Enter image URL</label>
-                <input [(ngModel)]="initialValue.userImage" name="name" type="text"
+                <input [(ngModel)]="initialValue.userImage" name="name" type="file"
                     [ngClass]="{ 'border border-success': validationForm.get('image')?.valid}"
                     class="form-control form-control-lg bg-light" id="image" aria-describedby="image"
                     formControlName="image">
@@ -50,7 +50,7 @@
                     class="form-control form-control-lg bg-light border-0" id="location" formControlName="location">
             </div>
             <app-validation-error-message [control]="validationForm.get('location')"></app-validation-error-message>
-            <button type="submit" class="btn btn-warning">{{'Action.Submit' | translate}}</button>
+            <button type="submit" (click)="onSubmit()" class="btn btn-warning">{{'Action.Submit' | translate}}</button>
             <button type="reset" class="btn btn-light">Reset Form</button>
         </form>
     </div>

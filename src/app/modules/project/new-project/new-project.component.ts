@@ -34,19 +34,16 @@ export class NewProjectComponent {
       startDate: new FormControl("", [Validators.required]),
       endDate: new FormControl("", [Validators.required]),
       teamTitle: new FormControl("", [Validators.required]),
-      team: new FormControl("", [Validators.required])
-
+      team: new FormControl("", [Validators.required]),
+      image: new FormControl("", [Validators.required])
     })
   }
 
-  // postList() {
-  //   if (this.validationForm.valid) {
-  //     this.tableService.postTableList(this.initialValue).subscribe({
-  //       next: () => {
-  //         this.router.navigate(["/project/projects"])
-  //       }
-  //     })
-  //   }
-  // }
+  onSubmit(){
+    if(this.validationForm.invalid){
+      this.validationForm.markAllAsTouched()
+      return
+    }
+  }
 
 }

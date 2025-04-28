@@ -41,7 +41,9 @@ export class CryptoComponent implements OnInit {
       name: new FormControl("", [Validators.required]),
       lastPrice: new FormControl("", [Validators.required]),
       change: new FormControl("", [Validators.required]),
-      lastHour: new FormControl("", [Validators.required])
+      lastHour: new FormControl("", [Validators.required]),
+      image: new FormControl("", [Validators.required])
+
     })
 
   }
@@ -54,12 +56,8 @@ export class CryptoComponent implements OnInit {
     icon: '',
   }
 
-  refresh(): void {
-    window.location.reload();
-  }
 
-
-  openModel() {
+  openModal() {
     const modelDiv = document.getElementById('myModal')
 
     if (modelDiv != null) {
@@ -67,7 +65,7 @@ export class CryptoComponent implements OnInit {
     }
   }
 
-  closeModel() {
+  closeModal() {
     const modelDiv = document.getElementById('myModal')
 
     if (modelDiv != null) {
@@ -170,6 +168,13 @@ export class CryptoComponent implements OnInit {
         }]
       }
     })
+  }
+
+  onSubmit(){
+    if(this.validationForm.invalid){
+      this.validationForm.markAllAsTouched()
+      return
+    }
   }
 
 

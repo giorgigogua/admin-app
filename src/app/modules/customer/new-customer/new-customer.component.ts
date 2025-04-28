@@ -40,14 +40,11 @@ export class NewCustomerComponent {
 
 
 
-  // post() {
-  //   if (this.validationForm.valid) {
-  //     this.customersTableService.postList(this.initialValue).subscribe({
-  //       next: () => {
-  //         this.router.navigate(["/customer/customers"])
-  //       }
-  //     })
-  //   }
-  // }
+  onSubmit() {
+    if (this.validationForm.invalid) {
+      this.validationForm.markAllAsTouched()
+      return
+    }
+  }
 
 }

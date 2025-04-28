@@ -50,7 +50,7 @@
       <div class="col-xl-8 col-lg-8 col-md-12 border border-1 border-card p-2 rounded-3 card h-100">
         <div class="d-flex justify-content-between align-items-center card-header bg-white border-card">
           <span>Watchlist</span>
-          <button type="button" class="btn btn-white" (click)="openModel()">Add +</button>
+          <button type="button" class="btn btn-white" (click)="openModal()">Add +</button>
         </div>
 
         <div>
@@ -110,7 +110,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close border-0 bg-body" data-dismiss="modal"
-            (click)="closeModel()">&times;</button>
+            (click)="closeModal()">&times;</button>
           <h4 class="modal-title">Add crypto list</h4>
         </div>
         <div class="modal-body">
@@ -145,15 +145,16 @@
 
               <div class="form-group">
                 <label for="image">Image</label>
-                <input type="text" [(ngModel)]="cryptoTableFormData.icon" name="image"
+                <input type="file" [(ngModel)]="cryptoTableFormData.icon" formControlName="image" name="image"
                   class="form-control form-control-lg bg-light border-0" id="image">
               </div>
+              <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
             </form>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModel()">Close</button>
-          <button type="button" class="btn btn-primary">Create</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModal()">Close</button>
+          <button type="button" class="btn btn-primary" (click)="onSubmit()">Create</button>
         </div>
       </div>
 

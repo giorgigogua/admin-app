@@ -53,10 +53,11 @@
                 </div>
                 <div class="card-body bg-light d-flex flex-column gap-3">
                     <div class="form-group d-flex flex-column gap-3">
-                        <label for="title">Files</label>
+                        <label for="image">Files</label>
                         <p>Attach files to this customer.</p>
-                        <input type="file" class="form-control form-control-lg bg-white border-0" id="title">
+                        <input type="file" class="form-control form-control-lg bg-white border-0" id="image" formControlName="image">
                     </div>
+                    <app-validation-error-message [control]="validationForm.get('image')"></app-validation-error-message>
                 </div>
             </div>
         </div>
@@ -90,7 +91,7 @@
 
 
         <div class="row gap-3 py-5">
-            <button type="submit" class="btn btn-warning">Submit</button>
+            <button type="submit" (click)="onSubmit()" class="btn btn-warning">Submit</button>
             <button type="reset" class="btn btn-light">Reset Form</button>
         </div>
     </form>
